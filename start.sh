@@ -1,2 +1,2 @@
-dev_appserver.py src/public
+dev_appserver.py public
 

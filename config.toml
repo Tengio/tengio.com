@@ -11,10 +11,10 @@ theme = "hugo-creative-theme"
 		brand = "small_logo.png"
 
 		[params.navigation.links]
-			about     = "About"
-			services  = "Services"
+			services = "Services"
+			portfolio = "Clients"
+			about = "About Us"
 			values  = "Values"
-			portfolio = "Portfolio"
 			contact   = "Contact"
 
 	[params.hero]
@@ -22,37 +22,22 @@ theme = "hugo-creative-theme"
 		subtitle   = ""
 
 	[params.about]
-		headline    = "About us"
+		headline    = "About Us"
 		description = "We are mobile native developer experts"
 		buttonText  = "Get started!"
 
 		[[params.about.list]]
 			 name = "Akshay Dashrath"
 			 bio  = "Boldness and disruption"
-			 image = "1.jpg"
+			 image = "luigi.jpg"
 
     [[params.about.list]]
-			name = "Luigi Agosti"
-			bio  = "Consistency and experience"
-			image = "luigi.png"
-
-		[[params.about.list]]
-			name = "Florent Guillemot"
-			bio  = "Ginuous and passion"
-			image = "3.jpg"
-
-		[[params.about.list]]
-			name = "Francesco Costarelli"
-			bio  = "Sleeping apprentice"
-			image = "4.jpg"
-
-		[[params.about.list]]
-			name = "Ozhan Saat"
-			bio  = "Jumping apprentice"
-			image = "5.jpg"
+			 name = "Luigi Agosti"
+			 bio  = "Consistency and experience"
+			 image = "luigi.png"
 
 		[params.values]
-			headline = "Our values"
+			headline = "Values"
 
 			[[params.values.list]]
 				 icon = "fa-diamond"

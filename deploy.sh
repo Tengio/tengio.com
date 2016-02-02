@@ -1,1 +1,1 @@
-appcfg.py update src/public
+appcfg.py update public

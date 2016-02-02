@@ -1,0 +1,31 @@
+application: tengio-web
+version: 5
+runtime: go
+api_version: go1
+
+handlers:
+- url: /favicon.ico
+  static_files: img/small_logo.png
+  upload: img/small_logo.png
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /font-awesome
+  static_dir: font-awesome
+
+- url: /css
+  static_dir: css
+
+- url: /404
+  static_dir: 404
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
