@@ -239,6 +239,7 @@ header .header-content {
     display: block;
     position: relative;
     margin: 0 auto;
+    margin-top: 75px;
     max-width: 250px;
 }
 
