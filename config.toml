@@ -94,7 +94,7 @@ theme = "hugo-creative-theme"
 		 	 image = "groupon.png"
 
 		[[params.portfolio.list]]
-			 link = "https://www.gumtree.co.uk/"
+			 link = "http://www.gumtree.co.uk/"
 			 image = "gumtree.png"
 
 		[[params.portfolio.list]]
@@ -106,7 +106,7 @@ theme = "hugo-creative-theme"
 			 image = "depop.png"
 
 	  [[params.portfolio.list]]
-			 link = "https://www.yoyo.com/"
+			 link = "http://yoyowallet.com/"
 			 image = "yoyo.png"
 
 	  [[params.portfolio.list]]
