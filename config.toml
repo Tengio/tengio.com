@@ -29,7 +29,7 @@ theme = "hugo-creative-theme"
 		[[params.about.list]]
 			 name = "Akshay Dashrath"
 			 bio  = "Boldness and disruption"
-			 image = "luigi.jpg"
+			 image = "akshay.png"
 
     [[params.about.list]]
 			 name = "Luigi Agosti"
@@ -52,15 +52,16 @@ theme = "hugo-creative-theme"
 			[[params.values.list]]
 				 icon = "fa-comments-o"
 				 title = "Comunication"
-				 description = "We see our clients are parteners in the project success."
+				 description = "We see our clients as parteners in the project success."
 
 			[[params.values.list]]
 				 icon = "fa-heart"
 				 title = "Passion"
-				 description = "We build software because that what we love."
+				 description = "We build software because that is what we love."
 
   [params.services]
 		headline = "Our services"
+		description = "Services description"
 
     [[params.services.list]]
        title = "Application Development"
@@ -68,7 +69,7 @@ theme = "hugo-creative-theme"
 
     [[params.services.list]]
        title = "UX Design and Longevity"
-       description = "We handle UX Design requirements and provide advice to ensure that your Apps are future proof and ready to be featured on respective App Stores."
+       description = "We handle UX Design requirements and provide advice to ensure that your Apps are future-proof and ready to be featured on respective App Stores."
 
 		[[params.services.list]]
        title = "Support Contracts"
@@ -86,11 +87,31 @@ theme = "hugo-creative-theme"
        title = "Strategy Analysis and Training"
        description = "We will help you determine long term mobile strategy, focusing on growth and revenue. We also provide training in Android and iOS."
 
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
+	[params.portfolio]
+
+		[[params.portfolio.list]]
+		 	 link = "https://www.groupon.com/"
+		 	 image = "groupon.png"
+
+		[[params.portfolio.list]]
+			 link = "https://www.gumtree.co.uk/"
+			 image = "gumtree.png"
+
+		[[params.portfolio.list]]
+			 link = "https://www.pearlshare.com/"
+			 image = "pearlshare.png"
+
+	  [[params.portfolio.list]]
+			 link = "https://www.depop.com/"
+			 image = "depop.png"
+
+	  [[params.portfolio.list]]
+			 link = "https://www.yoyo.com/"
+			 image = "yoyo.png"
+
+	  [[params.portfolio.list]]
+			 link = "https://www.adzuna.co.uk/"
+			 image = "adzuna.png"
 
 	[params.aside]
 		headline = ""
