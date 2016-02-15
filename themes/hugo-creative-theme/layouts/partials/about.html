@@ -27,7 +27,20 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <p>{{ with .Site.Params.about.about1 }}{{ . | markdownify }}{{ end }}</p>
-                <h3 class="section-heading">{{ with .Site.Params.about.aboutTitle }}{{ . }}{{ end }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <br />
+              <h3 class="section-heading">{{ with .Site.Params.about.aboutTitle }}{{ . }}{{ end }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <p>{{ with .Site.Params.about.about2 }}{{ . | markdownify }}{{ end }}</p>
             </div>
         </div>
@@ -35,7 +48,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="section-heading">{{ with .Site.Params.about.storyTitle }}{{ . }}{{ end }}</h3>
+              <br />
+              <h3 class="section-heading">{{ with .Site.Params.about.storyTitle }}{{ . }}{{ end }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <p>{{ with .Site.Params.about.story1 }}{{ . | markdownify }}{{ end }}</p>
             </div>
         </div>
