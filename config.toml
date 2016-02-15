@@ -6,6 +6,7 @@ theme = "hugo-creative-theme"
 [params]
 	name = "Luigi Agosti, Akshay Dashrath"
 	description = "Developers rule"
+	analytics = "UA-67184502-1"
 
 	[params.navigation]
 		brand = "small_logo.png"
