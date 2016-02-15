@@ -24,7 +24,13 @@ theme = "hugo-creative-theme"
 	[params.about]
 		headline    = "About Us"
 		description = "We are mobile native developer experts"
-		buttonText  = "Get started!"
+		about1 = "Mobile is what makes us tick. Working at the cutting edge. Making technology deliver. Creating stunning customer solutions. It’s what gets us out of bed in the morning. It’s why we love coming to work. It’s what we’re good at."
+		about2 = "Tengio is based in Shoreditch, London and we work with customers worldwide. We’ve brought together a team of dedicated, passionate developers who love building great products on mobile. We’ve got the experience that counts. From apps to SDKs, e-commerce to low-energy systems, we’ve got our finger on the pulse. Our customers – such as Groupon, Gumtree or Adzuna – trust us to deliver outstanding results. Every time. We wouldn’t settle for less. We love technology but we think personality is pretty important too. We like all sorts of random things. Ginger beer. Marathon running. Pen collecting. But we’re pretty sure that mobile is what we do best."
+		aboutTitle = "Who we are"
+		storyTitle = "Tengio story"
+		story1 = "In 2014, Akshay Dashrath and Luigi Agosti founded Tengio. The pair had previously worked together for several years at an established Android consultancy in London – later they contracted jointly on projects. Their dream was to create a company that would set new standards in mobile solutions. They had no shortage of experience to draw on. They’ve worked for clients such as Songkick, JP Morgan, Burberry, eBay (Gumtree), ASOS and Laundrapp. Combining technical expertise with business flair, they’ve built apps that have had more than ten million downloads on Google Play. "
+		quote = "Right from the start, we wanted Tengio to be something different – a place where we could do outstanding work with some of the best minds in mobile"
+		quoteAuthor = "Akshay Dashrath, co-founder"
 
 		[[params.about.list]]
 			 name = "Akshay Dashrath"
@@ -36,58 +42,64 @@ theme = "hugo-creative-theme"
 			 bio  = "Consistency and experience"
 			 image = "luigi.png"
 
-		[params.values]
-			headline = "Values"
+	[params.values]
+		headline = "Values"
+		description = "At Tengio, we live by our values. They shape the way we work and how we interact with the world."
 
-			[[params.values.list]]
-				 icon = "fa-diamond"
-				 title = "Code Quality"
-				 description = "We write code that we are happy to maintain and grow."
+		[[params.values.list]]
+			 icon = "fa-diamond"
+			 title = "Code Quality"
+			 description = "We pride ourselves on writing great quality code."
 
-			[[params.values.list]]
-				 icon = "fa-rocket"
-				 title = "Speed"
-				 description = "We deliver at an amazing speed."
+		[[params.values.list]]
+			 icon = "fa-rocket"
+			 title = "Speed"
+			 description = "We deliver at amazing speed."
 
-			[[params.values.list]]
-				 icon = "fa-comments-o"
-				 title = "Comunication"
-				 description = "We see our clients as parteners in the project success."
+		[[params.values.list]]
+			 icon = "fa-comments-o"
+			 title = "Comunication"
+			 description = "We believe in talking openly and honestly."
 
-			[[params.values.list]]
-				 icon = "fa-heart"
-				 title = "Passion"
-				 description = "We build software because that is what we love."
+		[[params.values.list]]
+			 icon = "fa-heart"
+			 title = "Passion"
+			 description = "We create solutions for mobile because that is what we love."
 
   [params.services]
 		headline = "Our services"
-		description = "Services description"
-
-    [[params.services.list]]
-       title = "Application Development"
-       description = "We provide end to end development of your Mobile Application on Android or iOS."
-
-    [[params.services.list]]
-       title = "UX Design and Longevity"
-       description = "We handle UX Design requirements and provide advice to ensure that your Apps are future-proof and ready to be featured on respective App Stores."
+		description1 = "The opportunities for mobile are limitless. And for those who take them, the rewards are huge. In essence, we believe that better mobile is a simple proposition. It’s about having the ambition and the know-how to develop stronger, more engaging and more valuable relationships. With your customers. With your workforce. With anyone you choose to."
+		description2 = "This is where Tengio can help: making mobile work for you. Putting it at the heart of how you do business. Delivering the product you need, when you need it. Understanding how your markets work. And creating the solutions upon which you can depend."
 
 		[[params.services.list]]
-       title = "Support Contracts"
-       description = "We specialise in providing long term support to your Apps with our competitive support and handover contracts."
+		   icon = "fa-rocket"
+       title = "Technology"
+       description = "At Tengio, we love working with the latest technologies. But, crucially, only if it helps us to achieve our customers’ goals. We design our technical solutions with a passionate focus on delivering results. Intuitive, seamless, future-proof. We work really hard to make technology look easy."
+			 tags = [ "Android",
+			 					"iOS",
+								"Responsive web" ]
+
+		[[params.services.list]]
+			 icon = "fa-pencil-square-o"
+			 title = "Design"
+			 description = "Form vs. function? With Tengio, you won’t have to choose. We believe that great design works beautifully – inside and out. Our team have created solutions for high-profile customers downloaded by millions of users worldwide. From initial concept to product launch, we turn design inspiration into everyday reality."
+			 tags = [ "Technical architecture",
+								"Best design practice",
+								"AB testing",
+								"Scalable code" ]
 
     [[params.services.list]]
-       title = "Recruitment and Training"
-       description = "We're glad to help you setup and recruit internal teams, and train them to get up to speed with the codebase as well as platform best practices."
-
-	  [[params.services.list]]
-       title = "Legacy Codebases"
-       description = "We specialise in maintainence as well as reworking of legacy codebases."
-
-	 	[[params.services.list]]
-       title = "Strategy Analysis and Training"
-       description = "We will help you determine long term mobile strategy, focusing on growth and revenue. We also provide training in Android and iOS."
+			 icon = "fa-lightbulb-o"
+       title = "Mobile strategy"
+       description = "Fine detail, big picture. In terms of mobile strategy, we deliver it all. We’ve got the experience to know what works. And what doesn’t. We’ll work to get to know your business, your market and your customers. Then we can develop a comprehensive strategy that makes you stand apart from the competition. If you have an idea, we can make it happen."
+			 tags = [ "Market analysis",
+			 					"Strategy development",
+								"Technical review",
+								"Competitor review",
+								"Localisation/launch solutions" ]
 
 	[params.portfolio]
+			headline = "Who we work with"
 
 		[[params.portfolio.list]]
 		 	 link = "https://www.groupon.com/"
@@ -119,7 +131,7 @@ theme = "hugo-creative-theme"
 
 	[params.contact]
 		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		description = "We love talking mobile. From big ideas to nuts and bolts, a conversation is where it all starts. Whatever’s on your mind, we’d love to hear from you."
 		phone = "+44 (0) 7816863557"
 		email = "contact@tengio.com"
 		address = "35 Kingsland Road Shoreditch E2 8AA"
