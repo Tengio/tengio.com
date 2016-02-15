@@ -34,13 +34,13 @@ theme = "hugo-creative-theme"
 
 		[[params.about.list]]
 			 name = "Akshay Dashrath"
-			 bio  = "Boldness and disruption"
 			 image = "akshay.png"
+			 link = "https://www.linkedin.com/in/akshaydashrath"
 
     [[params.about.list]]
 			 name = "Luigi Agosti"
-			 bio  = "Consistency and experience"
 			 image = "luigi.png"
+			 link = "https://www.linkedin.com/in/luigiagosti"
 
 	[params.values]
 		headline = "Values"
@@ -106,8 +106,10 @@ theme = "hugo-creative-theme"
 		 	 image = "groupon.png"
 
 		[[params.portfolio.list]]
-			 link = "http://www.gumtree.co.uk/"
-			 image = "gumtree.png"
+			 link = ""
+			 image = ""
+			#  link = "http://www.gumtree.co.uk/"
+			#  image = "gumtree.png"
 
 		[[params.portfolio.list]]
 			 link = "https://www.pearlshare.com/"

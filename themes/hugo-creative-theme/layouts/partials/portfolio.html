@@ -13,7 +13,9 @@
             {{ range .Site.Params.portfolio.list }}
             <div class="col-lg-4 col-md-6">
                 <div class="portfolio-box">
-                    <a href="{{ .link }}" target="_blank"><img src="img/{{ .image }}" /></a>
+                   {{ if ne .link "" }}
+                      <a href="{{ .link }}" target="_blank"><img src="img/{{ .image }}" /></a>
+                   {{ end }}
                 </div>
             </div>
             {{ end }}
