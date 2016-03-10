@@ -107,8 +107,8 @@ theme = "hugo-creative-theme"
 		 	 image = "groupon.png"
 
 		[[params.portfolio.list]]
-			 link = ""
-			 image = ""
+			 link = "http://www.gumtree.co.uk/"
+			 image = "gumtree.png"
 			#  link = "http://www.gumtree.co.uk/"
 			#  image = "gumtree.png"
 
