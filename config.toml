@@ -59,7 +59,7 @@ theme = "hugo-creative-theme"
 
 		[[params.values.list]]
 			 icon = "fa-comments-o"
-			 title = "Comunication"
+			 title = "Communication"
 			 description = "We believe in talking openly and honestly."
 
 		[[params.values.list]]
