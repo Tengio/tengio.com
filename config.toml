@@ -1,7 +1,7 @@
 baseurl = "http://www.tengio.com/"
 languageCode = "en-us"
 title = "Tengio Limited"
-theme = "hugo-creative-theme"
+disqusShortname = "tengio"
 
 [params]
 	name = "Luigi Agosti, Akshay Dashrath"
@@ -13,7 +13,8 @@ theme = "hugo-creative-theme"
 
 		[params.navigation.links]
 			services = "Services"
-			portfolio = "Clients"
+			portfolio = "Clients & Partners"
+			blog  = "Blog"
 			about = "About Us"
 			values  = "Values"
 			contact   = "Contact"
@@ -75,15 +76,17 @@ theme = "hugo-creative-theme"
 		[[params.services.list]]
 		   icon = "fa-rocket"
        title = "Technology"
-       description = "At Tengio, we love working with the latest technologies. But, crucially, only if it helps us to achieve our customers’ goals. We design our technical solutions with a passionate focus on delivering results. Intuitive, seamless, future-proof. We work really hard to make technology look easy."
+       description = "At Tengio, we love working with the latest technologies. But, crucially, only if it helps us to achieve our customers’ goals."
 			 tags = [ "Android",
 			 					"iOS",
-								"Responsive web" ]
+								"Responsive web",
+								"Microservices",
+								"Cloud solutions" ]
 
 		[[params.services.list]]
 			 icon = "fa-pencil-square-o"
 			 title = "Design"
-			 description = "Form vs. function? With Tengio, you won’t have to choose. We believe that great design works beautifully – inside and out. Our team have created solutions for high-profile customers downloaded by millions of users worldwide. From initial concept to product launch, we turn design inspiration into everyday reality."
+			 description = "Form vs. function? With Tengio, you won’t have to choose."
 			 tags = [ "Technical architecture",
 								"Best design practice",
 								"AB testing",
@@ -91,16 +94,16 @@ theme = "hugo-creative-theme"
 
     [[params.services.list]]
 			 icon = "fa-lightbulb-o"
-       title = "Mobile strategy"
-       description = "Fine detail, big picture. In terms of mobile strategy, we deliver it all. We’ve got the experience to know what works. And what doesn’t. We’ll work to get to know your business, your market and your customers. Then we can develop a comprehensive strategy that makes you stand apart from the competition. If you have an idea, we can make it happen."
-			 tags = [ "Market analysis",
-			 					"Strategy development",
-								"Technical review",
+       title = "Training"
+       description = "We help teams to benefit from our experince with real projects."
+			 tags = [ "Kotlin",
+			 					"TDD",
+								"Android MVP",
 								"Competitor review",
 								"Localisation/launch solutions" ]
 
 	[params.portfolio]
-			headline = "Who we work with"
+			headline = "Clients & partners"
 
 		[[params.portfolio.list]]
 		 	 link = "https://www.groupon.com/"
@@ -109,8 +112,6 @@ theme = "hugo-creative-theme"
 		[[params.portfolio.list]]
 			 link = "http://www.gumtree.co.uk/"
 			 image = "gumtree.png"
-			#  link = "http://www.gumtree.co.uk/"
-			#  image = "gumtree.png"
 
 		[[params.portfolio.list]]
 			 link = "https://www.pearlshare.com/"
@@ -127,6 +128,15 @@ theme = "hugo-creative-theme"
 	  [[params.portfolio.list]]
 			 link = "https://www.adzuna.co.uk/"
 			 image = "adzuna.png"
+
+	 	[[params.portfolio.list]]
+	 		 link = ""
+	 	 	 image = ""
+
+	  [[params.portfolio.list]]
+	 		 link = "https://getmondo.co.uk/"
+	 	 	 image = "mondo.png"
+
 
 	[params.aside]
 		headline = ""

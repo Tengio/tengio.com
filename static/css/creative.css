@@ -59,7 +59,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     color: #777;
-    line-height: 200%; 
+    line-height: 200%;
 }
 
 .bg-primary {
@@ -210,6 +210,7 @@ header .header-content {
 
 .section-heading {
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 .service-box {
@@ -408,4 +409,34 @@ body {
     overflow: hidden;
     width: 150px;
     height: 150px;
+}
+
+.secondary-navigation {
+    position:absolute;
+    z-index: 1;
+}
+
+.secondary-navigation img {
+    width:60px;
+    height:60px;
+    padding:10px;
+}
+
+.secondary-navigation a {
+    width:60px;
+    height:60px;
+    display:inline-block;
+}
+
+@media(min-width:820px) {
+    .secondary-navigation {
+        position:fixed;
+        z-index: 1;
+    }
+
+    .secondary-navigation a {
+        width:60px;
+        height:60px;
+        display:inline-block;
+    }
 }

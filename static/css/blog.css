@@ -1,0 +1,27 @@
+article h1 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.article-date {
+    padding-bottom: 10px;
+}
+
+img[alt="article-img"] {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.article-comments {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.article-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-summary {
+    padding-top: 20px;
+}

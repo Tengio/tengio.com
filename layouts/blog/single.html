@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+        <link rel="stylesheet" href="/css/blog.css" type="text/css">
+    </head>
+    <body id="page-top">
+        {{ partial "nav_secondary.html" . }}
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-1"></div>
+              <div class="col-lg-8 col-md-10 col-sm-12">
+                <article>
+                  <h1>{{ .Title }}</h1>
+                  <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                  {{ .Content }}
+                  <div class="article-comments">
+                    {{ template "_internal/disqus.html" . }}
+                  </div>
+                </article>
+              <div/>
+              <div class="col-lg-2 col-md-1"></div>
+           </div>
+        </div>
+        {{ partial "js.html" . }}
+    </body>
+</html>

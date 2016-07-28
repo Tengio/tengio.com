@@ -1,5 +1,5 @@
 application: tengio-web
-version: 6
+version: 7
 runtime: go
 api_version: go1
 
@@ -25,6 +25,10 @@ handlers:
 
 - url: /404
   static_dir: 404
+
+- url: /blog.html
+  static_files: blog.html
+  upload: blog.html
 
 - url: /.*
   static_files: index.html
