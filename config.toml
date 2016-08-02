@@ -2,6 +2,15 @@ baseurl = "http://www.tengio.com/"
 languageCode = "en-us"
 title = "Tengio Limited"
 disqusShortname = "tengio"
+tags = ["Development", "Team", "Fun"]
+
+[indexes]
+  tag = "tags"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [params]
 	name = "Luigi Agosti, Akshay Dashrath"

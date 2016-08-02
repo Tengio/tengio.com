@@ -26,9 +26,29 @@ handlers:
 - url: /404
   static_dir: 404
 
-- url: /blog.html
-  static_files: blog.html
-  upload: blog.html
+- url: /blog
+  static_files: blog/index.html
+  upload: blog/index.html
+
+- url: /blog/
+  static_files: blog/index.html
+  upload: blog/index.html
+
+- url: /tags
+  static_files: tags/index.html
+  upload: tags/index.html
+
+- url: /tags/
+  static_files: tags/index.html
+  upload: tags/index.html
+
+- url: /blog/(.+)/
+  static_files: blog/\1/index.html
+  upload: blog/(.+)/index.html
+
+- url: /tags/(.+)/
+  static_files: tags/\1/index.html
+  upload: tags/(.+)/index.html
 
 - url: /.*
   static_files: index.html

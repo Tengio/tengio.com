@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+        <link rel="stylesheet" href="/css/blog.css" type="text/css">
+    </head>
+    <body id="page-top">
+        {{ partial "nav_secondary.html" . }}
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 col-md-12">
+                <section id="main">
+                  <h1 id="title">{{ .Title }}</h1>
+                  {{ $data := .Data }}
+                   {{ range $key,$value := .Data.Terms.ByCount }}
+                   <h2><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}/"> {{ $value.Name }} </a> {{ $value.Count }} </h2>
+                   {{ end }}
+                </section>
+              <div/>
+              <div class="col-lg-2"></div>
+           </div>
+        </div>
+        {{ partial "js.html" . }}
+    </body>
+</html>

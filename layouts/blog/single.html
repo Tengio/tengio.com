@@ -12,8 +12,16 @@
               <div class="col-lg-8 col-md-10 col-sm-12">
                 <article>
                   <h1>{{ .Title }}</h1>
+                  <div class="tags">
+                    {{ range .Params.tags }}
+                      <a href="/tags/{{ . | urlize }}/">{{ . }}</a>
+                    {{ end }}
+                  </div>
                   <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
                   {{ .Content }}
+                  <div class="row">
+                    {{ partial "author.html" . }}
+                  </div>
                   <div class="article-comments">
                     {{ template "_internal/disqus.html" . }}
                   </div>

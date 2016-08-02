@@ -1,8 +1,6 @@
-<a class="article-link" href="{{ .Permalink }}">
-  <div>
-    <img src="{{ .Params.thumbnail }}" alt="article-img"/>
-    <h3>{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</h3>
-    <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-    <p>{{ .Summary }}</p>
-  </div>
-</a>
+<div style="cursor: pointer;" onclick="window.location='{{ .RelPermalink }}';">
+  <img src="{{ .Params.thumbnail }}" alt="article-img"/>
+  <h3>{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</h3>
+  <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+  <p>{{ .Summary }}</p>
+</div>

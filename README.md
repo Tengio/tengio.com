@@ -8,7 +8,7 @@ Make sure to use the correct version (in static/app.yaml).
 Run hugo commad to generate sources.
 
 ```
-hugo
+hugo -s .
 ```
 
 You can verify final version before deploy if you have appengine go sdk with:
@@ -46,8 +46,6 @@ These are the main sections:
 * "values.html"
 * "contact.html"
 
-this order is defined in theme/hugo-creative-theme/layouts/index.html.
+this order is defined in /layouts/index.html.
 
 Sections are built base on the content of config.toml
-
-Only change files in themes/hugo/creative-theme.
