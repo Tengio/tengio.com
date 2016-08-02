@@ -11,7 +11,9 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
 }
 
 hr {
@@ -45,21 +47,15 @@ a:focus {
     color: rgb(52, 52, 52);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #777;
-    line-height: 200%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
 }
 
 .bg-primary {
@@ -89,7 +85,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -98,7 +94,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #FC7800;
 }
@@ -370,7 +366,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 

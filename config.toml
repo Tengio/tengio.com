@@ -106,10 +106,8 @@ tags = ["Development", "Team", "Fun"]
        title = "Training"
        description = "We help teams to benefit from our experince with real projects."
 			 tags = [ "Kotlin",
-			 					"TDD",
-								"Android MVP",
-								"Competitor review",
-								"Localisation/launch solutions" ]
+			 					"TDD on Android",
+								"Android MVP" ]
 
 	[params.portfolio]
 			headline = "Clients & partners"
@@ -154,7 +152,7 @@ tags = ["Development", "Team", "Fun"]
 	[params.contact]
 		headline = "Let's Get In Touch!"
 		description = "We love talking mobile. From big ideas to nuts and bolts, a conversation is where it all starts. Whatever’s on your mind, we’d love to hear from you."
-		phone = "+44 (0) 7816863557"
+		phone = "+44 2032906415"
 		email = "contact@tengio.com"
 		address = "35 Kingsland Road Shoreditch E2 8AA"
 		city = "London"

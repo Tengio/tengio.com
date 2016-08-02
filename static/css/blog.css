@@ -3,6 +3,10 @@ article h1 {
     padding-bottom: 20px;
 }
 
+article em {
+    font-size: 16px;
+}
+
 .article-date {
     padding-bottom: 10px;
 }
@@ -38,13 +42,13 @@ img[alt="article-img"] {
 .tags a {
   border: none;
   color: rgba(0,0,0,.6);
-  background: rgba(0,0,0,.05);
+  background: rgba(0,0,0,.07);
   margin-right: 10px;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
 }
 
 .author-bio {
-  font-size: 12px;
-  color: rgba(0,0,0,.44);
+  font-size: 14px;
+  color: rgba(0,0,0,.64);
 }
