@@ -1,9 +1,9 @@
 +++
-date = "2016-07-26T16:11:58+05:30"
+date = "2016-08-02T16:11:58+05:30"
 title = "Team building for couch potatoes"
 author = "oz"
 thumbnail = "/img/blog/0001_1_t.jpg"
-tags = [ "Development", "Team", "Fun" ]
+tags = [ "Team", "Fun" ]
 +++
 
 ![article-img](/img/blog/0001_1.jpg)
