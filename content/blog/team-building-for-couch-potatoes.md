@@ -31,23 +31,29 @@ It was time to get serious with the team building, it was time to hike. I found 
 
 To my surprise, the day turned out to be a really good one. The team building must have worked because the drive home was a lot livelier. The topics we talked about covered everything other than work and the mood in the office has been more relaxed. I had a huge, fiery debate with Akshay about fate and the effect our decisions have on our lives. Luigi and Giorgio were in the back seat, laughing at us. Each time we started to calm down, one of them would say something to get us started again. We would not be able to raise our voices like that in the office. Even now, several days after the trip, I’m learning new things about the people I work with. I always thought Giorgio was just a pretty boy with piercing blue eyes, but it turns out he is a hard-core camper, camping out up mountains during snow storms.
 
+## Keeping up the momentum
+
 The thing about team building is it is a long term process, not just a one off event. Sure, we had fun and some of the quieter guys revealed some interesting things about themselves, but now what? It quickly becomes obvious that if you don’t build on the momentum then everyone will go back to their usual routine. So we decided to plan a more challenging trip. This time we would be joined by the rest of the office, Komal and Quentin.
 
 We decided on the Seven Sisters country park, starting from Eastbourne. 20km of hilly terrain along the English coast. The idea behind this was Luigi and Giorgio, the two most experienced hikers of the group (and the two quieter guys in the office), would guide the rest of us through this walk. They would advise us on what food to pack, pick out the best route, set the pace and make sure the “bigger boned” people like me can keep up.
 
-![article-img](/img/blog/0001_oz_giorgio_luigi.jpg)  
+![article-img](/img/blog/0001_seven_sisters.jpg)  
 *Luigi and Giorgio decided to jog up this hill*
 
 This time I was so excited I arrived at the train station an hour early and had time for two coffees. I was ready to go. I felt like a rocket just waiting to launch. Once everyone else arrived we hopped on our train and were on our way. I couldn’t wait to get out there and start hiking. We arrived in Eastbourne and one of the first things Quentin and I did was buy an ice cream. This turned out to be a mistake. The very first hill was the steepest. I could feel the ice cream turning in my stomach. Luigi was giving us encouraging words but all I could focus on was keeping that 99 flake down where it belonged. All that initial excitement just flew out the window.
 
+![article-img](/img/blog/0001_ice_cream.jpg)
+
 Whether in the office or at a social event it is very easy for the bigger personalities to take over, not allowing others a chance to be heard. It’s not done maliciously, it’s just how things are. Good team building is about everyone hearing everyone else. You need to know and understand the person you work with in order to trust them. So that’s where I found myself. I am normally quite loud and playful, but on this hike I am paying close attention to what Luigi and Giorgio are telling me. I put my water bottle away when they tell me not to drink while walking up a hill, I listen to their advice when they suggest that I don’t eat some of the snacks that I brought, I rest when they say rest, I walk when they say walk. I trust their words completely and they don’t let me down.
 
-![article-img](/img/blog/0001_oz_giorgio_luigi.jpg)  
+![article-img](/img/blog/0001_group_photo.jpg)  
 *From left: Luigi, Giorgio, Akshay, Quentin and me*
+
+## Strength of the group
 
 No one person can do everything. A mediocre army will easily defeat the greatest warrior. Too often I’ve seen teams practically work against each other when they were supposed to have a common goal. This sort of environment is inefficient, unproductive and not somewhere anyone wants to be. What is important is every individual trusts they can lean on the person next to them. Building that sort of trust takes effort and persistence and it will fall apart very easily if it isn’t nurtured, but the juice is worth the squeeze.
 
 I am now planning monthly events to keep up the momentum we have. It’s raining as I write this so it probably won’t be an even bigger hike. I’ll do some research for indoor activities but I’m looking forward to whatever we do next. The great thing is it’s supposed to be fun, so go out and enjoy yourselves while improving productivity and efficiency.
 
-![article-img](/img/blog/0001_oz_giorgio_luigi.jpg)
+![article-img](/img/blog/0001_komal_happy.jpg)
 *Komal getting into the hike, me regretting the ice cream*

@@ -50,5 +50,7 @@ img[alt="article-img"] {
 
 .author-bio {
   font-size: 14px;
+  font-style: italic;
+  font-weight: 700;
   color: rgba(0,0,0,.64);
 }

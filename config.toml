@@ -85,11 +85,10 @@ tags = ["Team", "Fun"]
 		[[params.services.list]]
 		   icon = "fa-rocket"
        title = "Technology"
-       description = "At Tengio, we love working with the latest technologies. But, crucially, only if it helps us to achieve our customers’ goals."
-			 tags = [ "Android",
-			 					"iOS",
-								"Responsive web",
-								"Microservices",
+       description = "At Tengio, we love working with the latest technologies."
+			 tags = [ "Android & iOS",
+                "Virtual & Augmented Reality",
+								"Progressive web",
 								"Cloud solutions" ]
 
 		[[params.services.list]]
@@ -97,17 +96,18 @@ tags = ["Team", "Fun"]
 			 title = "Design"
 			 description = "Form vs. function? With Tengio, you won’t have to choose."
 			 tags = [ "Technical architecture",
-								"Best design practice",
+								"Material & best design practices",
 								"AB testing",
 								"Scalable code" ]
 
     [[params.services.list]]
-			 icon = "fa-lightbulb-o"
+			 icon = "fa-university"
        title = "Training"
        description = "We help teams to benefit from our experince with real projects."
 			 tags = [ "Kotlin",
 			 					"TDD on Android",
-								"Android MVP" ]
+								"Android MVP",
+                "Unity VR intro" ]
 
 	[params.portfolio]
 			headline = "Clients & partners"
