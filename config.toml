@@ -75,7 +75,7 @@ tags = ["Team", "Fun", "TDD", "Kotlin"]
 		[[params.values.list]]
 			 icon = "fa-heart"
 			 title = "Passion"
-			 description = "We create solutions for mobile because that is what we love."
+			 description = "We create solutions because that is what we love."
 
   [params.services]
 		headline = "Our services"

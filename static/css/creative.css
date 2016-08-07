@@ -47,8 +47,14 @@ a:focus {
     color: rgb(52, 52, 52);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 p {
