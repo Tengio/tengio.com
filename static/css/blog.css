@@ -30,10 +30,6 @@ img[alt="article-img"] {
     text-decoration: none;
 }
 
-.post-summary {
-    padding-top: 20px;
-}
-
 .tags {
   margin-bottom: 20px;
   margin-top: 10px;
@@ -53,4 +49,16 @@ img[alt="article-img"] {
   font-style: italic;
   font-weight: 700;
   color: rgba(0,0,0,.64);
+}
+
+.post-summary {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.post-summary-read-more {
+    cursor: pointer;
+    float:right;
+    margin-top:-20px;
+    margin-bottom: 30px;
 }

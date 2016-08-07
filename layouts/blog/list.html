@@ -1,9 +1,7 @@
-<div>
-  <img src="{{ .Params.thumbnail }}" alt="article-img"/>
-  <h2>{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</h2>
-  <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-  <p>{{ .Summary }}</p>
-  <div style="width:100%;">
-    <a href="{{ .RelPermalink }}" style="cursor: pointer; float:right; margin-top:-20px;">READ MORE</a>
-  </div>
+<img src="/img/blog/{{ .Params.id }}/thumbnail.jpg" alt="article-img"/>
+<h2>{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</h2>
+<div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+<p>{{ .Summary }}</p>
+<div style="width:100%;">
+  <a href="{{ .RelPermalink }}" class="post-summary-read-more">READ MORE</a>
 </div>

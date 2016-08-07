@@ -1,9 +1,15 @@
+<div class="col-xs-3 col-md-2">
 {{ if eq .Params.author "oz" }}
-  <div class="col-xs-3 col-md-2">
-    <img class="rounded-small" src="/img/oz.png" />
+    <img class="rounded-small" src="/img/authors/oz.png" />
   </div>
   <div class="col-xs-9 col-md-10">
-    <h3>OZ</h3>
+    <h3>Oz</h3>
     <p class="author-bio">Oz is an enthusiastic Android developer with a keen eye for clean, considered and creative code. When not at his desk his biggest passions are traveling and training in boxing/brazilian jiu jitsu.</p>
+{{ else if eq .Params.author "flavio" }}
+    <img class="rounded-small" src="/img/authors/flavio.png" />
   </div>
+  <div class="col-xs-9 col-md-10">
+    <h3>Flavio</h3>
+    <p class="author-bio">Flavio is an experienced Android developer who has recently started training other developers in topics ranging from Kotlin to Test Driven Development. His passion for craftsmanship principles drives him to spread the word of the importance of writing good, clean, testable code.</p>
 {{ end }}
+</div>

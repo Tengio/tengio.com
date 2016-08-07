@@ -2,7 +2,7 @@ baseurl = "http://www.tengio.com/"
 languageCode = "en-us"
 title = "Tengio Limited"
 disqusShortname = "tengio"
-tags = ["Team", "Fun"]
+tags = ["Team", "Fun", "TDD", "Kotlin"]
 
 [indexes]
   tag = "tags"
@@ -120,9 +120,9 @@ tags = ["Team", "Fun"]
 			 link = "http://www.gumtree.co.uk/"
 			 image = "gumtree.png"
 
-		[[params.portfolio.list]]
-			 link = "https://www.pearlshare.com/"
-			 image = "pearlshare.png"
+    [[params.portfolio.list]]
+       link = "https://www.adzuna.co.uk/"
+       image = "adzuna.png"
 
 	  [[params.portfolio.list]]
 			 link = "https://www.depop.com/"
@@ -132,17 +132,17 @@ tags = ["Team", "Fun"]
 			 link = "http://yoyowallet.com/"
 			 image = "yoyo.png"
 
-	  [[params.portfolio.list]]
-			 link = "https://www.adzuna.co.uk/"
-			 image = "adzuna.png"
+    [[params.portfolio.list]]
+       link = "https://getmondo.co.uk/"
+       image = "mondo.png"
 
-	 	[[params.portfolio.list]]
-	 		 link = ""
-	 	 	 image = ""
+   [[params.portfolio.list]]
+			 link = "https://www.pearlshare.com/"
+			 image = "pearlshare.png"
 
-	  [[params.portfolio.list]]
-	 		 link = "https://getmondo.co.uk/"
-	 	 	 image = "mondo.png"
+    [[params.portfolio.list]]
+	 		 link = "http://amphio.co"
+	 	 	 image = "amphio.png"
 
 
 	[params.aside]
