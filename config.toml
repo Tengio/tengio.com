@@ -2,7 +2,7 @@ baseurl = "http://www.tengio.com/"
 languageCode = "en-us"
 title = "Tengio Limited"
 disqusShortname = "tengio"
-tags = ["Team", "Fun", "TDD", "Kotlin"]
+tags = ["Team", "Fun", "TDD", "Kotlin", "AI"]
 
 [indexes]
   tag = "tags"
@@ -103,7 +103,7 @@ tags = ["Team", "Fun", "TDD", "Kotlin"]
     [[params.services.list]]
 			 icon = "fa-university"
        title = "Training"
-       description = "We help teams to benefit from our experince with real projects."
+       description = "We help teams to benefit from our experience with real projects."
 			 tags = [ "Kotlin",
 			 					"TDD on Android",
 								"Android MVP",

@@ -11,5 +11,11 @@
   <div class="col-xs-9 col-md-10">
     <h3>Flavio</h3>
     <p class="author-bio">Flavio is an experienced Android developer who has recently started training other developers in topics ranging from Kotlin to Test Driven Development. His passion for craftsmanship principles drives him to spread the word of the importance of writing good, clean, testable code.</p>
-{{ end }}
+{{ else if eq .Params.author "shreyas" }}
+   <img class="rounded-small" src="/img/authors/shreyas.png" />
+  </div>
+  <div class="col-xs-9 col-md-10">
+    <h3>Shreyas</h3>
+    <p class="author-bio">Shreyas Skandan is pursuing a Master’s degree in Robotics at the University of Pennsylvania. He primary research interests are in Machine Perception and Machine Learning. He is currently working on 3D tracking using multiple stereo camera rigs.</p>
 </div>
+{{ end }}
