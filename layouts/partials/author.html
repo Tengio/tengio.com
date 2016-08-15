@@ -17,5 +17,11 @@
   <div class="col-xs-9 col-md-10">
     <h3>Shreyas</h3>
     <p class="author-bio">Shreyas Skandan is pursuing a Master’s degree in Robotics at the University of Pennsylvania. He primary research interests are in Machine Perception and Machine Learning. He is currently working on 3D tracking using multiple stereo camera rigs.</p>
-</div>
+{{ else if eq .Params.author "luigi" }}
+   <img class="rounded-small" src="/img/authors/luigi.png" />
+  </div>
+  <div class="col-xs-9 col-md-10">
+    <h3>Luigi</h3>
+    <p class="author-bio">Luigi is a developer with years of experince in many type of projects and tecnologies.</p>
 {{ end }}
+</div>
