@@ -181,8 +181,8 @@ The are many ways to publish the website. We used a golang instance of google ap
 
 ## Conclusion
 
-Making a real website with hugo is not much more than the easy steps described so far. Add bootstrap and some other js libraries with a bit of html and your job is done. Of course you need a bit of content but that can lean and evolve alongside your company. Also the team can help by changing the content or creating blog posts easily by using github.
+Making a real website with hugo is not much more than the easy steps described so far. Add bootstrap and some other js libraries with a bit of html and your job is done. Of course you need a bit of content but that can start lean and evolve alongside your company. Also the team can help by changing the content or creating blog posts easily by using github.
 
-The result in our case is a clean, simple and extensible website. A tool for our team to expose what we do. If you want to have a look at our website code, we made it open source on [github](https://github...)
+The result in our case is a clean, simple and extensible website. A tool for our team to expose what we do. If you want to have a look at our website code, we made it open source on [github](https://github.com/Tengio/tengio.com)
 
 It looks like hugo is a good choice as a static website generator. It definitely holds up to the promises of being fast, easy and flexible.
