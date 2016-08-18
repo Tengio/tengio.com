@@ -54,11 +54,20 @@ You can then refer to the images directly in the md file like:
 ```
 **NOTE**: The alternative text of the image is used to apply some css rule (article-img : for example fit the image to the content width).
 
+Markdown Cheatsheet
+-------------------
+Have a look at the nice [github markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you want to know more about MD format.
+
+
+Contribute with blog post
+-------------------------
+Fork the project and submit a pull request to github. Blog post should be compost of md file and images if necessary.
+
 Release
 -------
 Make sure to use the correct version (in static/app.yaml).
 
-Run hugo commad to generate sources.
+Run hugo commad to generate sources (it is a good practice to delete public folder):
 
 ```
 hugo -s .
@@ -89,7 +98,7 @@ We use the following open source tools:
 - [classie](https://github.com/ded/bonzo)
 - [start bootstrap](http://startbootstrap.com)
 
-Please make sure to understand and respect the corresponding license if you reuse this code.
+Please make sure to understand and respect the corresponding licenses if you reuse this code.
 
 License
 -------
