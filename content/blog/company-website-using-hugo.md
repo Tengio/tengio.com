@@ -1,50 +1,54 @@
 +++
-id = "0003"
-date = "2016-08-12T18:00:00+00:00"
-title = "Build a company website using hugo"
+id = "0004"
+date = "2016-08-18T19:10:10+00:00"
+title = "Company website using hugo"
 author = "luigi"
 tags = [ "Web" ]
 +++
 
-Company website is important. This is particularly true if you are a company that build software for a living. I have been working for other consultancies, funny thing though is that website where always outsource. Why is that? Mainly because of time. Can we make a website fast without affecting quality?
+![article-img](/img/blog/0004/hugo.jpg)
 
-I guess we should be able to. We pride ourself to be fast after all.
+Having a website for your company is important. This is particularly true if you are a company that builds software. Software consultancies I’ve previously worked at always seemed to outsource the development of their website. Why is that? Mainly because of time.
+
+Can we make a website fast, without affecting quality? To be honest, we should be able to. At Tengio we pride ourselves to be fast after all.
 
 ## What to use?
 
-Everyone in the team should be able to: manage the website and contribute with blogposts without too much effort. We also don't want to have to rely on framework or third-party tools, blog posts should be easily be written with any text editor.
+Everyone in the team should be able to: manage the website and contribute with blog posts without too much effort. We also don't want to have to rely on frameworks or third-party tools for editing and managing blog posts.
 
-Looks like a static website generators is the obvious choice here.
+It looks like a static website generator is the obvious choice here.
 
-There are many static website generators. I don't have any particular attachment to any of them but my passion of golang push me towards [hugo](https://gohugo.io). Hugo is sold with 3 simple features : simple, fast and flexible.
+There are many static website generators. I don't have any particular attachment to any of them but my passion for golang pushed me towards [hugo](https://gohugo.io). Hugo is advertised to be simple, fast and flexible. Hopefully this is a good match for our company website.
+
+Let's see how hugo works.
 
 ## Install
 
-The installation is simple, more so if you already have brew installed. Just run the command :
+The installation is simple, more so if you already have [brew](http://brew.sh/) installed. Just run the command :
 
 ```
 brew update && brew install hugo
 ```
 
-Ok job done. Now you can run hugo command to verify the correct installation:
+Ok, job done. Now you can run hugo command to verify the correct installation:
 
 ```
 hugo help
 hugo version
 ```
 
-## First basic website with hugo
+## First basic website
 
-I will be brief in this section. You can find better material for this part on the [hugo starting guide](https://gohugo.io/overview/quickstart)... anyway just run the command :
+I will be brief in this section. You can find better material for this part on the [hugo starting guide](https://gohugo.io/overview/quickstart)... To start just run the command :
 
 ```
 hugo new site firstwebsite
 ```
 
-You should have got a nice success message like:
+You should have a nice success message like:
 
 ```
-Congratulations! Your new Hugo site is created in "/Users/luigi/dev/prj/tengio.com/test/firstwebsite".
+Congratulations! Your new Hugo site is created in "/.../test/firstwebsite".
 
 Just a few more steps and you're ready to go:
 
@@ -56,15 +60,15 @@ Just a few more steps and you're ready to go:
 For more information read the documentation at https://gohugo.io.
 ```
 
-This command is generating the directory structure with some basic configuration file:
+This command is generating the directory structure with some basic configuration files:
 
-1. config.toml is the most important file. It holds all the configuration of the website.
+1. ```config.toml``` is the most important file. It holds all the configurations.
 
-2. layouts is where you store the layouts of different types of content.
+2. ```layouts``` folder is where you store the layouts of different types of content.
 
-3. content folder instead is where you will actually place real content like blog posts.
+3. ```content``` folder is where you will actually place blog posts or other types of content.
 
-If you want to see the rest of the structure details check [hugo starting guide](https://gohugo.io/overview/quickstart).
+If you want to see the rest of the structure details check the [hugo quickstart](https://gohugo.io/overview/quickstart).
 
 Now run this command from the created directory root:
 
@@ -72,11 +76,11 @@ Now run this command from the created directory root:
 hugo server
 ```
 
-This should start a small local server serving your new website on localhost:1313. At this point the loaded page is just a white empty screen.
+This should start a local server serving your new website on localhost:1313. At this point the loaded page is just a white empty screen.
 
 ## Editing the Home Page
 
-Let's see how to edit the home page. In the layout folder add an index.html file with something like:
+In the layout folder add an index.html file and edit it with something like:
 
 ```
 <!DOCTYPE html>
@@ -87,9 +91,9 @@ Let's see how to edit the home page. In the layout folder add an index.html file
 </html>
 ```
 
-Hugo is updating on the fly any change affecting files in the target folders of your hugo process. So to see the changes just go back to the browser.
+Hugo is updating on the fly any change affecting files in the target folders of your hugo process. To see the changes just go back to the browser.
 
-So far nothing interesting. Let's add some reusable part to our home page. In hugo fragment of reusable html can be implemented using partials. You need to create html files in the layout/partials folder. We are going to add head.html and footer.html as examples. Once you have done that you can reuse this in the index.html or any other page or your website.
+So far nothing interesting. Let's add some reusable parts to our home page. In hugo fragments of reusable html can be implemented using partials. You need to create html files in the layout/partials folder. We are going to add head.html and footer.html as examples. Once you have done that you can reuse this in the index.html or any other page of your website.
 
 ```
 <!DOCTYPE html>
@@ -106,16 +110,17 @@ Partials are a very useful tool when developing a website with hugo.
 
 ## Theme
 
-The approach I have use in this mini tutorial avoids the usage of themes. I have done that because starting with themes where most of the things are already prepare for you will postpone the understanding of some important part that are nice to know to have a more profound understanding of hugo.   
+The approach I have used in this mini tutorial avoids the usage of themes. I have done that because starting with themes will postpone the understanding of the basic building blocks that are important for a more profound understanding of hugo. The type of understanding that will make your life a lot easier when you will have to develop your website.
 
-Hugo has a nice set of theme you can use to jump start your website. Have a look at this [gallery](http://themes.gohugo.io/) and play with a few of theme.
+There are quite a few themes available for hugo that you can use to jump start your website. Look at this [gallery](http://themes.gohugo.io/) to see some of them.
 
 ## Adding a Blog
 
-To add blog section where members of the team can add post has [md](https://guides.github.com/features/mastering-markdown/) files. Go through the following steps:
+To add a blog section where members of the team can add post as [md](https://guides.github.com/features/mastering-markdown/) files there are a few steps to go through:
 
-* create a file /layouts/section/blog.html. This file will drive how the main blog page will look like. In our case will be a simple list of blogs.
+1. add a link in your home page to the blog section like ```/blog/``` so that the blog can be reached.
 
+2. create a file ```/layouts/section/blog.html```. This file will drive how the main blog page will look like. In our case it will be a simple list of blogs.
 ```
 <!DOCTYPE html>
 <html lang="en-US">
@@ -133,8 +138,7 @@ To add blog section where members of the team can add post has [md](https://guid
 </html>
 ```
 
-* create a file /layouts/blog/list.html. This is used to show a list of blogs as a summary.
-
+3. create a file ```/layouts/blog/list.html```. This is used to show a list of blogs as a summary.
 ```
 <h2>{{ .Title }}</h2>
 <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
@@ -142,8 +146,7 @@ To add blog section where members of the team can add post has [md](https://guid
 <a href="{{ .RelPermalink }}" class="post-summary-read-more">READ MORE</a>
 ```
 
-* create a file /layouts/blog/single.html. This is used to show one single blog page.
-
+4. create a file ```/layouts/blog/single.html```. This is used to show one single blog page.
 ```
 <!DOCTYPE html>
 <html lang="en-US">
@@ -158,31 +161,28 @@ To add blog section where members of the team can add post has [md](https://guid
 </html>
 ```
 
-* Finally create a file /content/blog/your-first-blog.md:
-
+5. Finally write your blog post ```/content/blog/your-first-blog.md```:
 ```
 +++
 date = "2016-08-12T18:00:00+00:00"
 title = "Blog title"
 +++
-
 Content of your blog...
 ```
+You can also create a [template or archetype](https://gohugo.io/content/archetypes/) if you want to simplify the content creation.
 
 ## Extras
 
-Hugo has a few nice things on top of this basics building blocks. It has in fact very easy ways to add Tags, Taxonomies... or plugins like Google Analytics, Disqus... See the full list on the [official documentation](https://gohugo.io/extras/analytics/)
+Hugo has a few nice things on top of these basics building blocks. It has in fact very easy ways to add Tags, Taxonomies... or plugins like Google Analytics, Disqus... See the full list on the [official documentation](https://gohugo.io/extras/analytics/)
 
 ## Publish the website
 
-The are many ways to publish the website. We used a go instance of google app engine. But you can also use github or other cloud service. Hugo [documentation](https://gohugo.io/tutorials/github-pages-blog/) also explain different ways in details.
+The are many ways to publish the website. We used a golang instance of google app engine. But you can also use [github static pages](https://gohugo.io/tutorials/github-pages-blog/) or other cloud services.
 
 ## Conclusion
 
-It looks like hugo is a good choice as a static website generator. It definitely hold up to the promises of being fast, easy and flexible.
+Making a real website with hugo is not much more than the easy steps described so far. Add bootstrap and some other js libraries with a bit of html and your job is done. Of course you need a bit of content but that can lean and evolve alongside your company. Also the team can help by changing the content or creating blog posts easily by using github.
 
-Making a real website with hugo is not much more than the easy steps described so far. Add bootstrap and some other js library with a bit of html and the job is done. Of course you need a bit of content but that can start with little and gradually evolve alongside your company. Also all the people of the team can help by changing the content or creating blog posts easily by just using github.
+The result in our case is a clean, simple and extensible website. A tool for our team to expose what we do. If you want to have a look at our website code, we made it open source on [github](https://github...)
 
-The result in our case it is a clean, simple and extensible website. A tool for our team to expose what we do.
-
-If you want to have a look at our website code, we made it open source on [github](https://github...)
+It looks like hugo is a good choice as a static website generator. It definitely holds up to the promises of being fast, easy and flexible.

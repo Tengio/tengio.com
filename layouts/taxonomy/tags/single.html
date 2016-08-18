@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     <head>
+        <title>Tengio tag : {{ .Title }}</title>
         {{ partial "head.html" . }}
-        <link rel="stylesheet" href="/css/blog.css" type="text/css">
     </head>
     <body id="page-top">
         {{ partial "nav_secondary.html" . }}

@@ -1,6 +1,7 @@
 +++
 id = "0003"
 date = "2016-08-12T11:00:58+05:30"
+modified = "2016-08-16T17:25:58+05:30"
 title = "Getting caffe for ai working on Linux"
 author = "shreyas"
 tags = [ "AI" ]
@@ -14,7 +15,13 @@ I have compiled these instructions during the many hours I spent trying to insta
 
 For a more detailed list of my setup, here is my build: [PC PartPicker List](http://pcpartpicker.com/list/Rc4YTH)
 
-I hope this guide will be of help to you, and if you have any questions, feel free to reach out via comments.
+What is [Caffe](http://caffe.berkeleyvision.org/)?
+
+ >Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley. Caffe is released under the BSD 2-Clause license.
+
+I hope this guide will be of help to you, and if you have any questions, feel free to reach out via e-mail.
+
+**NOTE**: I recomend installing CUDA via the Runfile package, as I have tested the method suggested below on multiple computers.
 
 ## Installing Ubuntu
 
@@ -227,6 +234,75 @@ Refer to the 'Debugging Common Errors' section below if you enounter a missing s
 If you followed all the above steps correctly, your runtest should have successfully passed all the tests and you should see a result similar to this.
 
 ![article-img](/img/blog/0003/caffe-screenshot.jpg)
+
+## Installing Python Interface
+
+While Linux comes with a system distribution of Python (2.7.x), it is advisable to avoid using this and create virtual environments with independent python distributions such that you can organise your dependencies within confined spaces. I've tried this installation using PIP and followed the suggested steps mentioned on the Caffe website and I have got the python interface to work successfully, but with this installation of Caffe I decided to try Anaconda and it's vast math and science libraries.
+
+1. Download the Anaconda Installer from HERE
+
+2. Install
+
+```
+$ cd ~/Downloads
+$ bash Anaconda2-4.1.1-Linux-x86_64.sh
+```
+
+Note down the location of your Anaconda installation. I installed anaconda to my $(HOME), in the same folder as Caffe.
+
+3. Create a virtual environment for all your Caffe processes
+
+```
+$ conda create -name caffe_env numpy=1.10.2
+```
+
+You can enter your virtual environment by simply typing in the following activation command
+
+```
+$ source activate caffe_env
+```
+
+You will notice a prefixed (caffe_env) to your prompt. This indicates that you are inside your environment
+To deactivate the virtual environment, use the following command
+
+```
+$ source deactivate
+```
+
+But we will continue the following steps inside the virtual environment
+
+```
+$ source activate caffe_env
+```
+
+Check if your virtual environment contains all the dependencies for Caffe
+
+```
+$ conda list
+```
+If you can see all the dependencies here, you're ready to go
+
+4. Build Caffe once again
+
+```
+$ make clean
+$ make all -j
+$ make test -j
+$ make runtest
+$ make pycaffe
+```
+
+If you've gotten here so far without errors, you've successfully installed Caffe with a python interface.
+
+5. Testing
+Close all your terminal windows and open up a new window.
+
+```
+$ python
+>>> import caffe
+```
+
+This should work without any errors!
 
 ### Debugging Common Errors
 

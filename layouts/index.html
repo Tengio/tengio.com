@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ .Site.LanguageCode }}">
     <head>
+        <title>{{ .Site.Title }}</title>
+        <meta name="author" content="{{ .Site.Params.name }}">
+        <meta name="description" content="{{ .Site.Params.description }}">
+        <meta name="og:image" content="http://www.tengio.com/img/small_logo.png" />
+        <meta name="og:description" content="{{ .Site.Params.description }}"/>
+        <meta name="og:title" content="{{ .Site.Title }}" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="{{ .Site.Params.description }}"/>
+        <meta name="twitter:title" content="{{ .Site.Title }}"/>
+        <meta name="twitter:image" content="http://www.tengio.com/img/small_logo.png"/>
         {{ partial "head.html" . }}
     </head>
     <body id="page-top">
         {{ partial "nav.html" . }}
-
         {{ partial "hero.html" . }}
         {{ partial "services.html" . }}
         {{ partial "portfolio.html" . }}
         {{ partial "about.html" . }}
         {{ partial "values.html" . }}
         {{ partial "contact.html" . }}
-
         {{ partial "js.html" . }}
     </body>
 </html>

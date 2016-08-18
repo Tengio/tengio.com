@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     <head>
+        <title>{{ .Title }}</title>
+        <meta name="author" content="{{ .Params.author }}">
+        <meta name="description" content="{{ .Summary }}">
+        <meta name="og:image" content="http://www.tengio.com/img/blog/{{ .Params.id }}/thumbnail.jpg" />
+        <meta name="og:description" content="{{ .Summary }}"/>
+        <meta name="og:title" content="{{ .Title }}" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="{{ .Summary }}"/>
+        <meta name="twitter:title" content="{{ .Title }}"/>
+        <meta name="twitter:image" content="http://www.tengio.com/img/blog/{{ .Params.id }}/thumbnail.jpg"/>
         {{ partial "head.html" . }}
-        <link rel="stylesheet" href="/css/blog.css" type="text/css">
     </head>
     <body id="page-top">
         {{ partial "nav_secondary.html" . }}

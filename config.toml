@@ -1,8 +1,8 @@
 baseurl = "http://www.tengio.com/"
 languageCode = "en-us"
-title = "Tengio Limited"
+title = "Tengio | We build apps"
 disqusShortname = "tengio"
-tags = ["Team", "Fun", "TDD", "Kotlin", "AI"]
+tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 
 [indexes]
   tag = "tags"
@@ -14,7 +14,7 @@ tags = ["Team", "Fun", "TDD", "Kotlin", "AI"]
 
 [params]
 	name = "Luigi Agosti, Akshay Dashrath"
-	description = "Developers rule"
+	description = "Tengio turns your idea into beautiful and reliable products on Android, iOS and the Web."
 	analytics = "UA-67184502-1"
 
 	[params.navigation]
@@ -27,10 +27,6 @@ tags = ["Team", "Fun", "TDD", "Kotlin", "AI"]
 			about = "About Us"
 			values  = "Values"
 			contact   = "Contact"
-
-	[params.hero]
-		slogan     = ""
-		subtitle   = ""
 
 	[params.about]
 		headline    = "About Us"
@@ -143,11 +139,6 @@ tags = ["Team", "Fun", "TDD", "Kotlin", "AI"]
     [[params.portfolio.list]]
 	 		 link = "http://amphio.co"
 	 	 	 image = "amphio.png"
-
-
-	[params.aside]
-		headline = ""
-
 
 	[params.contact]
 		headline = "Let's Get In Touch!"

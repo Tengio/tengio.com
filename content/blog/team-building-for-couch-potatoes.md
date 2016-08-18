@@ -3,7 +3,7 @@ id = "0001"
 date = "2016-08-02T16:11:58+05:30"
 title = "Team building for couch potatoes"
 author = "oz"
-tags = [ "Team", "Fun" ]
+tags = [ "Team" ]
 +++
 
 ![article-img](/img/blog/0001/1.jpg)
