@@ -3,7 +3,7 @@ Tengio website
 
 Live version
 ------------
-[tengio.com](www.tengio.com)
+[tengio.com](http://www.tengio.com)
 
 Our [blog post](http://www.tengio.com/blog/company-website-using-hugo/) is a good introduction to hugo and how this website code works.
 
