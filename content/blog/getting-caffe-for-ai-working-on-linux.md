@@ -80,7 +80,7 @@ $ `sudo apt-get install cuda`
 
 2. Reboot the system to load the NVIDIA drivers
 
-3. Set up the development environment by modifiying the PATH and LD_LIBRARY_PATH environment variables
+3. Set up the development environment by modifying the PATH and LD_LIBRARY_PATH environment variables
 ```
 $ export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 $ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\

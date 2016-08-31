@@ -2,7 +2,7 @@ baseurl = "http://www.tengio.com/"
 languageCode = "en-us"
 title = "Tengio | We build apps"
 disqusShortname = "tengio"
-tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
+tags = ["Team", "TDD", "Kotlin", "AI", "Web", "Flutter"]
 
 [indexes]
   tag = "tags"

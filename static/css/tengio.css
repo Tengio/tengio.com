@@ -51,6 +51,10 @@ h1, h2, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+article h2 {
+  margin-top: 80px;
+}
+
 h3 {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -467,6 +471,14 @@ article em {
 img[alt="article-img"] {
     width: 100%;
     padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img[alt="article-img-centered"] {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .article-comments {
