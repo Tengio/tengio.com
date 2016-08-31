@@ -60,4 +60,25 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="section-heading">{{ with .Site.Params.about.values.headline }}{{ . }}{{ end }}</h3>
+                <p>{{ with .Site.Params.about.values.description }}{{ . | markdownify }}{{ end }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {{ range .Site.Params.about.values.list }}
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x {{ .icon }} wow bounceIn text-primary"></i>
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
 </section>

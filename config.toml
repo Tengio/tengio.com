@@ -49,29 +49,29 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 			 image = "luigi.png"
 			 link = "https://www.linkedin.com/in/luigiagosti"
 
-	[params.values]
-		headline = "Values"
-		description = "At Tengio, we live by our values. They shape the way we work and how we interact with the world."
+  	[params.about.values]
+  		headline = "Values"
+  		description = "At Tengio, we live by our values. They shape the way we work and how we interact with the world."
 
-		[[params.values.list]]
-			 icon = "fa-diamond"
-			 title = "Code Quality"
-			 description = "We pride ourselves on writing great quality code."
+  		[[params.about.values.list]]
+  			 icon = "fa-diamond"
+  			 title = "Code Quality"
+  			 description = "We pride ourselves on writing great quality code."
 
-		[[params.values.list]]
-			 icon = "fa-rocket"
-			 title = "Speed"
-			 description = "We deliver at amazing speed."
+  		[[params.about.values.list]]
+  			 icon = "fa-rocket"
+  			 title = "Speed"
+  			 description = "We deliver at amazing speed."
 
-		[[params.values.list]]
-			 icon = "fa-comments-o"
-			 title = "Communication"
-			 description = "We believe in talking openly and honestly."
+  		[[params.about.values.list]]
+  			 icon = "fa-comments-o"
+  			 title = "Communication"
+  			 description = "We believe in talking openly and honestly."
 
-		[[params.values.list]]
-			 icon = "fa-heart"
-			 title = "Passion"
-			 description = "We create solutions because that is what we love."
+  		[[params.about.values.list]]
+  			 icon = "fa-heart"
+  			 title = "Passion"
+  			 description = "We create solutions because that is what we love."
 
   [params.services]
 		headline = "Our services"
