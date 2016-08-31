@@ -2,6 +2,7 @@
 id = "0002"
 date = "2016-08-05T16:00:58+05:30"
 title = "More readable tests with Kotlin"
+description = "The following is a highly opinionated rant. These are just my personal views on a subject I care about. Tests should be easy to read. You should be able to go to a test class you are not familiar with, collapse all the methods, and have a very quick read of all the test names. You do that, and in a matter of seconds you should have a very good idea of what the system under test is expected to do and in what circumstances."
 author = "flavio"
 tags = [ "TDD", "Kotlin" ]
 +++

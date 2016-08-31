@@ -3,6 +3,7 @@ id = "0003"
 date = "2016-08-12T11:00:58+05:30"
 modified = "2016-08-16T17:25:58+05:30"
 title = "Getting caffe for ai working on Linux"
+description = "The following tutorial/instruction set is to break down the arduous task of installing Caffe into a set of clear and simple instructions. If you've tried to install Caffe before, it is no secret that it can be a tricky task. While there are plenty of answers online for individual problems, I've rarely come across a single comprehensive guide to getting Caffe to successfully run on Ubuntu 14.04, utilising all the necessary..."
 author = "shreyas"
 tags = [ "AI" ]
 +++

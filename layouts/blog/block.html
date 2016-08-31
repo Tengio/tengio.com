@@ -1,0 +1,5 @@
+<h2>{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</h2>
+<p>{{ .Description }}</p>
+<div style="width:100%;">
+  <a href="{{ .RelPermalink }}" class="post-summary-read-more-centered">READ MORE</a>
+</div>

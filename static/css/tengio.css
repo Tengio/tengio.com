@@ -515,3 +515,9 @@ img[alt="article-img"] {
     margin-top:-20px;
     margin-bottom: 30px;
 }
+
+.post-summary-read-more-centered {
+    cursor: pointer;
+    float:center;
+    margin-bottom: 30px;
+}

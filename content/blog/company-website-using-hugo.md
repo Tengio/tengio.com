@@ -2,6 +2,7 @@
 id = "0004"
 date = "2016-08-18T19:10:10+00:00"
 title = "Company website using hugo"
+description = "Having a website for your company is important. This is particularly true if you are a company that builds software. Software consultancies I’ve previously worked at always seemed to outsource the development of their website. Why is that? Mainly because of time. Can we make a website fast, without affecting quality? To be honest, we should be able to. At Tengio we pride ourselves to be fast after all."
 author = "luigi"
 tags = [ "Web" ]
 +++

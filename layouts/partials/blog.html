@@ -1,0 +1,21 @@
+{{ "<!-- BLOG -->" | safeHTML }}
+<section id="blog">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Blog</h2>
+          <hr class="primary">
+        </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+            {{ range first 3 .Data.Pages }}
+            <div class="col-lg-4 text-center">
+                {{ .Render "block"}}
+            </div>
+            {{ end }}
+          </div>
+      </div>
+  </div>
+</section>
