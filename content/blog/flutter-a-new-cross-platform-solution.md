@@ -48,23 +48,23 @@ export PATH=`pwd`/flutter/bin:$PATH
 flutter doctor
 ```
 
-The default installation target the alpha branch. You may want to switch to the master branch because things are progressing very quickly.
+The default installation targets the alpha branch. You may want to switch to the master branch because things are progressing very quickly.
 
-There are a couple of steps required to link Android SDK and Xcode. [Flutter setup page](https://flutter.io/setup/) give you all the necessary details that I don't want to duplicate here.
+There are a couple of steps required to link Android SDK and Xcode. [Flutter setup page](https://flutter.io/setup/) gives you all the necessary details that I don't want to duplicate here.
 
 
 ## Editor
 
-The best editor for Flutter is a combination of [Atom](https://atom.io/) and the [Flutter atom plugin](https://atom.io/packages/flutter). It is very easy to install: Atom -> Preference -> Install -> then search for "flutter".
+The best editor for Flutter is the combination of [Atom](https://atom.io/) and the [Flutter atom plugin](https://atom.io/packages/flutter). It is very easy to install: Atom -> Preference -> Install -> then search for "flutter".
 
 ![article-img](/img/blog/0005/atom-flutter.jpg)
 
-The development environment has already a lot of functionalities. I personally like the simplicity of it.
+The development environment has already a lot of functionalities. I personally like its simplicity.
 
 
 ## Running the examples
 
-The best way to see what can be done with Flutter is play with the existing examples:
+The best way to see what can be done with Flutter is to play with the existing examples:
 
 1. [Flutter gallery](https://github.com/flutter/flutter/tree/master/examples/flutter_gallery) : A demo for the material design widgets.
 
@@ -72,22 +72,22 @@ The best way to see what can be done with Flutter is play with the existing exam
 
 3. [Hello world](https://github.com/flutter/flutter/tree/master/examples/hello_world) : No comment, you should know.
 
-4. [Layers](https://github.com/flutter/flutter/tree/master/examples/layers) : Collection of self-contained example which are really handy if you want to get up to speed quickly.
+4. [Layers](https://github.com/flutter/flutter/tree/master/examples/layers) : Collection of self-contained examples, which are really handy if you want to get up to speed quickly.
 
 5. [Stocks](https://github.com/flutter/flutter/tree/master/examples/stocks) : List of stocks with market value.
 
-The command to run a flutter app is: ```flutter run```. Before running a sample make sure to look at the README file on for each project as you may have to configure local variables.
+The command to run a flutter app is: ```flutter run```. Before running a sample make sure to look at the README file for each project as you may have to configure local variables.
 
-Flutter gallery is definitely the best sample app to understand how much has been done so far especially in terms of widgets support. It is also great way to showcase Flutter to your colleagues.
+Flutter gallery is definitely the best sample app to understand how much has been done so far especially in terms of widgets support. It is also a great way to showcase Flutter to your colleagues.
 
-**NOTE:** By default ```flutter run``` uses the debug build configuration which runs slowly (you can also see a warning banner in the app). If you want to actually see the real speed you need to change to either 'profile' or 'release' configuration. You can do that with the option ```--profile``` (from atom you can select the build configuration).
+**NOTE:** By default ```flutter run``` uses the debug build configuration, which runs slowly (you can also see a warning banner in the app). If you want to actually see the real speed you need to change to either 'profile' or 'release' configuration. You can do that with the option ```--profile``` (from atom you can select the build configuration).
 
 
 ## The first Flutter application
 
 You can't really understand a framework unless you write a few applications, but let's start with one.
 
-**NOTE:** The full code is available on [github](https://github.com/Tengio/books-demo).
+**NOTE:** The full code is available on [github](https://github.com/Tengio/flutter-demo).
 
 First we need to create it. Android and iOS require a lot of files and folders. It will be impractical to do it manually. For this reason Flutter offers the ability to create a skeleton just by running:
 ```
@@ -167,9 +167,9 @@ flutter run -v
 
 ![article-img-centered](/img/blog/0005/screenshot-1.jpg)
 
-The first time you deploy on iOS it is necessary to open the project with Xcode and run it. This because Flutter is not able to get code signing profile that apple requires.
+The first time you deploy on iOS it is necessary to open the project with Xcode and run it. This because Flutter is not able to get the signing profile.
 
-**NOTE:** An handy way to open the iOS simulator from command line is with the command:
+**NOTE:** An handy way to open the iOS simulator from the command line is with the command:
 ```
 open -a Simulator
 ```
@@ -177,11 +177,11 @@ open -a Simulator
 
 ## Adding a list of books
 
-Now that we have the skeleton of the app we can add a simple list of books. Our final goal is to implement this small app as you can see in the animated gifs:
+Now that we have the skeleton of the app we can add a simple list of books. Our final goal is to implement this app that you can see in the following animated gifs:
 
 ![article-img-centered](/img/blog/0005/android.gif)![article-img-centered](/img/blog/0005/ios.gif)
 
-**NOTE:** On iOS a the moment there a few issues on the network implementation this is causing problems on the images missing or truncated.
+**NOTE:** On iOS, at the moment there are a few issues on the network implementation this is the cause of the missing or truncated images.
 
 All the following snippets of code are in the ```main.dart``` file.
 
@@ -208,7 +208,7 @@ final List<Book> _books = <Book>[
 ];
 ```
 
-Next we have to prepare a widget to display the list item and a callback for the tap event:
+Next we have to prepare a widget to display the list item (BookListItem), a widget for the entire list (FlutterBookList) and a callback (BookChangedCallback) for the tap event:
 ```
 typedef void BookChangedCallback(Book book, bool read);
 
@@ -242,7 +242,6 @@ class BookListItem extends StatelessWidget {
 }
 ```
 
-Next we need a widget for the entire list:
 ```
 class FlutterBookList extends StatefulWidget {
   FlutterBookList({Key key, this.books}) : super(key: key);
@@ -286,7 +285,7 @@ class _FlutterBookListState extends State<FlutterBookList> {
 }
 ```
 
-Finally we create the FlutterBookList in the home of the MaterialApp:
+Finally we create the FlutterBookList as ```home``` of the MaterialApp:
 ```
 void main() {
   runApp(
@@ -324,13 +323,13 @@ I/flutter : #2      _FlutterDemoState.build (/Users/luigi/dev/prj/flutter/myapp/
 It looks friendly and readable. What do you think?
 
 
-## Completing the books demo with more details
+## A few more details
 
-One of the most common task in mobile applications is to implement a list of items with images loading asynchronously from the network. It will be nice if we can do this with our Flutter demo.
+One of the most common tasks in mobile applications is to implement a list of items with images loading asynchronously from the network. It will be nice if we can do this with our Flutter demo.
 
-It is still to early to have proper documentation on how to do this. But the examples are a great source of information that we can use.
+It is still to early to have a proper documentation on how to do this. But the examples are a great source of information that we can use.
 
-In the Flutter gallery example there is a grid implementation which has images. It looks like this:
+In the gallery example there is a grid, which has images. It looks like this:
 ```
 ...
 @override
@@ -383,8 +382,8 @@ It was much easier than I thought.
 
 ## Conclusions
 
-I still have a lot to explore : tests, widgets, FlutterView... just to mention a few. But I'm positively impressed by what I have see so far. From a developer prospective I have no doubt Flutter is potentially a step forward.
+I still have a lot to explore : tests, widgets, FlutterView... just to mention a few. But I'm positively impressed by what I have seen so far. From a developer prospective I have no doubt Flutter is potentially a step forward.
 
-My only doubt is that "Write once, run anywhere" also mean that the app will look the same on different platforms. Mobile developers have spent the last few years trying to convince everyone that applications should adapt to the native platforms. Now that we succeeded, we have fight our way back?
+My only doubt is that "Write once, run anywhere" also means that the app will look the same on different platforms. Mobile developers have spent the last few years trying to convince everyone that applications should adapt to the native platforms. Now that we succeeded, we have fight our way back?
 
-All said, I'm sold on Flutter. I guess I will have to remove the dust from my Dart book.
+Having said that, I'm sold on Flutter. I guess I will have to remove the dust from my Dart book.
