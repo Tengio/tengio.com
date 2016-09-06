@@ -1,1 +1,1 @@
-appcfg.py update public
+appcfg.py update -v public

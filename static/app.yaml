@@ -5,8 +5,8 @@ api_version: go1
 
 handlers:
 - url: /favicon.ico
-  static_files: img/small_logo.png
-  upload: img/small_logo.png
+  static_files: img/small_logo.svg
+  upload: img/small_logo.svg
 
 - url: /img
   static_dir: img
@@ -25,6 +25,9 @@ handlers:
 
 - url: /404
   static_dir: 404
+
+- url: /.well-known
+  static_dir: well-known
 
 - url: /blog
   static_files: blog/index.html

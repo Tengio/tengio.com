@@ -18,7 +18,7 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 	analytics = "UA-67184502-1"
 
 	[params.navigation]
-		brand = "small_logo.png"
+		brand = "small_logo.svg"
 
 		[params.navigation.links]
 			services = "Services"
