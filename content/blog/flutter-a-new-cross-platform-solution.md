@@ -1,12 +1,13 @@
 +++
 id = "0005"
-date = "2016-09-02T11:38:10+00:00"
+date = "2016-09-07T11:00:10+00:00"
 title = "Flutter a new cross platform solution"
+description = "We often face clients that want to explore the possibility of cross platform solutions in order to reduce costs but I personally don't feel confident in any of the solutions available today. Sure there are many good options, especially React Native, but at the moment it feels like these solutions are not seamless enough in their execution."
 author = "luigi"
 tags = [ "Flutter" ]
 +++
 
-We often face clients that want to explore the possibility of cross platform solutions in order to reduce costs but I personally don't feel confident in any of the solutions available today. Sure there are many good options, especially React Native, but it feels like they are not an evolutionary step forward.
+We often face clients that want to explore the possibility of cross platform solutions in order to reduce costs but I personally don't feel confident in any of the solutions available today. Sure there are many good options, especially React Native, but at the moment it feels like these solutions are not seamless enough in their execution.
 
 Recently, while looking at some news on Google's new os [Fuchsia](https://fuchsia.googlesource.com/), I discover [Flutter](https://flutter.io).
 
@@ -23,7 +24,7 @@ To better understand why Flutter is interesting we have to take a step back and 
 
 Flutter is also inspired by React but follows the "Write once, run anywhere" approach instead of "Learn Once, Write Anywhere".
 
-This quote from a Facebook's React Native post clarifies the concept even more:
+This quote from a Facebook's React Native post clarifies the concept:
 
 >It's worth noting that we're not chasing “write once, run anywhere.” Different platforms have different looks, feels, and capabilities, and as such, we should still be developing discrete apps for each platform, but the same set of engineers should be able to build applications for whatever platform they choose, without needing to learn a fundamentally different set of technologies for each. We call this approach “learn once, write anywhere.” [source](https://code.facebook.com/posts/1014532261909640/react-native-bringing-modern-web-techniques-to-mobile/)
 
@@ -41,7 +42,7 @@ Flutter previously called Sky (Check out this [youtube talk about Sky](https://w
 
 ## Flutter installation
 
-The setup of the environment is just about cloning the Flutter git repository:
+To setup the environment, all you need to do is clone the Flutter git repository:
 ```
 git clone https://github.com/flutter/flutter.git -b alpha
 export PATH=`pwd`/flutter/bin:$PATH
@@ -167,7 +168,7 @@ flutter run -v
 
 ![article-img-centered](/img/blog/0005/screenshot-1.jpg)
 
-The first time you deploy on iOS it is necessary to open the project with Xcode and run it. This because Flutter is not able to get the signing profile.
+The first time you deploy on iOS it is necessary to open the project with Xcode and run it. This is because Flutter is unable to access your signing profile.
 
 **NOTE:** An handy way to open the iOS simulator from the command line is with the command:
 ```
@@ -382,8 +383,8 @@ It was much easier than I thought.
 
 ## Conclusions
 
-I still have a lot to explore : tests, widgets, FlutterView... just to mention a few. But I'm positively impressed by what I have seen so far. From a developer prospective I have no doubt Flutter is potentially a step forward.
+I still have a lot to explore : tests, widgets, FlutterView... just to mention a few. I'm positively impressed by what I have seen so far. From a developer's prospective, I personally think that Flutter is potentially a step forward.
 
-My only doubt is that "Write once, run anywhere" also means that the app will look the same on different platforms. Mobile developers have spent the last few years trying to convince everyone that applications should adapt to the native platforms. Now that we succeeded, we have fight our way back?
+My only concern is that "Write once, run anywhere" also means that the app will look the same on every platforms. Mobile developers have spent the last few years trying to convince designers, product owners and managers that applications should adapt to the native platforms. Now that we succeeded, we have fight our way back?
 
-Having said that, I'm sold on Flutter. I guess I will have to remove the dust from my Dart book.
+Having said that, I'm sold on Flutter. Its now time for me to dust off my Dart book.
