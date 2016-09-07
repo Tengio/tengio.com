@@ -41,12 +41,12 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 
 		[[params.about.list]]
 			 name = "Akshay Dashrath"
-			 image = "akshay.png"
+			 image = "akshay.jpg"
 			 link = "https://www.linkedin.com/in/akshaydashrath"
 
     [[params.about.list]]
 			 name = "Luigi Agosti"
-			 image = "luigi.png"
+			 image = "luigi.jpg"
 			 link = "https://www.linkedin.com/in/luigiagosti"
 
   	[params.about.values]
@@ -110,15 +110,15 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 
 		[[params.portfolio.list]]
 		 	 link = "https://www.groupon.com/"
-		 	 image = "groupon.png"
+		 	 image = "groupon.jpg"
 
 		[[params.portfolio.list]]
 			 link = "http://www.gumtree.co.uk/"
-			 image = "gumtree.png"
+			 image = "gumtree.jpg"
 
     [[params.portfolio.list]]
        link = "https://www.adzuna.co.uk/"
-       image = "adzuna.png"
+       image = "adzuna.jpg"
 
 	  [[params.portfolio.list]]
 			 link = "https://www.depop.com/"
@@ -126,7 +126,7 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 
 	  [[params.portfolio.list]]
 			 link = "http://yoyowallet.com/"
-			 image = "yoyo.png"
+			 image = "yoyo.jpg"
 
     [[params.portfolio.list]]
        link = "https://getmondo.co.uk/"
@@ -138,7 +138,7 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web"]
 
     [[params.portfolio.list]]
 	 		 link = "http://amphio.co"
-	 	 	 image = "amphio.png"
+	 	 	 image = "amphio.jpg"
 
 	[params.contact]
 		headline = "Let's Get In Touch!"

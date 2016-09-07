@@ -3,6 +3,8 @@ version: 11
 runtime: go
 api_version: go1
 
+default_expiration: "7d"
+
 handlers:
 - url: /favicon.ico
   static_files: img/small_logo.svg
