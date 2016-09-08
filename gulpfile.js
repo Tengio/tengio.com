@@ -4,13 +4,22 @@ var inline = require('gulp-inline')
   , uglify = require('gulp-uglify')
   , minifyCss = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
+var htmlmin = require('gulp-htmlmin');
 var googleWebFonts = require('gulp-google-webfonts');
 var options = {
     fontsDir: 'fonts/',
     cssDir: 'css/'
 };
 
-gulp.task('default', ['css', 'images']);
+gulp.task('default', ['minify']);
+
+gulp.task('minify', ['css', 'images'], function() {
+  return gulp.src('public/**/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest(function(file) {
+      return file.base;
+    }));
+});
 
 gulp.task('css', ['fontsCssPath'], function() {
   return gulp.src('public/**/index.html')
@@ -26,11 +35,13 @@ gulp.task('css', ['fontsCssPath'], function() {
     }));
 });
 
-gulp.task('images', () =>
-  gulp.src('public/img/clients/*')
+gulp.task('images', function() {
+  gulp.src('public/img/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('public/img/clients/'))
-);
+    .pipe(gulp.dest(function(file) {
+      return file.base;
+    }));
+});
 
 gulp.task('fontsCssPath', ['fonts'], function() {
   gulp.src('public/css/fonts.css', {base : 'public/css/fonts.css'})
