@@ -3,10 +3,14 @@ var inline = require('gulp-inline')
   , uglify = require('gulp-uglify')
   , minifyCss = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
+var googleWebFonts = require('gulp-google-webfonts');
+var options = {
+    fontsDir: 'fonts/',
+};
 
 gulp.task('default', ['css', 'images']);
 
-gulp.task('css', function() {
+gulp.task('css', ['fonts'], function() {
   return gulp.src('public/index.html')
     .pipe(inline({
       base: 'public/',
@@ -23,3 +27,10 @@ gulp.task('images', () =>
         .pipe(imagemin())
         .pipe(gulp.dest('public/img/clients/'))
 );
+
+gulp.task('fonts', function () {
+  return gulp.src('./fonts.list')
+	 .pipe(googleWebFonts(options))
+	  .pipe(gulp.dest('public/fonts'))
+	;
+});
