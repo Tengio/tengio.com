@@ -32,7 +32,7 @@ Google with Flutter is chasing what Facebook didn't want to chase with React Nat
 
 To achieve his goal Flutter team had to implement its own rendering engine to draw widgets.
 
-![article-img](/img/blog/0005/architecture.jpg)
+![article-img](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0005/architecture.jpg)
 *This picture is taken from the [Architecture Diagram document](https://docs.google.com/presentation/d/1cw7A4HbvM_Abv320rVgPVGiUP2msVs7tfGbkgdrTy0I/edit#slide=id.p)*
 
 Flutter previously called Sky (Check out this [youtube talk about Sky](https://www.youtube.com/watch?v=PnIWl33YMwA)) is build by the experience accumulated with Blink and WebKit. This guys are no jokers.
@@ -58,7 +58,7 @@ There are a couple of steps required to link Android SDK and Xcode. [Flutter set
 
 The best editor for Flutter is the combination of [Atom](https://atom.io/) and the [Flutter atom plugin](https://atom.io/packages/flutter). It is very easy to install: Atom -> Preference -> Install -> then search for "flutter".
 
-![article-img](/img/blog/0005/atom-flutter.jpg)
+![article-img](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0005/atom-flutter.jpg)
 
 The development environment has already a lot of functionalities. I personally like its simplicity.
 
@@ -180,7 +180,7 @@ open -a Simulator
 
 Now that we have the skeleton of the app we can add a simple list of books. Our final goal is to implement this app that you can see in the following animated gifs:
 
-![article-img-centered](/img/blog/0005/android.gif)![article-img-centered](/img/blog/0005/ios.gif)
+![article-img-centered](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0005/android.gif)![article-img-centered](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0005/ios.gif)
 
 **NOTE:** On iOS, at the moment there are a few issues on the network implementation this is the cause of the missing or truncated images.
 
