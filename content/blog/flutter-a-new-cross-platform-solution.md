@@ -166,7 +166,7 @@ But before making any change try to deploy the app on android and ios:
 flutter run -v
 ```
 
-![article-img-centered](/img/blog/0005/screenshot-1.jpg)
+![article-img-centered](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0005/screenshot-1.jpg)
 
 The first time you deploy on iOS it is necessary to open the project with Xcode and run it. This is because Flutter is unable to access your signing profile.
 

@@ -234,7 +234,7 @@ $ make runtest
 Refer to the 'Debugging Common Errors' section below if you enounter a missing shared libraries error.
 If you followed all the above steps correctly, your runtest should have successfully passed all the tests and you should see a result similar to this.
 
-![article-img](/img/blog/0003/caffe-screenshot.jpg)
+![article-img](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0003/caffe-screenshot.jpg)
 
 ## Installing Python Interface
 
