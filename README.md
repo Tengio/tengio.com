@@ -92,11 +92,9 @@ We use the following open source tools:
 
 - [hugo](https://gohugo.io)
 - [jquery](https://jquery.org)
-- [wow](https://github.com/matthieua/WOW)
+- [animate.css](https://github.com/daneden/animate.css)
 - [font-awesome](http://fontawesome.io)
 - [bootstrap](http://getbootstrap.com)
-- [classie](https://github.com/ded/bonzo)
-- [start bootstrap](http://startbootstrap.com)
 
 Please make sure to understand and respect the corresponding licenses if you reuse this code.
 

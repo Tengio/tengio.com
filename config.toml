@@ -15,7 +15,9 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web", "Flutter"]
 [params]
 	name = "Luigi Agosti, Akshay Dashrath"
 	description = "Tengio turns your idea into beautiful and reliable products on Android, iOS and the Web."
-	analytics = "UA-67184502-1"
+
+  [params.cdn]
+    images = "https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img"
 
 	[params.navigation]
 		brand = "small_logo.svg"
