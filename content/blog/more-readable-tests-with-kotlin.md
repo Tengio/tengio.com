@@ -13,7 +13,7 @@ Tests should be easy to read. You should be able to go to a test class you are n
 
 Now here's what a BDD-style `given-when-then` format I've seen used and have used myself in the past looks like:
 
-![article-img](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0002/given-when-then-sample.jpg)
+![article-img](/img/blog/0002/given-when-then-sample.jpg)
 *Given when then tests*
 
 It's not exactly a pleasure to read a screen full of this stuff is it? The `given-when-then` keywords take up precious space on the screen. I really don't want to read a screen full of this stuff, because after a while it sort of starts looking a bit like:
@@ -57,19 +57,19 @@ I think it reads more like what you would actually say when asked "what does thi
 
 But wait what's that? Oh look! It's the good old `blahblahBlahblahBlahblahIsIt530YetBlahblahBlahblah()` effect again!
 
-Now, it's Kotlin we're using, so let's use the `` thingy Kotlin offers, I say. Feel free to use them in your test methods, or even class names, and feel free to write your test names in a as readable and as descriptive a way as you can. This is what I'd rather see:
+Now, it's Kotlin we're using, so let's use the `thingy` Kotlin offers, I say. Feel free to use them in your test methods, or even class names, and feel free to write your test names in a as readable and as descriptive a way as you can. This is what I'd rather see :
 
-![article-img](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0002/human-readable-tests.jpg)
+![article-img](/img/blog/0002/human-readable-tests.jpg)
 *Human readable tests*
 
 Now I can read a whole page of this stuff, quickly and without getting tired. What's more, I can actually read the summaries of the tests that have run at the bottom of the screen and actually get some more info out of it more than that all my `givenBlahblahCoolStoryBroBlahblah`s are green, whatever they mean. What summary would you rather read?
 
 *Wall of text meant for robots:*
 
-![article-img-not-scaled](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0002/robot-readable-results.jpg)
+![article-img-not-scaled](/img/blog/0002/robot-readable-results.jpg)
 
 *Information meant for humans:*
 
-![article-img-not-scaled](https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/0002/human-readable-results.jpg)
+![article-img-not-scaled](/img/blog/0002/human-readable-results.jpg)
 
 I for one would definitely go for the second one. But that's only my fallible opinion anyway, what do *YOU* think?
