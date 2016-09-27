@@ -1,10 +1,11 @@
 +++
 id = "0007"
 date = "2016-09-16T15:30:00+00:00"
-title = "Crossing realities: Baby steps into VR"
+title = "Crossing realities: 2. Baby steps into VR"
 description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here we explore how to move in a VR environment (and other tips)."
 author = "quentin"
 tags = [ "Unity", "Cardboard", "VR" ]
+draft = true
 +++
 
 ![article-img](/img/blog/0007/baby_steps.jpg "Baby steps into VR")

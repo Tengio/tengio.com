@@ -1,7 +1,7 @@
 +++
 id = "0006"
 date = "2016-09-16T15:30:00+00:00"
-title = "Crossing realities: The beginning of a VR journey"
+title = "Crossing realities: 1. The beginning of a VR journey"
 description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here is the introduction and basic steps to configure Unity for Cardboard development."
 author = "quentin"
 tags = [ "Unity", "Cardboard", "VR" ]

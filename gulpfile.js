@@ -12,7 +12,15 @@ gulp.task('prepare', shell.task([
   'hugo -s .'
 ]))
 
-gulp.task('minify-html', ['prepare'], function() {
+gulp.task('blog-image-cdn', ['prepare'], function() {
+  gulp.src('public/blog/**/*')
+       .pipe(replace('src="/img/blog/', 'src="https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img/blog/'))
+       .pipe(gulp.dest(function(file) {
+         return file.base;
+       }));
+});
+
+gulp.task('minify-html', ['blog-image-cdn'], function() {
   return gulp.src('public/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(function(file) {
