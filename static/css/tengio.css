@@ -62,10 +62,13 @@ h3 {
   font-size: 20px;
 }
 
-p {
-    margin-bottom: 20px;
+p, li {
     font-size: 20px;
     font-weight: 300;
+}
+
+p {
+    margin-bottom: 20px;
     line-height: 1.8;
 }
 
@@ -459,10 +462,6 @@ body {
 article h1 {
     padding-top: 100px;
     padding-bottom: 20px;
-}
-
-article em {
-    font-size: 16px;
 }
 
 .article-date {
