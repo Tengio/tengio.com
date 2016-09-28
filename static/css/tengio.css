@@ -544,3 +544,8 @@ img[alt="article-img-centered"] {
     animation-name: toolbar-animation;
     animation-duration: 3s;
 }*/
+
+.modal-dialog {
+  width: 95%;
+  padding: 0;
+}
