@@ -1,7 +1,7 @@
 +++
 id = "0006"
 date = "2016-09-16T15:30:00+00:00"
-title = "Crossing realities: 1. The beginning of a VR journey"
+title = "Crossing realities: The beginning of a VR journey"
 description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here is the introduction and basic steps to configure Unity for Cardboard development."
 author = "quentin"
 tags = [ "Unity", "Cardboard", "VR" ]
@@ -38,11 +38,11 @@ The first thing you need to do is download and install the required components t
 
 The documentation for the Cardboard API is available on [Google developers website](https://developers.google.com/vr/unity/). Follow the instructions on the [Get Started] (https://developers.google.com/vr/unity/get-started-android) section for the platform you are targeting. Once you've gone through the boring prerequisite parts the fun begins and you can import and test the demo scene by following the instructions! Once you've hit the “Play” button you should see something like this:
 
-![article-img](/img/blog/0006/unity_GoogleVR_demoScene_layout_default.jpg "Default layout")
+<img class="modal-image" src="/img/blog/0006/unity_GoogleVR_demoScene_layout_default.jpg" alt="article-img" title="Default layout">
 
 If your screen size is big enough I recommend changing the layout of Unity to `2 by 3`, this way you can still see the scene view when the emulator is running. To do so click on the top right button (labelled `Default`) and select `2 by 3`. You should now see this:
 
-![article-img](/img/blog/0006/unity_GoogleVR_demoScene_layout_2by3.jpg "2 by 3 layout")
+<img class="modal-image" src="/img/blog/0006/unity_GoogleVR_demoScene_layout_2by3.jpg" alt="article-img" title="2 by 3 layout">
 
 Congratulations! Your first VR app is ready to run! Now follow Google's instructions to build it to your device. Once this is done the app should start automatically, place the device in your Cardboard and look around. This is VR!
 

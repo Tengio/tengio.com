@@ -475,10 +475,18 @@ img[alt="article-img"] {
 }
 
 img[alt="article-img-centered"] {
-    display: block;
-    margin: 0 auto;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: none;
+}
+
+@media(min-width:820px) {
+  img[alt="article-img-centered"] {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .article-comments {
@@ -544,3 +552,8 @@ img[alt="article-img-centered"] {
     animation-name: toolbar-animation;
     animation-duration: 3s;
 }*/
+
+.modal-dialog {
+  width: 95%;
+  padding: 0;
+}
