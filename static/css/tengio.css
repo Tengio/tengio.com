@@ -489,6 +489,16 @@ img[alt="article-img-centered"] {
   }
 }
 
+.modal-image {
+   cursor: auto;
+}
+
+@media(min-width:700px) {
+    .modal-image {
+      cursor: pointer;
+   }
+}
+
 .article-comments {
     padding-top: 20px;
     padding-bottom: 20px;
