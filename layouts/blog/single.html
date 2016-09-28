@@ -62,12 +62,15 @@
         <script>
         $(function() {
           $(".modal-image").on("click", function() {
+              if($(this).width() <= 700){
+                return;
+              }
               var res = $(this).attr('src').replace(".jpg", "_modal.jpg");
               res = res.replace(".png", "_modal.png");
               $('.image-preview').attr('src', res);
               $('.modal-title').text($(this).attr('title'));
               $('#modal-div').modal('show');
-          });
+            });
         });
         </script>
     </body>

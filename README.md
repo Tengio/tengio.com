@@ -48,11 +48,27 @@ tags = [ "AI" ]
 +++
 ```
 Images used by the articles are stored into ```static/img/blog/0003/*.jpg```.
-You can then refer to the images directly in the md file like:
+
+So far we have implemented 3 types of images in blogs:
+
+**article-img** : image takes 100% of the width.
 ```
 ![article-img](/img/blog/0004/hugo.jpg)
 ```
-**NOTE**: The alternative text of the image is used to apply some css rule (article-img : for example fit the image to the content width).
+
+**article-img-centered** : image is placed in the center, on mobile get to the 100% to not brake horizontal scrolling.
+```
+![article-img-centered](/img/blog/0004/hugo.jpg)
+```
+
+**modal-image** : opens a modal almost full screen to see the "modal" image. This is disable for small screen.
+```
+<img
+  class="modal-image"
+  src="/img/blog/0006/unity_GoogleVR_demoScene_layout_2by3.jpg"
+  alt="article-img"
+  title="2 by 3 layout">
+```
 
 Markdown Cheatsheet
 -------------------
