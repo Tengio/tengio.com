@@ -1,33 +1,23 @@
 <div class="col-xs-3 col-md-2">
-{{ if eq .Params.author "oz" }}
-  <img class="rounded-small" src="{{ .Site.Params.cdn.images }}/authors/oz.jpg" />
-  </div>
-  <div class="col-xs-9 col-md-10">
-    <h3>Oz</h3>
-    <p class="author-bio">Oz is an enthusiastic Android developer with a keen eye for clean, considered and creative code. When not at his desk his biggest passions are traveling and training in boxing/brazilian jiu jitsu.</p>
-{{ else if eq .Params.author "flavio" }}
-  <img class="rounded-small" src="{{ .Site.Params.cdn.images }}/authors/flavio.jpg" />
-  </div>
-  <div class="col-xs-9 col-md-10">
-    <h3>Flavio</h3>
-    <p class="author-bio">Flavio is an experienced Android developer who has recently started training other developers in topics ranging from Kotlin to Test Driven Development. His passion for craftsmanship principles drives him to spread the word of the importance of writing good, clean, testable code.</p>
-{{ else if eq .Params.author "shreyas" }}
-  <img class="rounded-small" src="{{ .Site.Params.cdn.images }}/authors/shreyas.jpg" />
-  </div>
-  <div class="col-xs-9 col-md-10">
-    <h3>Shreyas</h3>
-    <p class="author-bio">Shreyas Skandan is pursuing a Master’s degree in Robotics at the University of Pennsylvania. He primary research interests are in Machine Perception and Machine Learning. He is currently working on 3D tracking using multiple stereo camera rigs.</p>
-{{ else if eq .Params.author "luigi" }}
-  <img class="rounded-small" src="{{ .Site.Params.cdn.images }}/authors/luigi.jpg" />
-  </div>
-  <div class="col-xs-9 col-md-10">
-    <h3>Luigi</h3>
-    <p class="author-bio">Luigi is a developer with years of experience in many types of projects and technologies.</p>
-{{ else if eq .Params.author "quentin" }}
-  <img class="rounded-small" src="{{ .Site.Params.cdn.images }}/authors/quentin.jpg" />
-  </div>
-  <div class="col-xs-9 col-md-10">
-    <h3>Quentin</h3>
-    <p class="author-bio">Quentin found himself a passion in augmented and virtual reality and has been testing and learning in this field ever since. Now he wants to help back the community by sharing the result of his studies.</p>
-{{ end }}
+  <img class="rounded-small" src="/img/authors/{{ .author.image }}" />
+  <br />
+  {{ if eq .author.twitter nil }}
+    <i class="fa fa-twitter author-links-disabled" aria-hidden="true"></i>
+  {{ else }}
+    <a href="{{ .author.twitter }}" class="author-links" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ if eq .author.linkedIn nil }}
+    <i class="fa fa-linkedin author-links-disabled" aria-hidden="true"></i>
+  {{ else }}
+    <a href="{{ .author.linkedIn }}" class="author-links" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ if eq .author.github nil }}
+    <i class="fa fa-github author-links-disabled" aria-hidden="true"></i>
+  {{ else }}
+    <a href="{{ .author.github }}" class="author-links" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  {{ end }}
+</div>
+<div class="col-xs-9 col-md-10">
+    <h3>{{ .author.name }}</h3>
+    <p class="author-bio">{{ .author.description }}</p>
 </div>

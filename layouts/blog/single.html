@@ -13,6 +13,7 @@
         <meta name="twitter:title" content="{{ .Title }}"/>
         <meta name="twitter:image" content="http://www.tengio.com/img/blog/{{ .Params.id }}/thumbnail.jpg"/>
         {{ partial "head.html" . }}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
     </head>
     <body id="page-top">
         {{ partial "toolbar.html" . }}
@@ -30,7 +31,11 @@
                   <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
                   {{ .Content }}
                   <div class="row">
-                    {{ partial "author.html" . }}
+                    {{ range $author := .Site.Params.authors }}
+                      {{ if eq $.Params.author $author.key }}
+                        {{ partial "author" (dict "author" $author) }}
+                      {{ end }}
+                    {{ end }}
                   </div>
                   <div class="article-comments">
                     {{ template "_internal/disqus.html" . }}

@@ -567,3 +567,21 @@ img[alt="article-img-centered"] {
   width: 95%;
   padding: 0;
 }
+
+.author-links i {
+  width:22px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.author-links {
+  color: rgba(0,0,0,.6);
+}
+
+.author-links:hover {
+  color: #f36618;
+}
+
+.author-links-disabled {
+  color: rgba(0,0,0,.3);
+}
