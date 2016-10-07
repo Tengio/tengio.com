@@ -30,6 +30,7 @@
                   </div>
                   <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
                   {{ .Content }}
+                  <br>
                   <div class="row">
                     {{ range $author := .Site.Params.authors }}
                       {{ if eq $.Params.author $author.key }}

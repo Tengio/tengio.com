@@ -1,16 +1,17 @@
 +++
 id = "0007"
-date = "2016-09-16T15:30:00+00:00"
-title = "Crossing realities: 2. Baby steps into VR"
+date = "2016-10-06T18:30:00+00:00"
+title = "Crossing realities: Baby steps into VR"
 description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here we explore how to move in a VR environment (and other tips)."
 author = "quentin"
 tags = [ "Unity", "Cardboard", "VR" ]
-draft = true
 +++
 
 ![article-img](/img/blog/0007/baby_steps.jpg "Baby steps into VR")
 
-In this section we will see how you can move around in VR.
+### Crossing realities tutorial
+1. [The beginning of a VR journey](/blog/crossing-realities-the-beginning-of-a-VR-journey/)
+2. Baby steps into VR
 
 
 ## Create your environment
@@ -32,7 +33,7 @@ Now if we click *Play* we can simulate head movement by holding the “alt” ke
 
 Let's add a floor to move on and an object to move to. Create a plane at the root of your *hierarchy* (`Create > 3D Object > Plane`) and increase it's scale to (5, 5, 5). Now create a cube in the same way and move it somewhere near your Player, like (0, 2, 5). Move your player out of the floor by increasing its *Y* position to 1. You should have something like this now:
 
-![article-img](/img/blog/0007/scene.jpg "Scene")
+<img class="modal-image" src="/img/blog/0007/scene.jpg" alt="article-img" title="Scene">
 
 Create a folder called *Scenes* in your *Asset* folder and save your *scene* in it (`File > Save Scene`).
 
@@ -144,8 +145,7 @@ Nothing out of the ordinary with this script, its pretty straightforward. Just d
 
 To test how the *Character Controller* reacts to slopes create a new *Plane* and call it "Ramp (1)". Set its *Position* to (3, 1, 5), *Rotation* to (316, 0, 0) and *Scale* to (0.3, 1, 0,3). Now duplicate it (right click `Duplicate`) and change the new ramp *Position* to (7, 1, 5) and *Rotation* to (315, 0, 0). Hit *Play* and try to climb each ramp. You can climb the first one because the slope is 44 but you can't climb the second one because your *Character Controller*  *Slope Limit* is 45. If you "jump" from the ramp you can see that the *Player* is not subject to gravity. When you move in any direction it will also move toward the ground, but if you stop moving mid-air it will just stay here floating.
 
-![article-img](/img/blog/0007/character_controller.jpg "Character Controller with ramps")
-
+<img class="modal-image" src="/img/blog/0007/character_controller.jpg" alt="article-img" title="Character Controller with ramps">
 
 ### Rigidbody with drag and no gravity
 This type of movement is also physics-based but this time gravity is disabled so you will float like in space. It uses the [*drag*](https://docs.unity3d.com/ScriptReference/Rigidbody-drag.html "Rigidbody.drag") component of the *Rigidbody* to decelerate and limit max speed. Same controls as previously, hold the left mouse button or the trigger to move in the direction you are facing, you can also move to the sky. The player will accelerate and decelerate progressively (not like the previous one where you were always moving at the same speed and stopping right away when releasing the trigger). I designed this type of movement for a game in space where the player was moving with a [Manned Maneuvering Unit](https://en.wikipedia.org/wiki/Manned_Maneuvering_Unit "Wikipedia: Manned Maneuvering Unit") (kind of a space jetpack).
@@ -229,7 +229,7 @@ Unity has a good article about [Building a NavMesh](https://docs.unity3d.com/Man
 
 In our case the relevant *game objects* for navigation are the *Plane* and the *Cube*, so select them both and mark them as *Navigation Static*. Then open the *Navigation* window (`Window > Navigation`). Here in the `Bake` tab you have several parameters that influence where your *Player* can go (as described in Unity [Building a NavMesh](https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html "Building a NavMesh") manual page). Leave them as they are and hit the `Bake` button at the bottom left corner. Unity will do its [magic](https://docs.unity3d.com/Manual/nav-InnerWorkings.html "Inner Workings of the Navigation System") and you should see the walkable area in blue in your scene.
 
-![article-img](/img/blog/0007/nav_mesh.jpg "Nav Mesh")
+<img class="modal-image" src="/img/blog/0007/nav_mesh.jpg" alt="article-img" title="Nav Mesh">
 
 Here you can see that the area under the cube is not walkable. That's because the *Player* is too tall to go under it.
 Let's add an other obstacle! Create a new cube and call it "Wall", set its *Position* to (0, 0.5, 2) and *Scale* to (8, 1, 1). Set it as *Navigation Static* and in the *Navigation* window hit bake again (you need to rebake every time you add a new obstacle).
@@ -353,4 +353,4 @@ I will not explain how this code works as shaders are rather difficult to unders
 
 Now drag and drop your *shader* on your *material*, then drag your *material* on the *Plane*.
 
-![article-img](/img/blog/0007/scene_chessboard.jpg "Scene with chessboard")
+<img class="modal-image" src="/img/blog/0007/scene_chessboard.jpg" alt="article-img" title="Scene with chessboard">

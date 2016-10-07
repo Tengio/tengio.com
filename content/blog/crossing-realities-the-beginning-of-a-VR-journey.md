@@ -2,13 +2,19 @@
 id = "0006"
 date = "2016-09-16T15:30:00+00:00"
 title = "Crossing realities: The beginning of a VR journey"
-description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here is the introduction and basic steps to configure Unity for Cardboard development."
+description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here is the introduction and basic steps to configure Unity for Cardboard."
 author = "quentin"
 tags = [ "Unity", "Cardboard", "VR" ]
 +++
 
 
 ![article-img-centered](/img/blog/0006/intro.jpg "Old school VR")
+
+
+### Crossing realities tutorial summary
+1. The beginning of a VR journey
+2. [Baby steps into VR](/blog/crossing-realities-baby-steps-into-VR/)
+
 
 ## Introduction
 A few months back I started a fantastic journey by diving into Virtual Reality. It happened quite casually, I was peacefully minding my how business when someone put a VR headset in my hands. I don't recall where it happened, probably at a meetup. But I do recall that the first thing I thought was “Wow, this is awesome!”, which also happened to be the second and third things I thought. Actually I still think that way right now. Based on this I started to wonder “Maybe I could be part of this awesomeness?” which quickly became a “Yes I can!” (I definitely didn't steal that quotation from a famous personality... maybe). So I started to read what I could find about VR, including the various headsets of the moment. And the [Google Cardboard](https://vr.google.com/cardboard/ "Cardboard") looked like the perfect tool for the beginner I was. It's totally inexpensive, easy to carry around and still produces good results, exactly what you need to start playing around! So I took a look at the API and several SDK were available, one for Android, one for IOS and one for [Unity](https://unity3d.com/ "Unity"). The latest caught my attention, I had already tested Unity about two weeks before and had loved the experience. That's when the picture got clearer: VR = awesome, Unity = awesome, so VR + Unity  = double awesome! That's where my journey started, and from there it only got awesomer (yes, it's so awesomingly awesoming that I need to create new words to carry the awesomishness)!
@@ -49,3 +55,8 @@ Congratulations! Your first VR app is ready to run! Now follow Google's instruct
 So, if you are still here it means that you went through the boring but necessary part of setting up your dev environment, that's great! And you have your first VR app! Sure it doesn't do much right now, you can just look around and press the trigger. But that's a good start!
 
 Now that we are all set we can actually start our journey in the heart of VR. And for this we will need to learn how to walk (and then run if we feel like it!). So the next section will be about the various ways you can move around in VR with a Cardboard.
+
+<br>
+
+### Read next
+[Crossing Realities: Baby steps into VR](/blog/crossing-realities-baby-steps-into-VR/)
