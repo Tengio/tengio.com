@@ -2,7 +2,7 @@
 id = "0005"
 date = "2016-09-07T11:00:10+00:00"
 title = "Flutter a new cross platform solution"
-description = "We often face clients that want to explore the possibility of cross platform solutions in order to reduce costs but I personally don't feel confident in any of the solutions available today. Sure there are many good options..."
+description = "We often face clients that want to explore the possibility of cross platform solutions in order to reduce costs but I personally don't feel confident in any of the solutions available today."
 author = "luigi"
 tags = [ "Flutter" ]
 +++

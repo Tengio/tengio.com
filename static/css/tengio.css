@@ -489,6 +489,16 @@ img[alt="article-img-centered"] {
   }
 }
 
+.modal-image {
+   cursor: auto;
+}
+
+@media(min-width:700px) {
+    .modal-image {
+      cursor: pointer;
+   }
+}
+
 .article-comments {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -556,4 +566,22 @@ img[alt="article-img-centered"] {
 .modal-dialog {
   width: 95%;
   padding: 0;
+}
+
+.author-links i {
+  width:22px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.author-links {
+  color: rgba(0,0,0,.6);
+}
+
+.author-links:hover {
+  color: #f36618;
+}
+
+.author-links-disabled {
+  color: rgba(0,0,0,.3);
 }

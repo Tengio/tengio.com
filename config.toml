@@ -41,7 +41,7 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web", "Flutter"]
 		quote = "Right from the start, we wanted Tengio to be something different – a place where we could do outstanding work with some of the best minds in mobile"
 		quoteAuthor = "Akshay Dashrath, co-founder"
 
-		[[params.about.list]]
+	   [[params.about.list]]
 			 name = "Akshay Dashrath"
 			 image = "akshay.jpg"
 			 link = "https://www.linkedin.com/in/akshaydashrath"
@@ -134,13 +134,66 @@ tags = ["Team", "TDD", "Kotlin", "AI", "Web", "Flutter"]
        link = "https://getmondo.co.uk/"
        image = "mondo.png"
 
-   [[params.portfolio.list]]
+    [[params.portfolio.list]]
 			 link = "https://www.pearlshare.com/"
 			 image = "pearlshare.png"
 
     [[params.portfolio.list]]
 	 		 link = "http://amphio.co"
 	 	 	 image = "amphio.jpg"
+
+  [params.authors]
+    [params.authors.akshay]
+       key = "akshay"
+ 			 name = "Akshay"
+ 			 image = "akshay.jpg"
+       description = ""
+ 			 linkedIn = "https://www.linkedin.com/in/akshaydashrath"
+       twitter = "https://twitter.com/akshaydashrath"
+       github = "https://github.com/akshaydashrath"
+
+   [params.authors.flavio]
+       key = "flavio"
+			 name = "Flavio"
+			 image = "flavio.jpg"
+       description = "Flavio is an experienced Android developer who has recently started training other developers in topics ranging from Kotlin to Test Driven Development. His passion for craftsmanship principles drives him to spread the word of the importance of writing good, clean, testable code."
+       github = "https://github.com/memoizr"
+
+    [params.authors.oz]
+       key = "oz"
+			 name = "Oz"
+			 image = "oz.jpg"
+       description = "Oz is an enthusiastic Android developer with a keen eye for clean, considered and creative code. When not at his desk his biggest passions are traveling and training in boxing/brazilian jiu jitsu."
+			 linkedIn = "https://www.linkedin.com/in/ozhan-saat-768556b6"
+       twitter = "https://twitter.com/Oz_Saat"
+       github = "https://github.com/ozsaat"
+
+    [params.authors.luigi]
+       key = "luigi"
+ 			 name = "Luigi"
+ 			 image = "luigi.jpg"
+       description = "Luigi is a developer with years of experience in many types of projects and technologies."
+ 			 linkedIn = "https://www.linkedin.com/in/luigiagosti"
+       twitter = "https://twitter.com/luigiagosti"
+       github = "https://github.com/luigi-agosti"
+
+    [params.authors.quentin]
+       key = "quentin"
+       name = "Quentin"
+       image = "quentin.jpg"
+       description = "Quentin found himself a passion in augmented and virtual reality and has been testing and learning in this field ever since. Now he wants to help back the community by sharing the result of his studies."
+       linkedIn = "https://www.linkedin.com/in/quentinleguennec"
+       twitter = "https://twitter.com/QuentinLG_07"
+       github = "https://github.com/quentinleguennec"
+
+    [params.authors.shreyas]
+       key = "shreyas"
+       name = "Shreyas"
+       image = "shreyas.jpg"
+       description = "Shreyas Skandan is pursuing a Master’s degree in Robotics at the University of Pennsylvania. He primary research interests are in Machine Perception and Machine Learning. He is currently working on 3D tracking using multiple stereo camera rigs."
+       linkedIn = "https://www.linkedin.com/in/shreyasskandan"
+       twitter = "https://twitter.com/ShreyasSkandan"
+       github = "https://github.com/shreyasskandan"
 
 	[params.contact]
 		headline = "Let's Get In Touch!"
