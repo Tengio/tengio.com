@@ -4,8 +4,7 @@ date = "2016-10-08T14:30:00+00:00"
 title = "Stereo vision : Automated background blur"
 description = "Ever since I heard that the new iPhone was to have two cameras, I've been excited at all the possibilities of having a widely used device with easy to use depth sensing capabilities."
 author = "shreyas"
-tags = [ "Unity", "Cardboard", "VR" ]
-draft = true
+tags = [ "Image Processing", "Stereoscopy", "OpenCV" ]
 +++
 
 ## Introduction
@@ -34,7 +33,7 @@ I quickly put together some data for this,
 
 ## Disparity Map
 
-Now that we have our left and right image frames rectified, we can use any off the shelf block matching algorithm to generate a map of disparity values from the two images. Essentially what this algorithm does is pick a block of pixel values in the left frame and compare it to a block of pixels in the right frame and generates a value of disparity between the two blocks. Most algorithms today are a lot more sophisticated than this to handle overalapping and reccuring patterns, occlusion etc, but that's the gist of it. This disparity value is a function of the actual depth value associated with each pixel and if you're not trying to accurately measure distances between objects, you don't need to worry about the magnitude of these values. However for those interested in understanding this relation, you can do so using the formula:
+Now that we have our left and right image frames rectified, we can use any off the shelf block matching algorithm to generate a map of disparity values from the two images. Essentially what this algorithm does is pick a block of pixel values in the left frame and compare it to a block of pixels in the right frame and generates a value of disparity between the two blocks. Most algorithms today are a lot more sophisticated than this to handle overlapping and recurring patterns, occlusion etc, but that's the gist of it. This disparity value is a function of the actual depth value associated with each pixel and if you're not trying to accurately measure distances between objects, you don't need to worry about the magnitude of these values. However for those interested in understanding this relation, you can do so using the formula:
 
 ```
 Depth (Z) = focal_length * ( stereo_camera_baseline / disparity )
@@ -48,7 +47,7 @@ Since this entire process is to be automated, tuning parameters for the *Semi-Gl
 
 ## Region Identification with K-Means
 
-Now that we have a rough approximation of where each pixel exists in 3D space, we can start to group pixels together to form regions. The constraint is to make this process as automated as possible but once again the algorithm that I have chosen requires some hand tuning. I chose to use the K-Means Algorithm on the disparity information. I hard coded a cluster count of 4, which for an image such as this with a single object of interest without nearby objects is quite suitable. For dealing with more cluttered environments a larger cluster count would ensure a more granular region identification.
+Now that we have a rough approximation of where each pixel exists in 3D space, we can start to group pixels together to form regions. The constraint is to make this process as automated as possible but once again the algorithm that I have chosen requires some hand tuning. I chose to use the *K-Means Algorithm* on the disparity information. I hard coded a cluster count of 4, which for an image such as this with a single object of interest without nearby objects is quite suitable. For dealing with more cluttered environments a larger cluster count would ensure a more granular region identification.
 
 The output of the *K-Means Algorithm* is shown below. You can see that the foreground object (*Nao Robot*) is very easily identifiable but VERY noisy. We will deal with that soon.
 
