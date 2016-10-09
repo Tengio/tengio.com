@@ -79,27 +79,27 @@ Contribute with blog post
 -------------------------
 Fork the project and submit a pull request to github. Blog post should be compost of md file and images if necessary.
 
-Release
--------
+
+Code Highlight
+--------------
+You only need this to release version on app engine or test the highlighting of the code.
+
+Hugo can do code Highlight server side with pygments pip package [see here](https://gohugo.io/extras/highlighting/) for more info.
+- You need python: ```brew install python```
+- Then pip: ```python get-pip.py```
+- Finally pygments: ```pip install Pygments```
+
+
+Release and gulp :metal:
+------------------------------------
 Make sure to use the correct version (in static/app.yaml).
 
-Run hugo commad to generate sources (it is a good practice to delete public folder):
+Release uses [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) and some other [doc](https://gulp.readme.io/docs/getting-started).
 
-```
-hugo -s .
-```
-
-You can verify final version before deploy if you have appengine go sdk with:
-
-```
-./start.sh
-```
-
-One all is done, deploy with:
-
-```
-./deploy.sh
-```
+This are main task implemented for you with gulp:
+- default task prepare local version using go, also listen to changes and automatically update content : ```gulp```
+- run local version using app engine : ```gulp run```
+- build and deploy on appengine : ```gulp deploy```
 
 Tools
 -----

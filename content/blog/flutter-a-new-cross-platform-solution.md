@@ -187,7 +187,8 @@ Now that we have the skeleton of the app we can add a simple list of books. Our 
 All the following snippets of code are in the ```main.dart``` file.
 
 First I'm going to prepare a list of books (I used the list of dart books from [Dartlang website](https://www.dartlang.org/resources/books)):
-```
+
+```dart
 class Book {
   const Book({this.name});
   final String name;
@@ -210,7 +211,8 @@ final List<Book> _books = <Book>[
 ```
 
 Next we have to prepare a widget to display the list item (BookListItem), a widget for the entire list (FlutterBookList) and a callback (BookChangedCallback) for the tap event:
-```
+
+```dart
 typedef void BookChangedCallback(Book book, bool read);
 
 class BookListItem extends StatelessWidget {
@@ -243,7 +245,7 @@ class BookListItem extends StatelessWidget {
 }
 ```
 
-```
+```dart
 class FlutterBookList extends StatefulWidget {
   FlutterBookList({Key key, this.books}) : super(key: key);
 
@@ -287,7 +289,7 @@ class _FlutterBookListState extends State<FlutterBookList> {
 ```
 
 Finally we create the FlutterBookList as ```home``` of the MaterialApp:
-```
+```dart
 void main() {
   runApp(
     new MaterialApp(
@@ -331,7 +333,7 @@ One of the most common tasks in mobile applications is to implement a list of it
 It is still to early to have a proper documentation on how to do this. But the examples are a great source of information that we can use.
 
 In the gallery example there is a grid, which has images. It looks like this:
-```
+```dart
 ...
 @override
 Widget build(BuildContext context) {
@@ -350,10 +352,14 @@ If you look at the Image class there is a nice factory method ```Image.network(u
 
 Still in the gallery example look for the ```list_demo.dart``` file. You can see that it is using the [ListItem class](https://docs.flutter.io/flutter/material/ListItem-class.html) which can have a ```leading``` for the book cover, a ```title``` and a ```subtitle``` for the author.
 
-So we have a plan of action.
+So we have a plan of action:
 
-1. Changing Book class to support image and author:
-```
+1. Change the Book class to support image and author
+2. Change the ListItem to show image and author
+
+Here is the code:
+
+```dart
 class Book {
   const Book({this.name, this.cover, this.author});
   final String name;
@@ -363,19 +369,18 @@ class Book {
 ```
 You will have to add urls and authors to your list of books.
 
-2. Changing ListItem to show image and author:
-```
+```dart
 @override
-  Widget build(BuildContext context) {
-    return new ListItem(
-      onTap: () {
-        onBookChanged(book, !read);
-      },
-      title: new Text(book.name, style: _getTextStyle(context)),
-      leading: new Image.network(book.cover, fit: ImageFit.cover),
-      subtitle: new Text('Written by ' + book.author, style: _getTextStyle(context)),
-    );
-  }
+Widget build(BuildContext context) {
+  return new ListItem(
+    onTap: () {
+      onBookChanged(book, !read);
+    },
+    title: new Text(book.name, style: _getTextStyle(context)),
+    leading: new Image.network(book.cover, fit: ImageFit.cover),
+    subtitle: new Text('Written by ' + book.author, style: _getTextStyle(context)),
+  );
+}
 ```
 
 It was much easier than I thought.
