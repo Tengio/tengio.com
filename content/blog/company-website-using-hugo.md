@@ -83,7 +83,7 @@ This should start a local server serving your new website on localhost:1313. At 
 
 In the layout folder add an index.html file and edit it with something like:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en-US">
     <body>
@@ -96,7 +96,7 @@ Hugo is updating on the fly any change affecting files in the target folders of 
 
 So far nothing interesting. Let's add some reusable parts to our home page. In hugo fragments of reusable html can be implemented using partials. You need to create html files in the layout/partials folder. We are going to add head.html and footer.html as examples. Once you have done that you can reuse this in the index.html or any other page of your website.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en-US">
     {{ partial "head.html" . }}
@@ -122,7 +122,7 @@ To add a blog section where members of the team can add post as [md](https://gui
 1. add a link in your home page to the blog section like ```/blog/``` so that the blog can be reached.
 
 2. create a file ```/layouts/section/blog.html```. This file will drive how the main blog page will look like. In our case it will be a simple list of blogs.
-```
+```html
 <!DOCTYPE html>
 <html lang="en-US">
     {{ partial "head.html" . }}
@@ -140,7 +140,7 @@ To add a blog section where members of the team can add post as [md](https://gui
 ```
 
 3. create a file ```/layouts/blog/list.html```. This is used to show a list of blogs as a summary.
-```
+```html
 <h2>{{ .Title }}</h2>
 <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
 <p>{{ .Summary }}</p>
@@ -148,7 +148,7 @@ To add a blog section where members of the team can add post as [md](https://gui
 ```
 
 4. create a file ```/layouts/blog/single.html```. This is used to show one single blog page.
-```
+```html
 <!DOCTYPE html>
 <html lang="en-US">
     {{ partial "head.html" . }}

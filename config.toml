@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Tengio | We build apps"
 disqusShortname = "tengio"
 tags = ["Team", "TDD", "Kotlin", "AI", "Web", "Flutter"]
+pygmentsstyle = "default"
+PygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [indexes]
   tag = "tags"

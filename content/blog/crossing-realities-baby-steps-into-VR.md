@@ -52,7 +52,7 @@ This type of movement is physics-based, so you are subject to gravity and can fa
 
 First add a [*Rigidbody*](https://docs.unity3d.com/Manual/class-Rigidbody.html "Rigidbody") to the *Player* (`Add Component` button in the Inspector tab and type *Rigidbody*). Then create a folder called *Scripts* in your *Assets* folder and create a new script in it (right click on the folder and `Create > C# Script`) called "PlayerMotorRigidbody". Open the script (double click on it) and copy-paste the following code (replace all the auto-generated code):
 
-```cs
+```csharp
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -111,7 +111,7 @@ Here we use a [*Character Controller*](https://docs.unity3d.com/ScriptReference/
 
 Create a new script called "PlayerMotorCharacterController" and copy-paste the following inside:
 
-```cs
+```csharp
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -154,7 +154,7 @@ This type of movement is also physics-based but this time gravity is disabled so
 
 Like previously, create a new script in the *Scripts* folder called "PlayerMotorDrag" and replace the auto-generated code with this one:
 
-```cs
+```csharp
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -238,7 +238,7 @@ Let's add an other obstacle! Create a new cube and call it "Wall", set its *Posi
 
 Now we can add the logic to the *Player*. Create a new script called "PlayerMotorNavMeshAgent" and copy-paste the following code into it:
 
-```cs
+```csharp
 using UnityEngine;
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -306,7 +306,7 @@ This *material* is very useful when you want to do tests.
 
 First create a folder called "Materials" in your *Assets* folder, then right click on the folder and select `Create > Material`, call it *Chessboard* (or whatever you like). Now create a new *Shader* (`Create > Shader > Unlit Shader`) and open it with a double click. Replace the existing code with this one:
 
-```c
+```csharp
 Shader "Custom/ChessboardShader" {
     Properties
     {
