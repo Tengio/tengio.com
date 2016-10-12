@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        <title>Tengio Blog</title>
+        {{ partial "head.html" . }}
+    </head>
+    <body id="page-top">
+        {{ partial "toolbar.html" . }}
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 col-md-12">
+                <section id="main">
+                  <h1 id="title">Blog</h1>
+                  {{ range .Data.Pages.GroupByDate "2006" }}
+                    <div class="post-summary">
+                      {{ range .Pages }}
+                          {{ .Render "list"}}
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </section>
+              <div/>
+              <div class="col-lg-2"></div>
+           </div>
+        </div>
+        {{ partial "flextext.html" . }}
+        {{ partial "analytics.html" . }}
+    </body>
+</html>
