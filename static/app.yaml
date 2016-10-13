@@ -1,5 +1,5 @@
 application: tengio-web
-version: 22
+version: 23
 runtime: go
 api_version: go1
 
@@ -51,6 +51,10 @@ handlers:
   static_files: blog/\1/index.html
   upload: blog/(.+)/index.html
 
+- url: /project/(.+)/
+  static_files: project/\1/index.html
+  upload: project/(.+)/index.html
+
 - url: /tags/(.+)/
   static_files: tags/\1/index.html
   upload: tags/(.+)/index.html
@@ -66,6 +70,9 @@ handlers:
 - url: /humans.txt
   static_files: humans.txt
   upload: humans.txt
+
+- url: /gocontacts
+  script: _go_app
 
 - url: /.*
   static_files: index.html

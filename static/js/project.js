@@ -49,4 +49,16 @@
       });
     }
     revealOnScroll();
+    $("#contact-form").validate();
+    $("button#submit").click(function() {
+       $.ajax({
+         type: "POST",
+         url: "/gocontacts",
+         data: $('form#contact-form').serialize(),
+         success: function(msg){
+           $('form#contact-form').hide();
+           $('div#success').fadeIn();
+         }
+     });
+   });
 })(jQuery);
