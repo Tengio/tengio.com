@@ -21,7 +21,7 @@ gulp.task('blog-image-cdn', ['prepare'], function() {
 });
 
 gulp.task('minify-html', ['blog-image-cdn'], function() {
-  return gulp.src(['public/**/*.html', '!public/project/**'])
+  return gulp.src(['public/**/*.html'])
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(function(file) {
       return file.base;

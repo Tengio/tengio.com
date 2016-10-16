@@ -10,8 +10,9 @@
     </div>
     <div class="container">
         <div class="row">
+            <br />
             {{ range .Site.Params.about.list }}
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
                 <div class="about-box">
                     <a href="{{ .link }}" target="_blank">
                       <img class="rounded" src="{{ $.Site.Params.cdn.images }}/authors/{{ .image }}" />
@@ -25,6 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
+                <br />
                 <p>{{ with .Site.Params.about.about1 }}{{ . | markdownify }}{{ end }}</p>
             </div>
         </div>
@@ -70,8 +72,8 @@
     <div class="container">
         <div class="row">
             {{ range .Site.Params.about.values.list }}
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                <div class="service-box" style="height: 220px;">
                     <i class="fa fa-4x {{ .icon }} animate-on-visibility text-primary"></i>
                     <h3>{{ .title }}</h3>
                     <p>{{ .description }}</p>

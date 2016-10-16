@@ -3,13 +3,13 @@
     <head>
         <title>{{ .Title }}</title>
         <meta name="author" content="{{ .Params.author }}">
-        <meta name="description" content="{{ .Summary }}">
+        <meta name="description" content="{{ .Params.description }}">
         <meta name="og:image" content="http://www.tengio.com/img/project/{{ .Params.id }}/thumbnail.jpg" />
-        <meta name="og:description" content="{{ .Summary }}"/>
+        <meta name="og:description" content="{{ .Params.description }}"/>
         <meta name="og:title" content="{{ .Title }}" />
         <meta name="og:type" content="website" />
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:description" content="{{ .Summary }}"/>
+        <meta name="twitter:description" content="{{ .Params.description }}"/>
         <meta name="twitter:title" content="{{ .Title }}"/>
         <meta name="twitter:image" content="http://www.tengio.com/img/project/{{ .Params.id }}/thumbnail.jpg"/>
         {{ partial "head.html" . }}

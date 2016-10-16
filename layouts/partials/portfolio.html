@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             {{ range .Site.Params.portfolio.list }}
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="portfolio-box">
                    {{ if ne .link "" }}
                       <a href="{{ .link }}" target="_blank"><img src="{{ $.Site.Params.cdn.images }}/clients/{{ .image }}" /></a>
