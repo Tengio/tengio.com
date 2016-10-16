@@ -9,7 +9,7 @@
   </div>
   <div class="container">
       <div class="row">
-            {{ range first 3 .Data.Pages }}
+            {{ range first 3 (where .Data.Pages "Section" "blog")}}
             <div class="col-lg-4 text-center">
                 {{ .Render "block"}}
             </div>

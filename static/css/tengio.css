@@ -225,7 +225,6 @@ header .header-content {
 
 .service-box {
     margin: 50px auto 0;
-    max-width: 400px;
     text-align: center;
 }
 
@@ -412,6 +411,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+    margin: 0px;
+    padding: 0px;
 }
 
 .rounded {
@@ -584,4 +585,8 @@ img[alt="article-img-centered"] {
 
 .author-links-disabled {
   color: rgba(0,0,0,.3);
+}
+
+.alternative-row-background {
+  background: #F1F1EF;
 }
