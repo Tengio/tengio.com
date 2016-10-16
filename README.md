@@ -98,8 +98,14 @@ Release uses [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-star
 
 This are main task implemented for you with gulp:
 - default task prepare local version using go, also listen to changes and automatically update content : ```gulp```
-- run local version using app engine : ```gulp run```
+- run local version using app engine : ```gulp start```
 - build and deploy on appengine : ```gulp deploy```
+
+**NOTE** to add slack integration env variable you need to create a file .env in the root of the project like:
+```
+SLACK_INTEGRATION_URL="https://hooks.slack.com/services/23423FSD/ERTFCVXXC3/SDFSDFWE234234sdsSDFDSDS"
+```
+Make sure to change the custom slack integration url.
 
 Tools
 -----

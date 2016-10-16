@@ -6,6 +6,9 @@ var replace = require('gulp-replace');
 var inline = require('gulp-inline');
 var minifyCss = require('gulp-minify-css');
 var shell = require('gulp-shell');
+var ngConfig = require('gulp-ng-config');
+
+require('dotenv').load();
 
 gulp.task('prepare', shell.task([
   'rm -rf public',
@@ -42,12 +45,20 @@ gulp.task('minify-res', ['minify-html'], function() {
     }));
 });
 
+gulp.task('replace-slack-token', ['minify-res'], function() {
+  return gulp.src('public/gocontacts/gocontacts.go')
+    .pipe(replace('{{slack-integration-url}}', process.env.SLACK_INTEGRATION_URL || ''))
+    .pipe(gulp.dest(function(file) {
+      return file.base;
+    }));
+});
+
 // -----------------------------------
 // Core tasks
 // -----------------------------------
 gulp.task('default', shell.task(['hugo server --buildDrafts -w -v .']))
-gulp.task('start', ['minify-res'], shell.task(['dev_appserver.py public']))
-gulp.task('deploy', ['minify-res'], shell.task(['appcfg.py update -v public']))
+gulp.task('start', ['replace-slack-token'], shell.task(['dev_appserver.py public']))
+gulp.task('deploy', ['replace-slack-token'], shell.task(['appcfg.py update -v public']))
 gulp.task('clean', shell.task(['rm -rf public']))
 
 // -----------------------------------
