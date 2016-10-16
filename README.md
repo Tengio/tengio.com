@@ -92,6 +92,9 @@ Hugo can do code Highlight server side with pygments pip package [see here](http
 
 Release and gulp :metal:
 ------------------------------------
+Make sure you have either npm or yarn. Run ```yarn``` to get all the dependencies first.
+
+
 Make sure to use the correct version (in static/app.yaml).
 
 Release uses [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) and some other [doc](https://gulp.readme.io/docs/getting-started).
