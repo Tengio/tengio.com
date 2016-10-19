@@ -134,8 +134,8 @@ pygmentsUseClasses = true
 			 image = "yoyo.jpg"
 
     [[params.portfolio.list]]
-       link = "https://getmondo.co.uk/"
-       image = "mondo.png"
+       link = "https://monzo.com/"
+       image = "monzo.png"
 
     [[params.portfolio.list]]
 			 link = "https://www.pearlshare.com/"
