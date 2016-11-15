@@ -7,13 +7,16 @@ author = "quentin"
 tags = [ "Unity", "Cardboard", "VR", "Daydream" ]
 +++
 
+![article-img-centered](/img/blog/0009/output_2.jpg "Jane Sutherland: Daydream 1895")
+
+
 ### Crossing realities tutorial
 1. [The beginning of a VR journey](/blog/crossing-realities-the-beginning-of-a-VR-journey/)
 2. [Baby steps into VR](/blog/crossing-realities-baby-steps-into-VR/)
 3. Ready to Daydream!
 
 ## Daywhat?
-So, Google finally released the [Daydream headset and controller](https://vr.google.com/intl/en_uk/daydream/headset/ "Daydream"), but what is Daydream anyway? Well, Daydream is not only about hardware, its also a set of specifications. To be able to use the Daydream controller a phone must have Google's "Daydream seal of approval", which means that it has been deemed powerful enough to run VR apps. This might looks like an annoying limitation, but it's actually a good thing for two reasons. First it gives us developers a base hardware to work on, so we can be sure that any VR app built for a Daydream phone will run smoothly on other Daydream devices. And last but not least, it gives users an idea of which devices they should use to run VR apps, so they don't shout "VR is sh**!" and turn completely away from it because they had a bad experience on a device not powerful enough for VR.
+So, Google finally released the [Daydream headset and controller](https://vr.google.com/intl/en_uk/daydream/headset/ "Daydream"), but what is Daydream anyway? Well, Daydream is not only about hardware, its also a set of specifications. To be able to use the Daydream controller a phone must have Google's "Daydream seal of approval", which means that it has been deemed powerful enough to run VR apps. This might look like an annoying limitation, but it's actually a good thing for two reasons. First, it gives us developers a base hardware to work on, so we can be sure that any VR app built for a Daydream phone will run smoothly on other Daydream devices. And last but not least, it gives users an idea of which devices they should use to run VR apps, so they don't shout "VR is sh**!" and turn completely away from it because they had a bad experience on a device not powerful enough for VR.
 
 
 ## I want to take control!
@@ -21,17 +24,17 @@ From a technical perspective the headset is like a standard Cardboard, with the 
 
 The controller is a lot more interesting, first because it increases **a lot** the possible interactions. Without it you only have one single button to do all your interactions, which means that most of the time you have to trick your way out of this issue.
 
-The controller is about 10cm long and 3.5cm wide. It features a circular touchpad that also has a pressure button, a *Home* button and an second button that you can configure (plus 2 volume buttons). I would personally have loved the controller to also have a trigger, but it would have required a bigger one.
+The controller is about 10cm long and 3.5cm wide. It features a circular touchpad that also has a pressure button, a *Home* button and a second button that you can configure (plus 2 volume buttons). I would personally have loved the controller to also have a trigger, but it would have required a bigger one.
 
  It can track its own orientation as well as the rotation speed and acceleration. **BUT** it **CANNOT** track its position. Concretely, it knows where it's pointing at, so you can point it in a direction to select an object, but it doesn't know if you are moving your arm forward and backward (or left and right), so you can't move the controller on a virtual object to grab it. This is the main difference with the [HTC Vive](https://www.vive.com/uk/product/ "HTC Vive") controller.
 
 
 ## How do I start?
 
-If you want to have fun with the controller and create your own Daydream apps in [Unity](https://unity3d.com/ "Unity") here what worked for me:
+If you want to have fun with the controller and create your own Daydream apps in [Unity](https://unity3d.com/ "Unity") here is what worked for me:
 
 ### 1. Get Daydream technical preview
-You need a special version of Unity called *Unity Daydream technical preview*. You can get it [*here*](https://unity3d.com/partners/google/daydream "Daydream technical preview"). Once you've downloaded it install it like a normal Unity version, it should be rather straightforward but if you have difficulties look at my previous blog post on how to [*configure Unity for Cardboard*](/blog/crossing-realities-the-beginning-of-a-VR-journey/ "The beginning of a VR journey"). By default it should install next to your normal Unity version (if you have any) and not overwrite it. You can check the name of the installation folder to check this. it also means that you must be careful and not open the wrong version of Unity...
+You need a special version of Unity called *Unity Daydream technical preview*. You can get it [*here*](https://unity3d.com/partners/google/daydream "Daydream technical preview"). Once you've downloaded it install it like a normal Unity version, it should be rather straightforward but if you have difficulties look at my previous blog post on how to [*configure Unity for Cardboard*](/blog/crossing-realities-the-beginning-of-a-VR-journey/ "The beginning of a VR journey"). By default it should install next to your normal Unity version (if you have any) and not overwrite it. You can check the name of the installation folder to check this. It also means that you must be careful and not open the wrong version of Unity...
 
 While it's installing you can download Android SDK 24.
 
@@ -50,7 +53,7 @@ Then click on *Install packages...* and go get a coffee while everything is inst
 ### 3. Set the Android SDK path in Unity
 Now you need to set the Android SDK location in Unity (the new *Daydream technical preview* Unity version that you just installed).
 To do this open Unity and create a new empty project. Go to the preference menu (Mac `Unity > Preferences...`, Windows `Edit > Preferences...`) and to the `External Tools` tab (on the left).
-Here you can check the Android SDK path, make sure it's the same that the one indicated at the top of the *Android SDK Manager* window.
+Here you can check the Android SDK path, make sure it's the same that as the one indicated at the top of the *Android SDK Manager* window.
 
 ![article-img-centered](/img/blog/0009/unity_android_sdk_path.PNG "Unity Android SDK Path")
 
@@ -82,7 +85,7 @@ Open the *ControllerDemo* scene (`GoogleVR > DemoScenes > ControllerDemo > Contr
   alt="article-img"
   title="Unity Player Settings">
 
-I didn't heard of any way to have the controller working in Unity emulator (unless you use a phone to [emulate the controller](https://developers.google.com/vr/daydream/dev-kit-setup "Emulate the Daydream controller"), but the point here is to use the actual controller...). So you will have to build the app to your Pixel.
+I didn't hear of any way to have the controller working in Unity emulator (unless you use a phone to [emulate the controller](https://developers.google.com/vr/daydream/dev-kit-setup "Emulate the Daydream controller"), but the point here is to use the actual controller...). So you will have to build the app to your Pixel.
 
 Remember to change the `Bundle Identifier` in the *Player Settings*, like for any other Android app in Unity. Then click `File > Build & Run`.
 
@@ -92,9 +95,11 @@ When it's done building, follow the instructions on your phone. The app features
 
 And here we are! You are all set up to create your how apps!
 
+![article-img-centered](/img/blog/0009/fallout_thumb_up.jpg "Fallout Thumb up")
+
 
 ## Gimme more!
-Here are a few other stuffs you could find interesting.
+Here are a few other things you could find interesting.
 
 ### Good to read
 1. [Google's documentation](https://developers.google.com/vr/unity/controller-basics "Google's Daydream controller documentation") for Daydream controller.
@@ -108,7 +113,7 @@ We plan on adding a lot more content and better art (whenever we get the time ^^
 
 ### Remove part of the useless controller emulator stuffs
 Right now the prefabs for Daydream still have parts for the controller emulator (with a phone, Cf previously). This is useless with the real controller.
-I didn't managed to disable it completely but you can turn off part of it by going on your *GvrControllerMain* GameObject and select `OFF` for `Emulator Connection Mode` on the `Gvr Controller` script.
+I didn't manage to disable it completely but you can turn off part of it by going on your *GvrControllerMain* GameObject and select `OFF` for `Emulator Connection Mode` on the `Gvr Controller` script.
 
 ### While building an app for Google Play Store
 If you want to release a Daydream app on Google Play Store you need to add special icons for Daydream (else the store refuses the .apk).

@@ -12,7 +12,7 @@ tags = [ "Unity", "Cardboard", "VR" ]
 ### Crossing realities tutorial
 1. [The beginning of a VR journey](/blog/crossing-realities-the-beginning-of-a-VR-journey/)
 2. Baby steps into VR
-
+3. [Ready to Daydream!](/blog/crossing-realities-ready-to-daydream/)
 
 ## Create your environment
 First create a new project `(File > New Project`) with any name you fancy and with 3D checked. Then load the *GoogleVRForUnity* package (`Assets > Import Package > Custom Package`) and select everything but the *DemoScene* folder.
