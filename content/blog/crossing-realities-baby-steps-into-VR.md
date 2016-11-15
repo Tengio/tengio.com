@@ -19,7 +19,7 @@ First create a new project `(File > New Project`) with any name you fancy and wi
 
 ![article-img-centered](/img/blog/0007/unity_import_GoogleVRForUnity_package.jpg "Import package")
 
-Now go to `GoogleVR > Prefabs` folder and drag and drop the *GvrViewerMain* prefab to your scene. This element will handle a lot of things for you (until cardboard becomes native in Unity and we don't need it anymore  :smiley:).
+Now go to `GoogleVR > Prefabs` folder and drag and drop the *GvrViewerMain* prefab to your scene. This element will handle a lot of things for you (until cardboard becomes native in Unity and we don't need it anymore :) ).
 
 Let's create our player. On the *Hierarchy* tab click `Create > 3D Object > Capsule`. Rename your capsule *Player* and drag and drop the *Main Camera* object that was automatically created for you by Unity into your *Player*. Now got to `GoogleVR > Prefabs > UI` and drag and drop the *GvrReticle* prefab inside the *Main Camera*. Then add a [*Physics Raycaster*](https://docs.unity3d.com/Manual/Raycasters.html "Raycasters") to your *Main Camera* by selecting it, clicking `Add Component` in the Inspector tab and typing “Raycaster” in the search field. Your *hierarchy* should look like this by now:
 
