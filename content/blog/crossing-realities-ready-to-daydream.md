@@ -2,12 +2,12 @@
 id = "0009"
 date = "2016-11-14T22:00:00+00:00"
 title = "Crossing realities: Ready to Daydream!"
-description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here we will see how to configure Unity to create apps for Google Daydream."
+description = "Crossing realities is a series of blog posts where I share my knowledge and experiences as I explore the possibilities of VR. Here we will see how to configure Unity to create apps for Daydream."
 author = "quentin"
 tags = [ "Unity", "Cardboard", "VR", "Daydream" ]
 +++
 
-![article-img-centered](/img/blog/0009/output_2.jpg "Jane Sutherland: Daydream 1895")
+![article-img-centered](/img/blog/0009/output.jpg "Jane Sutherland: Daydream 1895")
 
 
 ### Crossing realities tutorial
