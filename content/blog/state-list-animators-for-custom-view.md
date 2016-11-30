@@ -1,25 +1,27 @@
 +++
 id = "0010"
 date = "2016-11-29T17:40:27+00:00"
-title = "State List Animators for Custom View and Drawables"
+title = "State List Animators for Custom View"
 description = "Creating State List Animators for Custom Views or Drawables"
 author = "akshay"
-tags = [ "android" ]
+tags = [ "Android" ]
+draft = true
 +++
 
-![article-img](/img/blog/0004/hugo.jpg)
+![article-img](/img/blog/0010/animator.jpg)
 
 ## Introduction
 
 Material Design has been around for a few years now, and one of the fundamental aspects of Material Design is motion. Excerpt taken from the Material Design documentation:
 
-Motion shows how an app is organized and what it can do.
-Motion provides:
-* Guided focus between views
-* Hints at what will happen if a user completes a gesture
-* Hierarchical and spatial relationships between elements
-* Distraction from what’s happening behind the scenes (like fetching content or loading the next view)
-* Character, polish, and delight
+
+>Motion shows how an app is organized and what it can do. Motion provides:
+>
+>* Guided focus between views
+>* Hints at what will happen if a user completes a gesture
+>* Hierarchical and spatial relationships between elements
+>* Distraction from what’s happening behind the scenes (like fetching content or loading the next view)
+>* Character, polish, and delight
 
 ## What is a state list animator?
 
@@ -113,4 +115,4 @@ ViewOutlineProvider viewOutlineProvider = new ViewOutlineProvider() {
        };
        this.setOutlineProvider(viewOutlineProvider);
 ```
-and viola! we've got a wonderful rise on touch that corresponds to the shape of my chip. 
+and viola! we've got a wonderful rise on touch that corresponds to the shape of my chip.
