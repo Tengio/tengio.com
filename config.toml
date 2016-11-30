@@ -30,6 +30,7 @@ pygmentsUseClasses = true
 			portfolio = "Clients & Partners"
 			blog  = "Blog"
 			about = "About Us"
+			projects = "Projects"
 			values  = "Values"
 			contact   = "Contact"
 
