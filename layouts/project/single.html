@@ -17,96 +17,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-        <style>
-        body {
-          text-align: center;
-        }
-        h1 {
-          text-transform: uppercase;
-          font-size: 80px;
-          padding: 0px;
-          margin: 0px;
-          text-align: left;
-          padding: 2px;
-          color: white;
-        }
-        .title {
-          background: rgba(0,0,0,.68);
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-        .partners-thumbnail {
-          background-color: white;
-          width: 125px;
-          height: 125px;
-          padding: 10px;
-        }
-        .youtube-container {
-          position:relative;
-          padding-bottom:56.25%;
-          padding-top:30px;
-          height:0;
-          overflow:hidden;
-        }
-        .youtube-container iframe, .youtube-container object, .youtube-container embed {
-          position:absolute;
-          top:0;
-          left:0;
-          width:100%;
-          height:100%;
-        }
-        .title-background {
-          width:100%;
-          /*position: absolute;*/
-          top: 0px;
-          left: 0px;
-          background-image: url("/img/project/0001/living_room.jpg");
-          background-size: cover;
-        }
-        .feature {
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-        .outer {
-          display: table;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-        }
-        .middle {
-          display: table-cell;
-          vertical-align: middle;
-        }
-        .inner {
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .form-control {
-          margin-top:10px;
-          margin-bottom:10px;
-          border-radius: 3px;
-        }
-        input {
-          font-family: 'Roboto', sans-serif;
-          border-radius: 3px;
-        }
-        .btn-primary {
-          font-family: 'Roboto', sans-serif;
-          border-radius: 3px;
-          margin-top:10px;
-          margin-bottom:10px;
-        }
-        </style>
+        <link rel="stylesheet" href="/css/projects/{{ .Params.id }}/project.css" type="text/css">
     </head>
     <body id="page-top">
-      {{ partial "toolbar_project.html" . }}
-      {{ partial "vr_header.html" . }}
-      {{ partial "vr_products.html" . }}
-      {{ partial "vr_features.html" . }}
       {{ .Content }}
-      {{ partial "vr_partners.html" . }}
-      {{ partial "contact_form.html" . }}
-      {{ partial "contact_short.html" . }}
+      {{ if eq .Params.contacts nil }}
+        {{ partial "contact_form.html" . }}
+        {{ partial "contact_short.html" . }}
+      {{ end }}
       {{ partial "flextext.html" . }}
       {{ partial "analytics.html" . }}
       <script src="/js/project.js"></script>

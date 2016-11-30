@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(14, 14, 10);
+  text-align: center;
+}
+#cover { 
+}
+#cover-image {
+  width: 100%;
+  height: auto;
+}
+#mainNav {
+  background-color: transparent;
+}
+#play-image {
+  padding-top:25px;
+  padding-bottom:25px;
+  width:200px;
+  height:auto;
+}

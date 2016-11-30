@@ -1,0 +1,27 @@
+<section id="projects">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Projects</h2>
+          <hr class="primary">
+        </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+            {{ range first 2 (where .Data.Pages "Section" "project")}}
+            <div class="col-lg-6 text-center">
+                {{ .Render "block"}}
+            </div>
+            {{ end }}
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 text-center">
+            <a href="/projects/" class="fa fa-bars fa-3x animate-on-visibility" style="text-decoration: none; margin-top:40px;"></a>
+        </div>
+      </div>
+  </div>
+</section>
