@@ -14,6 +14,7 @@ tags = [ "Unity", "Cardboard", "VR" ]
 ### Crossing realities tutorial summary
 1. The beginning of a VR journey
 2. [Baby steps into VR](/blog/crossing-realities-baby-steps-into-VR/)
+3. [Ready to Daydream!](/blog/crossing-realities-ready-to-daydream/)
 
 
 ## Introduction

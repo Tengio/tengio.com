@@ -354,3 +354,6 @@ I will not explain how this code works as shaders are rather difficult to unders
 Now drag and drop your *shader* on your *material*, then drag your *material* on the *Plane*.
 
 <img class="modal-image" src="/img/blog/0007/scene_chessboard.jpg" alt="article-img" title="Scene with chessboard">
+
+### Read next
+[Crossing Realities: Ready to Daydream!](/blog/crossing-realities-ready-to-daydream/)
