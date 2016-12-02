@@ -126,3 +126,5 @@ setClipToOutline(true);
 and viola! we've got a wonderful stadium shaped chip thats rises on touch, has a beautiful replaceable ripple and casts a shadow that corresponds to the shape of my chip.
 
 Code can be found here in its entirety: https://github.com/Tengio/android-chips
+
+![article-img-centered](/img/blog/0010/screenshot.png)
