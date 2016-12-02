@@ -1,7 +1,7 @@
 +++
 id = "0008"
 date = "2016-10-08T14:30:00+00:00"
-title = "Stereo vision : Automated background blur"
+title = "Stereo vision: Automated background blur"
 description = "Ever since I heard that the new iPhone was to have two cameras, I've been excited at all the possibilities of having a widely used device with easy to use depth sensing capabilities."
 author = "shreyas"
 tags = [ "Image Processing", "Stereoscopy", "OpenCV" ]

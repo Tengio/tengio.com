@@ -7,6 +7,7 @@ description = "Lily the game."
 author = "Veronica,Harry"
 thumbnail = "/img/project/0002/thumbnail.jpg"
 contacts = "false"
+draft = true
 +++
 <nav id="mainNav" class="toolbar navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">

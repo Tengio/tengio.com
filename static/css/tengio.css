@@ -31,11 +31,13 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
     color: #f36618;
+    text-decoration: none;
 }
 
 #about a {
@@ -86,7 +88,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 0;
 }
 
 aside {
@@ -588,5 +590,85 @@ img[alt="article-img-centered"] {
 }
 
 .alternative-row-background {
-  background: #F1F1EF;
+  background: #eee;
+}
+
+.box-container {
+  background-color: white;
+  box-shadow: 0;
+  -moz-box-shadow: 0;
+  -webkit-box-shadow: 0;
+  -webkit-transition: box-shadow .3s;
+  -moz-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  height: 330px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.box-container h2 {
+  font-size: 28px;
+}
+
+.box-container:hover {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+}
+
+.box-link:hover,
+.box-link,
+.box-link:visited,
+.box-link:active {
+  color: black;
+}
+
+.box-header {
+  background-color: #f36618;
+  color: white;
+  padding: 8px;
+}
+
+.box-content {
+  padding: 8px;
+}
+
+.follow-us {
+  background-color: #f36618;
+  height:auto;
+  width:100%;
+  text-align: center;
+  padding: 16px;
+  margin-top: 96px;
+}
+
+.follow-us a {
+  padding: 16px;
+}
+
+.dark-row-background {
+  color: white;
+  background-color: #303c42;
+}
+
+.rights {
+  background-color:#455a64;
+  height:auto;
+  width:100%;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.primary-contacts {
+  padding: 64px;
+}
+
+#projects,
+#services,
+#portfolio,
+#about,
+#blog {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }

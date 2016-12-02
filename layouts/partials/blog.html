@@ -1,4 +1,4 @@
-<section id="blog">
+<section id="blog" class="alternative-row-background">
   <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -11,16 +11,16 @@
       <div class="row">
             {{ range first 3 (where .Data.Pages "Section" "blog")}}
             <div class="col-lg-4 text-center">
-                {{ .Render "block"}}
+              {{ .Render "block"}}
             </div>
             {{ end }}
           </div>
       </div>
   </div>
   <div class="container">
-      <div class="row">
+      <div class="row" style="margin-top:32px;">
         <div class="col-lg-4 col-lg-offset-4 text-center">
-            <a href="/blog/" class="fa fa-bars fa-3x animate-on-visibility" style="text-decoration: none; margin-top:40px;"></a>
+            <a href="/blog/" style="text-decoration: none;">READ MORE</a>
         </div>
       </div>
   </div>

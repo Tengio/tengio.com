@@ -8,16 +8,16 @@
         $('.fa-arrow-down').removeClass('infinite');
         event.preventDefault();
     });
-    // Highlight the top nav as scrolling occurs
+
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
+        target: '#mainNav',
         offset: 51
     })
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
+    $('.navbar-collapse ul li a img').click(function() {
         $('.navbar-toggle:visible').click();
     });
-    // Offset for Main Navigation
+
     $('#mainNav').affix({
         offset: {
             top: 100

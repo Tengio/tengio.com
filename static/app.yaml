@@ -1,5 +1,5 @@
 application: tengio-web
-version: 25
+version: 26
 runtime: go
 api_version: go1
 
