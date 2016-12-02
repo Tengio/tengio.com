@@ -2,7 +2,7 @@
 id = "0001"
 date = "2016-10-12T16:11:58+05:30"
 title = "Virtual reality for architecture"
-description = "VR Architect is a virtual reality software solution developed by Tengio for the AEC  (Architecture Engineering Construction) industry."
+description = "VR Architect is a software solution developed by Tengio as a virtual simulation, immersive design, architectural visualization, and communication tool for the AEC industry."
 summary = "VR Architect is a virtual reality software solution developed by Tengio for the AEC industry."
 author = "Komal,Veronica,Quentin"
 thumbnail = "/img/project/0001/thumbnail.jpg"

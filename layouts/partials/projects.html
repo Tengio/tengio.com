@@ -10,7 +10,7 @@
   <div class="container">
       <div class="row">
             {{ range first 2 (where .Data.Pages "Section" "project")}}
-            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-center">
+            <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
               <div class="box-container">
                 {{ .Render "block"}}
               </div>
@@ -19,11 +19,4 @@
           </div>
       </div>
   </div>
-  <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-lg-offset-4 text-center">
-            <a href="/projects/" class="fa fa-bars fa-3x animate-on-visibility" style="text-decoration: none; margin-top:40px;"></a>
-        </div>
-      </div>
-  </div> -->
 </section>

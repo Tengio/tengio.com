@@ -438,14 +438,12 @@ body {
 }
 
 .secondary-navigation img {
-    width:60px;
-    height:60px;
-    padding:10px;
+    width: 80px;
+    height: auto;
+    padding: 10px;
 }
 
 .secondary-navigation a {
-    width:60px;
-    height:60px;
     display:inline-block;
 }
 
@@ -456,8 +454,6 @@ body {
     }
 
     .secondary-navigation a {
-        width:60px;
-        height:60px;
         display:inline-block;
     }
 }
@@ -601,13 +597,15 @@ img[alt="article-img-centered"] {
   -webkit-transition: box-shadow .3s;
   -moz-transition: box-shadow .3s;
   transition: box-shadow .3s;
-  height: 330px;
+  height: 260px;
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-.box-container h2 {
-  font-size: 28px;
+@media(max-width:780px) {
+    .box-container {
+      height: auto;
+   }
 }
 
 .box-container:hover {
@@ -625,12 +623,25 @@ img[alt="article-img-centered"] {
 
 .box-header {
   background-color: #f36618;
-  color: white;
-  padding: 8px;
+  color: #fff;
+  padding: 4px;
+  height: 70px;
+}
+
+.box-container h2 {
+  margin-top: 8px;
+  padding-top: 0px;
+  font-size: 22px;
 }
 
 .box-content {
   padding: 8px;
+  font-size: 18px;
+}
+
+.box-content p {
+  line-height: 1.4;
+  color: #555;
 }
 
 .follow-us {
@@ -664,11 +675,18 @@ img[alt="article-img-centered"] {
   padding: 64px;
 }
 
-#projects,
 #services,
 #portfolio,
-#about,
-#blog {
+#about {
   padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+#projects {
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+#blog {
   padding-bottom: 96px;
 }
