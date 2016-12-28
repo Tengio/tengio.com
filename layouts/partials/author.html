@@ -6,10 +6,10 @@
   {{ else }}
     <a href="{{ .author.twitter }}" class="author-links" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
   {{ end }}
-  {{ if eq .author.linkedIn nil }}
+  {{ if eq .author.linkedin nil }}
     <i class="fa fa-linkedin author-links-disabled" aria-hidden="true"></i>
   {{ else }}
-    <a href="{{ .author.linkedIn }}" class="author-links" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="{{ .author.linkedin }}" class="author-links" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
   {{ end }}
   {{ if eq .author.github nil }}
     <i class="fa fa-github author-links-disabled" aria-hidden="true"></i>

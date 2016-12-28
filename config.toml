@@ -8,209 +8,200 @@ PygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [indexes]
-  tag = "tags"
+    tag = "tags"
 
 [sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+    changefreq = "monthly"
+    priority = 0.5
+    filename = "sitemap.xml"
 
 [params]
-	name = "Luigi Agosti, Akshay Dashrath"
-	description = "Tengio turns your idea into beautiful and reliable products on Android, iOS and the Web."
+    name = "Luigi Agosti, Akshay Dashrath"
+    description = "Tengio turns your idea into beautiful and reliable products on Android, iOS and the Web."
 
-  [params.cdn]
-    images = "https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img"
+    [params.cdn]
+        images = "https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img"
 
 	[params.navigation]
-		brand = "small_logo.svg"
+        brand = "small_logo.svg"
 
-		[params.navigation.links]
-			services = "Services"
-			portfolio = "Clients & Partners"
-			blog  = "Blog"
-			about = "About Us"
-			projects = "Projects"
-			values  = "Values"
-			contact   = "Contact"
+        [params.navigation.links]
+            services = "Services"
+            portfolio = "Clients & Partners"
+            blog  = "Blog"
+            about = "About Us"
+            projects = "Projects"
+            values  = "Values"
+            contact   = "Contact"
 
-	[params.about]
-		headline    = "About Us"
-		description = "We are mobile native developer experts"
-		about1 = "Mobile is what makes us tick. Working at the cutting edge. Making technology deliver. Creating stunning customer solutions. It’s what gets us out of bed in the morning. It’s why we love coming to work. It’s what we’re good at."
-		about2 = "Tengio is based in Shoreditch, London and we work with customers worldwide. We’ve brought together a team of dedicated, passionate developers who love building great products on mobile. We’ve got the experience that counts. From apps to SDKs, e-commerce to low-energy systems, we’ve got our finger on the pulse. Our customers – such as Groupon, Gumtree or Adzuna – trust us to deliver outstanding results. Every time. We wouldn’t settle for less. We love technology but we think personality is pretty important too. We like all sorts of random things. Ginger beer. Marathon running. Pen collecting. But we’re pretty sure that mobile is what we do best."
-		aboutTitle = "Who we are"
-		storyTitle = "Tengio story"
-		story1 = "In 2014, Akshay Dashrath and Luigi Agosti founded Tengio. The pair had previously worked together for several years at an established Android consultancy in London – later they contracted jointly on projects. Their dream was to create a company that would set new standards in mobile solutions. They had no shortage of experience to draw on. They’ve worked for clients such as Songkick, JP Morgan, Burberry, eBay (Gumtree), ASOS and Laundrapp. Combining technical expertise with business flair, they’ve built apps that have had more than ten million downloads on Google Play. "
-		quote = "Right from the start, we wanted Tengio to be something different – a place where we could do outstanding work with some of the best minds in mobile"
-		quoteAuthor = "Akshay Dashrath, co-founder"
+    [params.about]
+        headline = "About Us"
+        description = "We are mobile native developer experts"
+        about1 = "Mobile is what makes us tick. Working at the cutting edge. Making technology deliver. Creating stunning customer solutions. It’s what gets us out of bed in the morning. It’s why we love coming to work. It’s what we’re good at."
+        about2 = "Tengio is based in Shoreditch, London and we work with customers worldwide. We’ve brought together a team of dedicated, passionate developers who love building great products on mobile. We’ve got the experience that counts. From apps to SDKs, e-commerce to low-energy systems, we’ve got our finger on the pulse. Our customers – such as Groupon, Gumtree or Adzuna – trust us to deliver outstanding results. Every time. We wouldn’t settle for less. We love technology but we think personality is pretty important too. We like all sorts of random things. Ginger beer. Marathon running. Pen collecting. But we’re pretty sure that mobile is what we do best."
+        aboutTitle = "Who we are"
+        storyTitle = "Tengio story"
+        story1 = "In 2014, Akshay Dashrath and Luigi Agosti founded Tengio. The pair had previously worked together for several years at an established Android consultancy in London – later they contracted jointly on projects. Their dream was to create a company that would set new standards in mobile solutions. They had no shortage of experience to draw on. They’ve worked for clients such as Songkick, JP Morgan, Burberry, eBay (Gumtree), ASOS and Laundrapp. Combining technical expertise with business flair, they’ve built apps that have had more than ten million downloads on Google Play. "
+        quote = "Right from the start, we wanted Tengio to be something different – a place where we could do outstanding work with some of the best minds in mobile"
+        quoteAuthor = "Akshay Dashrath, co-founder"
 
-	   [[params.about.list]]
-			 name = "Akshay Dashrath"
-			 image = "akshay.jpg"
-			 link = "https://www.linkedin.com/in/akshaydashrath"
+        [[params.about.list]]
+            name = "Akshay Dashrath"
+            image = "akshay.jpg"
+            link = "https://www.linkedin.com/in/akshaydashrath"
 
-    [[params.about.list]]
-			 name = "Luigi Agosti"
-			 image = "luigi.jpg"
-			 link = "https://www.linkedin.com/in/luigiagosti"
+        [[params.about.list]]
+            name = "Luigi Agosti"
+            image = "luigi.jpg"
+            link = "https://www.linkedin.com/in/luigiagosti"
 
-  	[params.about.values]
-  		headline = "Values"
-  		description = "At Tengio, we live by our values. They shape the way we work and how we interact with the world."
+        [params.about.values]
+            headline = "Values"
+            description = "At Tengio, we live by our values. They shape the way we work and how we interact with the world."
 
-  		[[params.about.values.list]]
-  			 icon = "fa-diamond"
-  			 title = "Code Quality"
-  			 description = "We pride ourselves on writing great quality code."
+            [[params.about.values.list]]
+                icon = "fa-diamond"
+                title = "Code Quality"
+                description = "We pride ourselves on writing great quality code."
 
-  		[[params.about.values.list]]
-  			 icon = "fa-rocket"
-  			 title = "Speed"
-  			 description = "We deliver at amazing speed."
+            [[params.about.values.list]]
+                icon = "fa-rocket"
+                title = "Speed"
+                description = "We deliver at amazing speed."
 
-  		[[params.about.values.list]]
-  			 icon = "fa-comments-o"
-  			 title = "Communication"
-  			 description = "We believe in talking openly and honestly."
+            [[params.about.values.list]]
+                icon = "fa-comments-o"
+                title = "Communication"
+                description = "We believe in talking openly and honestly."
 
-  		[[params.about.values.list]]
-  			 icon = "fa-heart"
-  			 title = "Passion"
-  			 description = "We create solutions because that is what we love."
+            [[params.about.values.list]]
+                icon = "fa-heart"
+                title = "Passion"
+                description = "We create solutions because that is what we love."
 
-  [params.services]
+    [params.services]
 		headline = "Our services"
 		description1 = "The opportunities for mobile are limitless. And for those who take them, the rewards are huge. In essence, we believe that better mobile is a simple proposition. It’s about having the ambition and the know-how to develop stronger, more engaging and more valuable relationships. With your customers. With your workforce. With anyone you choose to."
 		description2 = "This is where Tengio can help: making mobile work for you. Putting it at the heart of how you do business. Delivering the product you need, when you need it. Understanding how your markets work. And creating the solutions upon which you can depend."
 
 		[[params.services.list]]
-		   icon = "fa-rocket"
-       title = "Technology"
-       description = "At Tengio, we love working with the latest technologies."
-			 tags = [ "Android & iOS",
-                "Virtual & Augmented Reality",
-								"Progressive web",
-								"Cloud solutions" ]
+			icon = "fa-rocket"
+            title = "Technology"
+			description = "At Tengio, we love working with the latest technologies."
+			tags = [ "Android & iOS","Virtual & Augmented Reality","Progressive web","Cloud solutions" ]
 
 		[[params.services.list]]
 			 icon = "fa-pencil-square-o"
 			 title = "Design"
 			 description = "Form vs. function? With Tengio, you won’t have to choose."
-			 tags = [ "Technical architecture",
-								"Material & best design practices",
-								"AB testing",
-								"Scalable code" ]
+			 tags = [ "Technical architecture","Material & best design practices", "AB testing","Scalable code" ]
 
-    [[params.services.list]]
-			 icon = "fa-university"
-       title = "Training"
-       description = "We help teams to benefit from our experience with real projects."
-			 tags = [ "Kotlin",
-			 					"TDD on Android",
-								"Android MVP",
-                "Unity VR intro" ]
+        [[params.services.list]]
+            icon = "fa-university"
+            title = "Training"
+            description = "We help teams to benefit from our experience with real projects."
+            tags = [ "Kotlin", "TDD on Android", "Android MVP", "Unity VR intro" ]
 
-	[params.portfolio]
-			headline = "Clients & partners"
+    [params.portfolio]
+        headline = "Clients & partners"
 
-		[[params.portfolio.list]]
-		 	 link = "https://www.groupon.com/"
-		 	 image = "groupon.jpg"
+        [[params.portfolio.list]]
+            link = "https://www.groupon.com/"
+            image = "groupon.jpg"
 
-		[[params.portfolio.list]]
-			 link = "http://www.gumtree.co.uk/"
-			 image = "gumtree.jpg"
+        [[params.portfolio.list]]
+            link = "http://www.gumtree.co.uk/"
+            image = "gumtree.jpg"
 
-    [[params.portfolio.list]]
-       link = "https://www.adzuna.co.uk/"
-       image = "adzuna.jpg"
+        [[params.portfolio.list]]
+            link = "https://www.adzuna.co.uk/"
+            image = "adzuna.jpg"
 
-	  [[params.portfolio.list]]
-			 link = "https://www.depop.com/"
-			 image = "depop.png"
+        [[params.portfolio.list]]
+            link = "https://www.depop.com/"
+            image = "depop.png"
 
-	  [[params.portfolio.list]]
-			 link = "http://yoyowallet.com/"
-			 image = "yoyo.jpg"
+        [[params.portfolio.list]]
+            link = "http://yoyowallet.com/"
+            image = "yoyo.jpg"
 
-    [[params.portfolio.list]]
-       link = "https://monzo.com/"
-       image = "monzo.png"
+        [[params.portfolio.list]]
+            link = "https://monzo.com/"
+            image = "monzo.png"
 
-    [[params.portfolio.list]]
-			 link = "https://www.pearlshare.com/"
-			 image = "pearlshare.png"
+        [[params.portfolio.list]]
+            link = "https://www.pearlshare.com/"
+            image = "pearlshare.png"
 
-    [[params.portfolio.list]]
-	 		 link = "http://amphio.co"
-	 	 	 image = "amphio.jpg"
+        [[params.portfolio.list]]
+            link = "http://amphio.co"
+            image = "amphio.jpg"
 
-  [params.authors]
-    [params.authors.akshay]
-       key = "akshay"
- 			 name = "Akshay"
- 			 image = "akshay.jpg"
-       description = "Co-Founder at Tengio, Android Developer, Amateur Photographer and Bird Watcher"
- 			 linkedIn = "https://www.linkedin.com/in/akshaydashrath"
-       twitter = "https://twitter.com/akshaydashrath"
-       github = "https://github.com/akshaydashrath"
+    [params.authors]
+        [params.authors.akshay]
+            key = "akshay"
+            name = "Akshay"
+            image = "akshay.jpg"
+            description = "Co-Founder at Tengio, Android Developer, Amateur Photographer and Bird Watcher"
+            linkedin = "https://www.linkedin.com/in/akshaydashrath"
+            twitter = "https://twitter.com/akshaydashrath"
+            github = "https://github.com/akshaydashrath"
 
-   [params.authors.flavio]
-       key = "flavio"
-			 name = "Flavio"
-			 image = "flavio.jpg"
-       description = "Flavio is an experienced Android developer who has recently started training other developers in topics ranging from Kotlin to Test Driven Development. His passion for craftsmanship principles drives him to spread the word of the importance of writing good, clean, testable code."
-       github = "https://github.com/memoizr"
+        [params.authors.flavio]
+            key = "flavio"
+            name = "Flavio"
+            image = "flavio.jpg"
+            description = "Flavio is an experienced Android developer who has recently started training other developers in topics ranging from Kotlin to Test Driven Development. His passion for craftsmanship principles drives him to spread the word of the importance of writing good, clean, testable code."
+            github = "https://github.com/memoizr"
 
-    [params.authors.oz]
-       key = "oz"
-			 name = "Oz"
-			 image = "oz.jpg"
-       description = "Oz is an enthusiastic Android developer with a keen eye for clean, considered and creative code. When not at his desk his biggest passions are traveling and training in boxing/brazilian jiu jitsu."
-			 linkedIn = "https://www.linkedin.com/in/ozhan-saat-768556b6"
-       twitter = "https://twitter.com/Oz_Saat"
-       github = "https://github.com/ozsaat"
+        [params.authors.oz]
+            key = "oz"
+            name = "Oz"
+            image = "oz.jpg"
+            description = "Oz is an enthusiastic Android developer with a keen eye for clean, considered and creative code. When not at his desk his biggest passions are traveling and training in boxing/brazilian jiu jitsu."
+            linkedin = "https://www.linkedin.com/in/ozhan-saat-768556b6"
+            twitter = "https://twitter.com/Oz_Saat"
+            github = "https://github.com/ozsaat"
 
-    [params.authors.luigi]
-       key = "luigi"
- 			 name = "Luigi"
- 			 image = "luigi.jpg"
-       description = "Luigi is a developer with years of experience in many types of projects and technologies."
- 			 linkedIn = "https://www.linkedin.com/in/luigiagosti"
-       twitter = "https://twitter.com/luigiagosti"
-       github = "https://github.com/luigi-agosti"
+        [params.authors.luigi]
+            key = "luigi"
+            name = "Luigi"
+            image = "luigi.jpg"
+            description = "Luigi is a developer with years of experience in many types of projects and technologies."
+            linkedin = "https://www.linkedin.com/in/luigiagosti"
+            twitter = "https://twitter.com/luigiagosti"
+            github = "https://github.com/luigi-agosti"
 
-    [params.authors.quentin]
-       key = "quentin"
-       name = "Quentin"
-       image = "quentin.jpg"
-       description = "Quentin found himself a passion in augmented and virtual reality and has been testing and learning in this field ever since. Now he wants to help back the community by sharing the result of his studies."
-       linkedIn = "https://www.linkedin.com/in/quentinleguennec"
-       twitter = "https://twitter.com/QuentinLG_07"
-       github = "https://github.com/quentinleguennec"
+        [params.authors.quentin]
+            key = "quentin"
+            name = "Quentin"
+            image = "quentin.jpg"
+            description = "Quentin found himself a passion in augmented and virtual reality and has been testing and learning in this field ever since. Now he wants to help back the community by sharing the result of his studies."
+            linkedin = "https://www.linkedin.com/in/quentinleguennec"
+            twitter = "https://twitter.com/QuentinLG_07"
+            github = "https://github.com/quentinleguennec"
 
-    [params.authors.shreyas]
-       key = "shreyas"
-       name = "Shreyas"
-       image = "shreyas.jpg"
-       description = "Shreyas Skandan is pursuing a Master’s degree in Robotics at the University of Pennsylvania. He primary research interests are in Machine Perception and Machine Learning. He is currently working on 3D tracking using multiple stereo camera rigs."
-       linkedIn = "https://www.linkedin.com/in/shreyasskandan"
-       twitter = "https://twitter.com/ShreyasSkandan"
-       github = "https://github.com/shreyasskandan"
+        [params.authors.shreyas]
+            key = "shreyas"
+            name = "Shreyas"
+            image = "shreyas.jpg"
+            description = "Shreyas Skandan is pursuing a Master’s degree in Robotics at the University of Pennsylvania. He primary research interests are in Machine Perception and Machine Learning. He is currently working on 3D tracking using multiple stereo camera rigs."
+            linkedin = "https://www.linkedin.com/in/shreyasskandan"
+            twitter = "https://twitter.com/ShreyasSkandan"
+            github = "https://github.com/shreyasskandan"
 
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "We love talking mobile. From big ideas to nuts and bolts, a conversation is where it all starts. Whatever’s on your mind, we’d love to hear from you."
-		phone = "+44 2032906415"
-		email = "contact@tengio.com"
-		address = "35 Kingsland Road Shoreditch E2 8AA"
-    googlemap = "https://www.google.co.uk/maps/place/Tengio+Ltd/@51.5291439,-0.0806492,17z/data=!4m13!1m7!3m6!1s0x48761cbbbc841443:0x4241045b95d3f158!2sShoreditch+Building,+35+Kingsland+Rd,+Hackney,+London+E2+8AA!3b1!8m2!3d51.5291439!4d-0.0784605!3m4!1s0x0:0x41863c6057b925c3!8m2!3d51.5291441!4d-0.0784606"
-		city = "London"
-		country = "United Kingdom"
-		twitter = "https://goo.gl/cvmdxh"
-    facebook = "https://goo.gl/DHBIHa"
-    linkedin = "https://goo.gl/0sLbTI"
-    instagram = "https://goo.gl/oTVmj3"
-    youtube = "https://goo.gl/jbqlws"
-		companyName = "Tengio Ltd"
+    [params.contact]
+        headline = "Let's Get In Touch!"
+        description = "We love talking mobile. From big ideas to nuts and bolts, a conversation is where it all starts. Whatever’s on your mind, we’d love to hear from you."
+        phone = "+44 2032906415"
+        email = "contact@tengio.com"
+        address = "35 Kingsland Road Shoreditch E2 8AA"
+        googlemap = "https://www.google.co.uk/maps/place/Tengio+Ltd/@51.5291439,-0.0806492,17z/data=!4m13!1m7!3m6!1s0x48761cbbbc841443:0x4241045b95d3f158!2sShoreditch+Building,+35+Kingsland+Rd,+Hackney,+London+E2+8AA!3b1!8m2!3d51.5291439!4d-0.0784605!3m4!1s0x0:0x41863c6057b925c3!8m2!3d51.5291441!4d-0.0784606"
+        city = "London"
+        country = "United Kingdom"
+        twitter = "https://goo.gl/cvmdxh"
+        facebook = "https://goo.gl/DHBIHa"
+        linkedin = "https://goo.gl/0sLbTI"
+        instagram = "https://goo.gl/oTVmj3"
+        youtube = "https://goo.gl/jbqlws"
+        companyName = "Tengio Ltd"

@@ -90,19 +90,18 @@ Hugo can do code Highlight server side with pygments pip package [see here](http
 - Finally pygments: ```pip install Pygments```
 
 
-Release and gulp :metal:
+Gulp :metal:
 ------------------------------------
-Make sure you have either npm or yarn. Run ```yarn``` to get all the dependencies first.
-
-
-Make sure to use the correct version (in static/app.yaml).
-
-Release uses [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) and some other [doc](https://gulp.readme.io/docs/getting-started).
+Make sure you have either npm or yarn. Run ```yarn``` to get all the dependencies first. If you are using npm you need to run ```npm install`` to get the dependencies.
 
 This are main task implemented for you with gulp:
 - default task prepare local version using go, also listen to changes and automatically update content : ```gulp```
 - run local version using app engine : ```gulp start```
 - build and deploy on appengine : ```gulp deploy```
+
+Make sure to use the correct version (in static/app.yaml).
+
+Release uses [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) and some other [doc](https://gulp.readme.io/docs/getting-started).
 
 **NOTE** to add slack integration env variable you need to create a file .env in the root of the project like:
 ```
