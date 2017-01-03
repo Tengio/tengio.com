@@ -20,7 +20,7 @@ pygmentsUseClasses = true
     description = "Tengio turns your idea into beautiful and reliable products on Android, iOS and the Web."
 
     [params.cdn]
-        images = "https://raw.githubusercontent.com/Tengio/tengio.com/master/static/img"
+        images = "/img"
 
 	[params.navigation]
         brand = "small_logo.svg"

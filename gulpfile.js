@@ -10,10 +10,9 @@ var ngConfig = require('gulp-ng-config');
 
 require('dotenv').load();
 
-gulp.task('prepare', shell.task([
-  'rm -rf public',
-  'hugo -s .'
-]))
+gulp.task('clean', shell.task(['rm -rf public']))
+
+gulp.task('prepare', ['clean'], shell.task(['hugo -s .']))
 
 gulp.task('blog-image-cdn', ['prepare'], function() {
   gulp.src(['public/blog/**/*', 'public/tags/**/*'])
@@ -56,7 +55,7 @@ gulp.task('replace-slack-token', ['minify-res'], function() {
 // -----------------------------------
 // Core tasks
 // -----------------------------------
-gulp.task('default', shell.task(['hugo server --buildDrafts -w -v .']))
+gulp.task('default', ['clean'], shell.task(['hugo server --buildDrafts -w -v --destination public .']))
 gulp.task('start', ['replace-slack-token'], shell.task(['dev_appserver.py public']))
 gulp.task('deploy', ['replace-slack-token'], shell.task(['appcfg.py update -v public']))
 gulp.task('clean', shell.task(['rm -rf public']))
