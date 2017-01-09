@@ -1,28 +1,24 @@
 +++
-id = "0011"
+id = "0012"
 title = "Gradle : Reduce duplication accross projects"
 description = "Gradle plugins and scripts to reduce duplication of code across projects"
-date = "2016-12-29T17:40:27+00:00"
+date = "2017-12-29T17:40:27+00:00"
 author = "luigi"
 tags = [ "Gradle", "Android" ]
 +++
 
-## Introduction ??
-
 Holidays are always a good moment to stop and reflect a little bit about the last few projects. And this is even more true for xmas holidays as November and December are always busy months.
 
-During the last couple of months in Tengio we have created a few open source library and demo app, as a reasult we have plenty of duplicated code in build scripts.
+During the last couple of months in Tengio we have created a few open source library and demo app, as a reasult we have plenty of duplicated code in build scripts. I decided to have a deeper look at the gradle build scripts and plugins that we use and extract the duplication where possible.
 
-I decided to have a deeper look at the gradle build scripts and plugins that we use and extract the duplication where possible.
-
-I set the following requirements:
+I set the following requirements for this task:
 * Cost in terms of my time should not be more than 2 days
-* The abstraction should increase the learning curve for other developers in the team
-* The value of the work should affect positively more than 1 project.
+* The abstraction should not increase the learning curve for other developers in the team
+* The changes should affect positively more than 1 project.
 
 ## Duplication in gradle scripts
 
-It is quite easy to identify the primary source of duplication in the gradle scripts of our projects. Just by looking at a few projects build.gradle files I have identified the following parts:
+It is quite easy to identify the primary source of duplication in the gradle scripts of our projects. Just by looking at a few projects ```build.gradle``` files I have identified the following parts:
 - checkstyle
 - bintray
 
