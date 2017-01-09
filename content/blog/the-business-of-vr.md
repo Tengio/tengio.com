@@ -1,12 +1,13 @@
 +++
 id = "0011"
-date = "2016-11-29T17:40:27+00:00"
+date = "2017-01-09T17:40:27+00:00"
 title = "The Business of Virtual Reality: New Build Property Sales"
-description = "A brief look into the business possibilities of Virtual Reality"
+description = "A series of posts about the business applications of Virtual Reality. The post specifically deals with using Virtual Reality in new build property sales."
 author = "akshay"
-tags = [ "Virtual Reality" ]
+tags = [ "VR" ]
 +++
 
+![article-img](/img/blog/0011/vr_living_room.jpg)
 
 ## What is Virtual Reality
 
@@ -34,9 +35,11 @@ An added benefit once the Virtual experience is created, you also can create as 
 
 We've for example created the two videos below from a VR model for an apartment.
 
-//TODO: Add video 1
+{{< youtube EmAoENCBUUY >}}
 
-//TODO: Add video 2
+<br/>
+
+{{< youtube F8oF5AtloTY >}}
 
 ## Conclusion
 

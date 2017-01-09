@@ -3,6 +3,7 @@ id = "0012"
 title = "Gradle : Reduce duplication accross projects"
 description = "Gradle plugins and scripts to reduce duplication of code across projects"
 date = "2017-12-29T17:40:27+00:00"
+draft = true
 author = "luigi"
 tags = [ "Gradle", "Android" ]
 +++
