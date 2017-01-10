@@ -142,7 +142,7 @@ pygmentsUseClasses = true
             key = "akshay"
             name = "Akshay"
             image = "akshay.jpg"
-            description = "Co-Founder at Tengio, Android Developer, Amateur Photographer and Bird Watcher"
+            description = "Co-Founder at Tengio, Amateur Photographer and Bird Watcher"
             linkedin = "https://www.linkedin.com/in/akshaydashrath"
             twitter = "https://twitter.com/akshaydashrath"
             github = "https://github.com/akshaydashrath"
@@ -189,6 +189,14 @@ pygmentsUseClasses = true
             linkedin = "https://www.linkedin.com/in/shreyasskandan"
             twitter = "https://twitter.com/ShreyasSkandan"
             github = "https://github.com/shreyasskandan"
+
+        [params.authors.kate]
+            key = "kate"
+            name = "Kate"
+            image = "kate.jpg"
+            description = ""
+            linkedin = "https://uk.linkedin.com/in/katherineefholden"
+            twitter = "https://twitter.com/darthmongoose"
 
     [params.contact]
         headline = "Let's Get In Touch!"
