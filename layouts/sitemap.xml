@@ -1,5 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {{ range .Data.Pages }}
+  {{ range where .Data.Pages "Section" "blog" }}
   <url>
     <loc>{{ .Permalink }}</loc>
     <lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</lastmod>{{ with .Sitemap.ChangeFreq }}
@@ -12,5 +12,11 @@
     <lastmod>2016-08-01T16:00:58+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tengio.com/</loc>
+    <lastmod>2017-01-09T17:40:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
   </url>
 </urlset>
