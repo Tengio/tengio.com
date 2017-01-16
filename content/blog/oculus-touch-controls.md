@@ -43,7 +43,7 @@ Again in the tracking space object, you'll discover two game objects that are ca
 ![article-img-centered](/img/blog/0013/anchors.png)
 *Controller anchors*
 
-Now if you have no need for  shader based hands then you can proceed with creating block based hands! This is the best and quickest way to check that your controllers are working within Unity. Simply spawn a cube and child it to the right hand and then doing the same for the left. Upon doing this **right click ** the **transform component** of the cube and hit **reset**. Make sure to scale the cubes down as well to correlate with the controller's size, I went with a 0.2 scale factor. This positions it at the center of its parent, which in this case is the controller. Now when you move your hands around in-game, and everything has been setup correctly, you should see two cubes replacing your hand positions. 
+Now if you have no need for  shader based hands then you can proceed with creating block based hands! This is the best and quickest way to check that your controllers are working within Unity. Simply spawn a cube and child it to the right hand and then doing the same for the left. Upon doing this **right click** the **transform component** of the cube and hit **reset**. Make sure to scale the cubes down as well to correlate with the controller's size, I went with a 0.2 scale factor. This positions it at the center of its parent, which in this case is the controller. Now when you move your hands around in-game, and everything has been setup correctly, you should see two cubes replacing your hand positions. 
 
 ![article-img](/img/blog/0013/minecraft_hands.png)
 *Minecraft-esque hands!*
