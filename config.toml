@@ -198,6 +198,15 @@ pygmentsUseClasses = true
             linkedin = "https://uk.linkedin.com/in/katherineefholden"
             twitter = "https://twitter.com/darthmongoose"
 
+        [params.authors.harry]
+            key = "harry"
+            name = "Harry Roper"
+            image = "harry.jpg"
+            description = "Harry enjoys making games that make an impact utilising the latest technology's available to him. He also enjoys a good glass of whiskey and jazz based hiphop."
+            linkedin = "https://www.linkedin.com/in/harry-roper-434a8a130"
+            twitter = "https://twitter.com/harry_aldian"
+            github = "https://github.com/Aldian1"
+
     [params.contact]
         headline = "Let's Get In Touch!"
         description = "We love talking mobile. From big ideas to nuts and bolts, a conversation is where it all starts. Whatever’s on your mind, we’d love to hear from you."
