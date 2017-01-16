@@ -7,8 +7,8 @@ default_expiration: "7d"
 
 handlers:
 - url: /favicon.ico
-  static_files: img/small_logo.svg
-  upload: img/small_logo.svg
+  static_files: img/small_logo.png
+  upload: img/small_logo.png
 
 - url: /img
   static_dir: img
