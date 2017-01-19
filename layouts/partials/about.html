@@ -14,8 +14,8 @@
             {{ range .Site.Params.about.list }}
             <div class="col-lg-6 col-md-6 col-sm-6 text-center">
                 <div class="about-box">
-                    <a href="{{ .link }}" target="_blank">
-                      <img class="rounded" src="{{ $.Site.Params.cdn.images }}/authors/{{ .image }}" />
+                    <a href="{{ .link }}" target="_blank" rel="noopener">
+                      <img class="rounded" src="{{ $.Site.Params.cdn.images }}/authors/{{ .image }}" alt="Founder"/>
                     </a>
                     <h3>{{ .name }}</h3>
                 </div>

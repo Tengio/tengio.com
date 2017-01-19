@@ -13,7 +13,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="portfolio-box">
                    {{ if ne .link "" }}
-                      <a href="{{ .link }}" target="_blank"><img src="{{ $.Site.Params.cdn.images }}/clients/{{ .image }}" /></a>
+                      <a href="{{ .link }}" target="_blank" rel="noopener"><img src="{{ $.Site.Params.cdn.images }}/clients/{{ .image }}" alt="Partner"/></a>
                    {{ end }}
                 </div>
             </div>

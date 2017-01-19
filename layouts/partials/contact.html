@@ -1,10 +1,10 @@
 <section id="contact" class="dark-row-background">
     <div class="follow-us">
-        <a href="{{ with .Site.Params.contact.twitter }}{{ . }}{{ end }}" target="_blank"><i class="fa fa-twitter fa-3x animate-on-visibility" style="color:white;"></i></a>
-        <a href="{{ with .Site.Params.contact.facebook }}{{ . }}{{ end }}" target="_blank"><i class="fa fa-facebook fa-3x animate-on-visibility" style="color:white;"></i></a>
-        <a href="{{ with .Site.Params.contact.linkedin }}{{ . }}{{ end }}" target="_blank"><i class="fa fa-linkedin fa-3x animate-on-visibility" style="color:white;"></i></a>
-        <a href="{{ with .Site.Params.contact.instagram }}{{ . }}{{ end }}" target="_blank"><i class="fa fa-instagram fa-3x animate-on-visibility" style="color:white;"></i></a>
-        <a href="{{ with .Site.Params.contact.youtube }}{{ . }}{{ end }}" target="_blank"><i class="fa fa-youtube fa-3x animate-on-visibility" style="color:white;"></i></a>
+        <a href="{{ with .Site.Params.contact.twitter }}{{ . }}{{ end }}" target="_blank" rel="noopener"><i class="fa fa-twitter fa-3x animate-on-visibility" style="color:white;"></i></a>
+        <a href="{{ with .Site.Params.contact.facebook }}{{ . }}{{ end }}" target="_blank" rel="noopener"><i class="fa fa-facebook fa-3x animate-on-visibility" style="color:white;"></i></a>
+        <a href="{{ with .Site.Params.contact.linkedin }}{{ . }}{{ end }}" target="_blank" rel="noopener"><i class="fa fa-linkedin fa-3x animate-on-visibility" style="color:white;"></i></a>
+        <a href="{{ with .Site.Params.contact.instagram }}{{ . }}{{ end }}" target="_blank" rel="noopener"><i class="fa fa-instagram fa-3x animate-on-visibility" style="color:white;"></i></a>
+        <a href="{{ with .Site.Params.contact.youtube }}{{ . }}{{ end }}" target="_blank" rel="noopener"><i class="fa fa-youtube fa-3x animate-on-visibility" style="color:white;"></i></a>
     </div>
     <div class="container primary-contacts">
         <div class="row">
@@ -21,11 +21,11 @@
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                   <i class="fa fa-envelope-o fa-3x animate-on-visibility"></i>
-                  <p><a href="mailto:{{ with .Site.Params.contact.email }}{{ . }}{{ end }}" target="_blank">{{ with .Site.Params.contact.email }}{{ . }}{{ end }}</a></p>
+                  <p><a href="mailto:{{ with .Site.Params.contact.email }}{{ . }}{{ end }}" target="_blank" rel="noopener">{{ with .Site.Params.contact.email }}{{ . }}{{ end }}</a></p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                   <i class="fa fa-map-signs fa-3x animate-on-visibility"></i>
-                  <p><a href="{{ with .Site.Params.contact.googlemap }}{{ . }}{{ end }}" target="_blank">{{ with .Site.Params.contact.address }}{{ . }}{{ end }}</a></p>
+                  <p><a href="{{ with .Site.Params.contact.googlemap }}{{ . }}{{ end }}" target="_blank" rel="noopener">{{ with .Site.Params.contact.address }}{{ . }}{{ end }}</a></p>
               </div>
             </div>
           </div>
