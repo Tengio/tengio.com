@@ -14,6 +14,7 @@ tags = [ "Unity", "Cardboard", "VR", "Daydream" ]
 1. [The beginning of a VR journey](/blog/crossing-realities-the-beginning-of-a-VR-journey/)
 2. [Baby steps into VR](/blog/crossing-realities-baby-steps-into-VR/)
 3. Ready to Daydream!
+4. [Tips & Tricks](/blog/crossing-realities-tips-and-tricks/)
 
 ## Daywhat?
 So, Google finally released the [Daydream headset and controller](https://vr.google.com/intl/en_uk/daydream/headset/ "Daydream"), but what is Daydream anyway? Well, Daydream is not only about hardware, its also a set of specifications. To be able to use the Daydream controller a phone must have Google's "Daydream seal of approval", which means that it has been deemed powerful enough to run VR apps. This might look like an annoying limitation, but it's actually a good thing for two reasons. First, it gives us developers a base hardware to work on, so we can be sure that any VR app built for a Daydream phone will run smoothly on other Daydream devices. And last but not least, it gives users an idea of which devices they should use to run VR apps, so they don't shout "VR is sh**!" and turn completely away from it because they had a bad experience on a device not powerful enough for VR.
@@ -120,3 +121,6 @@ If you want to release a Daydream app on Google Play Store you need to add speci
 You can set them in the `Player Settings...` `Other Settings` section. Click on the small arrow next to `Daydream`.
 
 ![article-img-centered](/img/blog/0009/unity_daydream_icon.PNG "Unity Player Settings")
+
+### Read next
+[Crossing Realities: Tips & Tricks](/blog/crossing-realities-tips-and-tricks/)
