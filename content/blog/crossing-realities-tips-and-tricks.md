@@ -38,12 +38,12 @@ But enough with the tales of my adventures, here is what you can do with this *I
 ### The uses
 If you are familiar with Unity [*Event Triggers*](https://docs.unity3d.com/Manual/script-EventTrigger.html) you know that you can use them to interact with *GameObjects* using your mouse. Google have created an *Input Module* to detect gazed based event for the Cardboard, which is pretty handy to create cool interactions :). And if you don't know *Event Triggers* then you definitely have to [watch this tutorial](https://unity3d.com/learn/tutorials/topics/user-interface-ui/ui-events-and-event-triggers) by Unity!
 
-![article-img-centered](/img/blog/0014/event_trigger_mouse.png "Mouse Event Trigger")
+![article-img-centered](/img/blog/0014/event_trigger_mouse.jpg "Mouse Event Trigger")
 <center>Mouse Event Trigger</center>
 
 What Ghosthands does is giving you the same flexibility by offering you a range of events to listen to for the Oculus Touch controllers.
 
-![article-img-centered](/img/blog/0014/event_trigger_oculus_touch.png "Oculus Touch Event Trigger")
+![article-img-centered](/img/blog/0014/event_trigger_oculus_touch.jpg "Oculus Touch Event Trigger")
 <center>Ghosthands Event Trigger</center>
 
 What it **doesn't do** (yet) is send events to UI elements that don't have a collider (but if you add a collider it will work fine).
@@ -56,12 +56,12 @@ You don't have much to do to use this plugin, it's the same setup as using Unity
 3. Drag and drop the *LeftHandAnchor* and *RightHandAnchor* GameObjects from your *OVRCameraRig > TrackingSpace* GameObject into the corresponding slots of the *Oculus Touch Input Module*.
 4. Go to any GameObject for which you want to register an event. Make sure that it has a collider (it works fine if it's a trigger collider). Add an *Oculus Touch Event Trigger* component (`Add Component > Event >  Oculus Touch Event Trigger`). And use it as you would for a classic *Event Trigger*!
 
-![article-img-centered](/img/blog/0014/oculus_touch_input_module.png "Event System")
+![article-img-centered](/img/blog/0014/oculus_touch_input_module.jpg "Event System")
 
 ### The bonus
 I added a handy Debug Lines option (check the box in the *Oculus Touch Input Module*) which traces a line from each controller in its forward direction, so you can see clearly where you are pointing at.
 
-![article-img-centered](/img/blog/0014/debug_lines.png "Debug Lines")
+![article-img-centered](/img/blog/0014/debug_lines.jpg "Debug Lines")
 
 ### The parameters
 In *Oculus Touch Input Module*:
