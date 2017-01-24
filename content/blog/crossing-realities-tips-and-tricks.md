@@ -51,7 +51,7 @@ What it **doesn't do** (yet) is send events to UI elements that don't have a col
 ### The setup
 You don't have much to do to use this plugin, it's the same setup as using Unity *Event System*:
 
-1. Get the [*Unity Package*](https://docs.unity3d.com/Manual/AssetPackages.html) *OculusTouchInputModule.unitypackage* from [our Github repository](https://github.com/Tengio/ghosthands "Tengio's Github") and import it in your project.
+1. Get the [*Unity Package*](https://docs.unity3d.com/Manual/AssetPackages.html) *OculusTouchInputModule . unitypackage* from [our Github repository](https://github.com/Tengio/ghosthands "Tengio's Github") and import it in your project.
 2. Create an [*EventSystem*](https://docs.unity3d.com/Manual/EventSystem.html) GameObject in your Scene (`Create > UI > Event System`), remove the *Standalone Input Module* component from it, add an *Oculus Touch Input Module* (`Add Component > Event >  Oculus Touch Input Module`).
 3. Drag and drop the *LeftHandAnchor* and *RightHandAnchor* GameObjects from your *OVRCameraRig > TrackingSpace* GameObject into the corresponding slots of the *Oculus Touch Input Module*.
 4. Go to any GameObject for which you want to register an event. Make sure that it has a collider (it works fine if it's a trigger collider). Add an *Oculus Touch Event Trigger* component (`Add Component > Event >  Oculus Touch Event Trigger`). And use it as you would for a classic *Event Trigger*!

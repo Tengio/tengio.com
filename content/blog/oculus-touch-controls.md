@@ -4,7 +4,7 @@ date = "2017-01-16T19:20:10+00:00"
 title = "Oculus Touch Controls"
 description = "Last week we had received our oculus touch controllers for the office and after having played super hot, and other such titles, we were all deeply satisfied..."
 author = "harry"
-tags = [ "VR", "Games" ]
+tags = [ "VR", "Games", "Oculus" ]
 +++
 
 I tend to find myself in quite a lucky position at Tengio. Because I'm an intern I get to do quite a bit of porting of our products to other devices which in turn lets me play around with new opportunities presented by other platforms. This week I got the opportunity to port [our daydream app](http://www.tengio.com/blog/oz-chicken-slayer-case-study/) too oculus rift which leads to some exciting changes to the app.

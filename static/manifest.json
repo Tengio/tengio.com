@@ -2,8 +2,6 @@
   "name": "Tengio",
   "short_name": "Tengio",
   "start_url": "index.html",
-  "display": "standalone",
-  "orientation": "landscape",
   "icons": [{
         "src": "img/logo-72x72.png",
         "sizes": "72x72",
