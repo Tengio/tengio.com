@@ -5,12 +5,14 @@ description = "Gradle plugins and scripts to reduce duplication of code across p
 date = "2017-12-29T17:40:27+00:00"
 draft = true
 author = "luigi"
-tags = [ "Gradle", "Android" ]
+tags = [ "Gradle", "Android", "Checkstyle", "Bintray" ]
 +++
 
-Holidays are always a good moment to stop and reflect a little bit about the last few projects. And this is even more true for xmas holidays as November and December are always busy months.
+Holidays are always a good moment to stop and reflect a little bit about the last few projects, and this is even more true for Christmas holidays as November and December are always busy months.
 
-During the last couple of months in Tengio we have created a few open source library and demo app, as a reasult we have plenty of duplicated code in build scripts. I decided to have a deeper look at the gradle build scripts and plugins that we use and extract the duplication where possible.
+During the last couple of months in Tengio we have created a few open source library and demo apps, and as a reasult we have plenty of duplicated code in build scripts. 
+
+It is time to have a deeper look at the gradle build scripts and plugins that we use and extract the duplication where possible.
 
 I set the following requirements for this task:
 * Cost in terms of my time should not be more than 2 days
@@ -19,47 +21,46 @@ I set the following requirements for this task:
 
 ## Duplication in gradle scripts
 
-It is quite easy to identify the primary source of duplication in the gradle scripts of our projects. Just by looking at a few projects ```build.gradle``` files I have identified the following parts:
+It is quite easy to identify the primary source of duplication in the gradle scripts of our projects. Just by reading through a few project ```build.gradle``` files I have identified the following parts:
 - checkstyle
 - bintray
 
 ## Checkstyle
 
-I hope people reading this blog are familiar with checkstyle. If you don't, unless you always work alone, please google it and try to use it. In the past, it was quite hard and cumbersome to use but nowdays there are no excuses.
+I hope people reading this blog are familiar with checkstyle. If you are not please google it and try to use it. In the past, it was quite hard and cumbersome to use, but nowdays there are no excuses.
 
-The best way to use it is to create a company wide code style rule set that is as close as possible to the current standard style guidelines. Once the rule set is defined you can enforce the rules in static code analysis phase of the build scripts and at the same time help developers use the rules with some IDE integration. 
+The best way to take advantage of checkstyle is to create a company wide code style rule set that is as close as possible to the current standard style guidelines of you project type. Once the rule set is defined you can enforce the rules in the static code analysis phase of the build scripts and at the same time help developers use the rules with some IDE integration. 
 
-To summarise if you want to use checkstyle you have to:
-* enforce it with the continuous integration
-* adapt IDE to support the defined rules
-If you don't respect this two points it will be very hard to successfuly use checkstyle. And trust me on this having a consistent style in the code base makes the difference.
+To summarise if you want to use checkstyle, you have to:
+* enforce it in your continuous integration
+* integrate it in your IDE
+Any friction between these two rules and you will have more issues using checkstyle than not using it.
 
-For our case I'm looking at java/android base projects. It is easy for this type of projects to use checkstyle.
-In fact you can implement checkstyle for your project just with the following steps: 
+In this case I'm looking at java/android base projects. For this type of projects you can implement checkstyle with the following steps: 
 - define the rules of your code style in a file ```checkstyle.xml```.   
 - add the checkstyle plugin to your gradle project.
-- create a ```codestyle.xml``` file, and import the file in your IDE. (At least this should work for android studio and IntelliJ)
+- create a ```codestyle.xml``` file, and import the file in your IDE (at least this should work for android studio and IntelliJ).
 
-## Checkstyle implementation problem.
+## Checkstyle implementation problem
 
 As mentioned before, the codestyle implementation for a project consists of the following files:
 - codestyle.xml
 - checkstyle.xml
 - Plugin repository definition and dependency
-- For android project you also need the ridefinition of the checkstyle task so that it can take the proper source ccode to analyse.
+- For android project you also need the ridefinition of the checkstyle task so that it can take the proper source code to analyse.
 
-All this it is fine for a single project. But as soon as you start to have a few projects you end up with duplication which is expensive to maintain.
+All this is fine for a single project, but as soon as you start to have a few projects you end up with lots of duplications which are expensive to maintain.
 
-## A Tengio Checkstyle Plugin
+## Tengio Checkstyle Plugin
 
-Ok so, we have one problem and we know the requirements for our solution. I think a gradle plugin is the best possible solution in this case. One of the main goal is the ability to share ```checkstyle.xml``` file for all the projects. 
+Ok so, we have one problem and we know the requirements for our solution. I think a gradle plugin is the best possible solution in this case. One of the main goals is the ability to share ```checkstyle.xml``` file for all the projects. 
 
-First thing to know is then: Is it actually possible to include and distribute the xml file into the jar and pass it to checkstyle?
+First thing to know: is it actually possible to include and distribute the xml file into the jar and pass it to checkstyle?
 
-A gradle plugin is essentialy a jar. So it is possible to include a file as a resource and read it. More complicated is passing it to checkstyle plugin. In fact I have limited time I can't rewrite the all checkstyle plugin so I need to have it as a dependency and set the configuration it needs.
+A gradle plugin is essentialy a jar. So it is possible to include a file as a resource and read it. More complicated is passing it to checkstyle plugin. With limited time I can't rewrite the checkstyle plugin. I need to have it as a dependency and set the proper configuration to make it work.
 
-Luckily for me the checkstyle plugin has a new ```config``` property that instead of the ```configFile``` can take a string instead of a file for the checkstyle Checker configuration.
-Finally with this line of code it be possible to read as a string a file in the resources of the jar and assign it to the checkstyle plugin:
+Luckily for me the checkstyle plugin has a new ```config``` property that can take the checkstyle Checker configuration as a string.
+Finally, with this line of code it is possible to read a file in the resources of the jar as a string  and assign it to the checkstyle plugin:
 
 ```
 checkstyle.config = project.resources.text.fromString(getClass().getResourceAsStream("checkstyle.xml").text)
@@ -67,7 +68,7 @@ checkstyle.config = project.resources.text.fromString(getClass().getResourceAsSt
 
 Ok now I have to learn how to create a gradle plugin, inject a checkstyle plugin and make sure it is configured correctly.
 
-There are the things we need to do:
+These are the things we need to do:
 - 1. create a gradle plugin project
 - 2. define a plugin id
 - 3. define the plugin class
@@ -80,7 +81,9 @@ There are the things we need to do:
 
 ### 1. Create a gradle plugin project
 
-I will try to put just the necessary part in the blog, if you want to look at the full code the project is open source: 
+Note : I will discuss only the necessary parts in the blog, if you want to look at the full code the project is [open source](https://github.com/Tengio/tengio-checkstyle-plugin): 
+
+Simple, just create a build.gradle file with this in your root folder: 
 
 ```
 apply plugin: 'groovy'
@@ -90,13 +93,14 @@ dependencies {
     compile localGroovy()
 }
 ```
+
 With this in you build.gradle you have a basic groovy gradle plugin (you can also do it in java if you prefer).
 
 ### 2. Define a plugin id
 
-Each gradle plugin need to define a plugin id. The plugin id will also have to associate the id to a Class that implements the Plugin itself.
+Each gradle plugin needs to define a plugin id. The plugin id will also have to associate the id to a Class that implements the Plugin itself.
 To do that you have to create a file with name ```[package].[pluginId]```. The file need to be in ```src/main/resources/META-INF``` directory. 
-The file need to contain the class association. Like in this case:
+The file needs to contain the class association. Like in this case:
 
 ```
 implementation-class=com.tengio.gradle.TengioCheckstylePlugin
@@ -104,7 +108,7 @@ implementation-class=com.tengio.gradle.TengioCheckstylePlugin
 
 ### 3. Define the plugin class
 
-The plugin class in itself is a very simple class that implements Plugin and you can use the apply method to do your own logic.
+The plugin class is a very simple class in itself that implements Plugin. You can use the apply method to do your own logic.
 
 ```
 class TengioCheckstylePlugin implements Plugin<Project> {
@@ -117,7 +121,7 @@ class TengioCheckstylePlugin implements Plugin<Project> {
 
 ### 4. Checkstyle plugin dependency
 
-Dependency declaration with gradle plugins it is easy. See here:
+Dependency declaration with gradle plugins is easy. See here:
 
 ```
 buildscript {
@@ -133,7 +137,7 @@ This needs to be placed in the build.gradle of the plugin we are creating.
 
 ### 5. Apply the Checkstyle plugin
 
-Going back to the TengioCheckstylePlugin class, to configure and apply the checkstyle plugin to the targeted project you need to use the pluginManager and the apply method like in this script:
+Going back to the TengioCheckstylePlugin class, to configure and apply the checkstyle plugin to the targeted project you need to use the pluginManager and the apply method as in this script:
 
 ```
 project.plugins.withType(CheckstylePlugin) {
@@ -166,7 +170,7 @@ uploadArchives {
 }
 ```
 
-By adding this to you build.gradle and with the task ```uploadArchives``` you can deploy a version of your plugin locally.
+By adding this to your build.gradle and with the task ```uploadArchives``` you can deploy a version of your plugin locally.
 In the demo project you can easily pick up the plugin by adding usual plugin declaration:
 
 ```
@@ -187,7 +191,7 @@ Ok now everything works on a normal java project.
 
 ### 7. Add support for android projects
 
-When you apply the checkstyle plugin to a java project gradle will automatically attach two tasks *checkstyleMain* and *checkstyleTest* as dependencies of the check task.
+When you apply the checkstyle plugin to a java project, gradle will automatically attach two tasks *checkstyleMain* and *checkstyleTest* as dependencies of the check task.
 
 With android though this doesn't happen. This is probably related to the different way android plugin manager defines the sources paths of the project. If you have used checkstyle on android project you already know this. Anyway we basically have to do that manually:
 
@@ -207,13 +211,13 @@ The interesting bit is the last line:
 ```
 project.tasks.getByName('check').dependsOn 'checkstyleMain'
 ```
-It is adding the newly defined task as a Dependency of 'check'. Check is one of the goal executed during a android gradle build.
+It is adding the newly defined task as a Dependency of 'check'. Check is one of the goals executed during an android gradle build.
 
 ### 8. Publish the plugin
 
-I'm used to publish Tengio's open source project to bintray. And it is possible to publish a gradle plugin to bintray. But I noticed there is a specific gradle repository for plugins. So I gave it a go.
+I'm used to publish Tengio's open source project to bintray, and it is possible to publish a gradle plugin to bintray. However, I noticed that there is a specific gradle repository for plugins. So I gave it a go.
 
-Go to this link and follow the steps, this pubblication process it is actually very simple (one of the best I have used so far). I can't make it clearer. 
+Go to this link and follow the steps, this pubblication process is actually very simple (one of the best I have used so far).
 
 Once it is published you can use it like any other public plugin:
 
@@ -236,12 +240,12 @@ apply plugin: 'com.tengio.gradle.tengio-checkstyle-plugin'
 
 ### 9. Update existing projects to use the new plugin
 
-Finally the best part and is all about deleting stuff.
+Finally, the best part and is all about deleting stuff.
 
 
 ## Bintray and maven
 
-At Tengio we have a few open source projects. Any open source project should be as easy as possible to use, for this reason all our project are published on Bintray. 
+At Tengio we have a few open source projects. All open source projects should be as easy as possible to use. For this reason all our projects are published on Bintray. 
 
 Bintray requires the maven plugin to prepare some meta-information of the artifact. Also for Android projects, bintray needs some custom configuration. See this example: 
 
@@ -298,7 +302,7 @@ artifacts {
 }
 ```
 
-**NOTE:** Notice the trick to avoid duplication of the versionName:
+**NOTE:** Note the trick that we use to avoid the duplication of the versionName:
 ```
 project.afterEvaluate {
     project.version = android.defaultConfig.versionName
@@ -307,22 +311,19 @@ project.afterEvaluate {
 
 ## Bintray and maven implementation problem 
 
-You can see the problem already. For all the Android projects we have to write this snippet of code. 
+You can see the problem already. For all the Android projects we have to write the previous snippet of code. 
 
 
 ## Tengio Bintray Script
 
-I have not much time left, digging stuff on how to use checkstyle took me quite a bit. And having seen the difficulties of the re-usage of checkstyle plugin in our custom extension. I'm starting this task much more afraid of what is going to be using bintray and maven as dependecies to make a plugin.
-
-I cloned quickly the repo for the maven plugin and bintray plugin to see the code. The result is clear. I'm not going to write a plugin this time.
-
-The thing is that plugins are not written with the idea that other people will write plugin on top of them.
+Digging stuff on how to use checkstyle took me quite a bit and having seen the difficulties, I'm afraid I can't follow the same plugin solution I used for checkstyle.
 
 Luckily for me there is another clever solution for gradle to reuse code: ```apply from: url```. 
 
-With this you can apply a script to an existing build. It is quite awesome. There is only one drawback the ```apply from:``` is executed after the evaluation phase. This means that it is not possible to add dependencies from within the applyed script.
+With this you can apply a script to an existing build. It is quite awesome. There is only one drawback though, the ```apply from:``` is executed after the evaluation phase. This means that it is not possible to add dependencies from within the applyed script.
 
-Still a pritty good result. We remove all the code making sure to leave the plugin dependencies:
+Still a pretty good result. We remove all the code making sure to leave the plugin dependencies:
+
 ```
 buildscript {
   repositories {
@@ -341,6 +342,6 @@ apply from: 'https://raw.githubusercontent.com/Tengio/tengio-bintray-script/mast
 
 ## Conclusions
 
-To be honest the all thing was also an elaborate excuse to get to build some plugin with gradle. I always wanted to try at least with once. 
+Overall I'm happy with checkstyle plugin. Also the bintray imlementation is much better than before. I know the ideal solution would be a plugin for bintray too, but I leave it for another holiday.
 
-Overall I'm happy with checkstyle plugin also the bintray imlementation is much better than before. I know the ideal situation will be a plugin. But I leave this to another holiday.
+To be honest all this was also an elaborate excuse to get to build some plugin with gradle. I always wanted to try it.
