@@ -1,12 +1,13 @@
 +++
-id = "0012"
-title = "Gradle : Reduce duplication accross projects"
-description = "Gradle plugins and scripts to reduce duplication of code across projects"
-date = "2017-12-29T17:40:27+00:00"
-draft = true
+id = "0015"
+title = "Gradle : Reduce duplication across projects"
+description = "Gradle files contain code, and code generate duplications if not organised and maintaned correctly. Gradle plugins and 'apply from' can help to organise build script code in multiple projects."
+date = "2017-01-26T17:40:27+00:00"
 author = "luigi"
-tags = [ "Gradle", "Android", "Checkstyle", "Bintray" ]
+tags = [ "Gradle", "Android", "Checkstyle" ]
 +++
+
+![article-img](/img/blog/0015/scared_tengio_gradle.png)
 
 Holidays are always a good moment to stop and reflect a little bit about the last few projects, and this is even more true for Christmas holidays as November and December are always busy months.
 
@@ -345,3 +346,5 @@ apply from: 'https://raw.githubusercontent.com/Tengio/tengio-bintray-script/mast
 Overall I'm happy with checkstyle plugin. Also the bintray imlementation is much better than before. I know the ideal solution would be a plugin for bintray too, but I leave it for another holiday.
 
 To be honest all this was also an elaborate excuse to get to build some plugin with gradle. I always wanted to try it.
+
+![article-img-centered](/img/blog/0015/gradle_tengio_friends.png)
